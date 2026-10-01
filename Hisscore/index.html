@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hisscore — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 680px;
+    margin: 3rem auto;
+    padding: 0 1.25rem;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8e8e8; background: #121212; }
+    a { color: #7fd1ff; }
+  }
+  h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
+  .updated { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+  @media (prefers-color-scheme: dark) { .updated { color: #999; } }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  ul { padding-left: 1.25rem; }
+  code { background: rgba(127,127,127,0.15); padding: 0.1em 0.35em; border-radius: 4px; }
+</style>
+</head>
+<body>
+
+<h1>Hisscore — Privacy Policy</h1>
+<p class="updated">Last updated: 2026-09-22</p>
+
+<p>
+  Hisscore is a Snake game. Almost everything it does happens on your
+  device. The one exception is the global leaderboards, which send your
+  score and a display name to a server. This page explains exactly what
+  is sent, when, and to whom.
+</p>
+
+<h2>What leaves your device</h2>
+<p>
+  <strong>Nothing is sent anywhere until you say it may be.</strong> The
+  first time you finish a game with a score above zero, Hisscore asks
+  whether your scores may go on the global leaderboards. Until you
+  answer, and if you answer no, nothing about you leaves the device at
+  all. If you answer yes, each run scoring above zero is submitted when
+  it ends. What is sent is:
+</p>
+<ul>
+  <li>Your <strong>display name</strong>. If you never choose one, the app
+    generates a name for you from your anonymous ID; you can change it at
+    any time on the STATS tab.</li>
+  <li>Your <strong>score</strong> for that run, and which board it belongs
+    to (the day's Daily Challenge, or the all-time board for that mode).</li>
+  <li>A <strong>timestamp</strong>, set by the server when the entry is
+    written.</li>
+  <li>An <strong>anonymous player ID</strong>, described below, which the
+    entry is stored under.</li>
+</ul>
+<p>
+  Nothing else is transmitted. No email address, no contacts, no location,
+  no advertising identifier, and no account you hold anywhere else.
+</p>
+
+<h2>Sharing a score or a challenge</h2>
+<p>
+  When you tap SHARE, the app hands a picture and some text to whichever
+  app you then choose — a messaging app, mail, anything on the sheet.
+  That is you sending a message, not Hisscore sending data anywhere; it
+  goes only to whoever you send it to, and nothing about it reaches us.
+</p>
+<p>
+  One thing is worth knowing about what is in it. Sharing a
+  <strong>challenge</strong> puts a link in that message, and the link
+  contains your display name and a record of the run you just played —
+  the turns you made, so your friend's game can replay your snake and
+  race you on the same board. There is no server involved: the run
+  travels inside the link itself. Anyone who has the link can read both,
+  so treat it the way you would treat anything else you send.
+</p>
+
+<h2>The anonymous player ID</h2>
+<p>
+  To keep one leaderboard row per player rather than one per run, the app
+  signs in to Firebase Anonymous Authentication the first time it needs
+  the leaderboard. This creates a random identifier that is not tied to
+  your name, email, phone number, or Google account, and is not shared
+  with other apps. It is stored on your device and by Google, and it
+  persists until you uninstall the app or clear its data.
+</p>
+
+<h2>Who processes it</h2>
+<p>
+  The leaderboards run on <strong>Google Firebase</strong> — Firebase
+  Authentication and Cloud Firestore. Data sent to the leaderboard is
+  stored on Google's servers and handled under
+  <a href="https://firebase.google.com/support/privacy">Firebase's privacy
+  terms</a> and
+  <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.
+  Hisscore has no other backend.
+</p>
+<p>
+  There are <strong>no advertising SDKs, no analytics SDKs, and no
+  tracking</strong> of any kind in the app.
+</p>
+
+<h2>What stays on your device</h2>
+<p>
+  Your high scores, top-5 local leaderboard, cumulative stats,
+  daily-challenge streak, daily quests, XP and level, unlocked themes and
+  skins, your chosen settings, and a short local crash log are stored only
+  in this app's own storage on your device, using the platform's standard
+  local-storage APIs. None of that leaves your device. Uninstalling the
+  app deletes all of it.
+</p>
+<p>
+  Crash reports stay on your device. The app is built with no crash
+  reporting service configured, so crashes are written to that local log
+  and are not sent anywhere.
+</p>
+
+<h2>Permissions</h2>
+<p>
+  The release build requests one runtime permission:
+  <code>POST_NOTIFICATIONS</code>, used solely to schedule a local
+  reminder for your next Daily Challenge. That reminder is scheduled and
+  delivered entirely on-device — no notification content or token is sent
+  anywhere. The app also declares network access, which is used only for
+  the leaderboards described above.
+</p>
+
+<h2>If you would rather not appear on the leaderboards</h2>
+<p>
+  Then say no when the game asks, or turn <strong>SENDING YOUR
+  SCORES</strong> off on the STATS tab, which you can do at any time and
+  as often as you like. With it off, nothing about you is sent. The app
+  is fully playable that way — every mode, the daily challenge, quests,
+  levels and your own records all work offline and on-device; only the
+  global boards need the connection. You can also change your display
+  name at any time on the same tab.
+</p>
+<p>
+  To have a leaderboard entry removed, email the address below with the
+  display name shown on the board and roughly when it was set, and it will
+  be deleted.
+</p>
+
+<h2>Children's privacy</h2>
+<p>
+  The game is rated for all ages and does not knowingly collect personal
+  information from children. The only thing a player can enter is a
+  display name, which appears publicly on the leaderboards — please do not
+  use a real name. If you believe a child has submitted identifying
+  information as a display name, email the address below and it will be
+  removed.
+</p>
+
+<h2>Changes to this policy</h2>
+<p>
+  If what the app sends ever changes, this page will be updated with a new
+  "last updated" date above.
+</p>
+
+<h2>Contact</h2>
+<p>
+  Questions about this policy, or requests to remove a leaderboard entry:
+  <code>oasisforge.support@gmail.com</code>
+</p>
+
+</body>
+</html>
