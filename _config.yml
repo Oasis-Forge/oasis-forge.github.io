@@ -1,0 +1,11 @@
+# GitHub Pages builds this site with Jekyll, so the Markdown privacy policies (Monthly Expenses, Wasn't Me) become
+# pages, in the theme they had in their own repos. HTML files with no front matter (the home page and the other
+# policies) are served exactly as they are.
+title: Oasis Forge
+description: Mobile apps and games by Oasis Forge.
+theme: jekyll-theme-primer
+
+# Notes for this repo, not pages.
+exclude:
+  - README.md
+  - tools
