@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Wasfati / سياسة الخصوصية — وصفاتي</title>
+<meta name="description" content="Privacy policy for the Wasfati recipe app by Oasis Forge.">
+<style>
+  body { font-family: system-ui, "Segoe UI", Tahoma, sans-serif; line-height: 1.8;
+         max-width: 760px; margin: 0 auto; padding: 24px; color: #1a1a1a; background: #fffaf6; }
+  h1 { font-size: 1.6rem; } h2 { font-size: 1.2rem; margin-top: 2rem; }
+  .meta { color: #666; font-size: .9rem; }
+  a { color: #9c5b3c; }
+  ul { padding-inline-start: 1.4rem; }
+  section[dir="rtl"] { text-align: right; }
+  .divider { border: 0; border-top: 2px solid #9c5b3c; margin: 3rem 0; }
+  .langnav { font-size: .95rem; margin-bottom: 1.5rem; }
+</style>
+</head>
+<body>
+
+<p class="langnav"><a href="#en">English</a> · <a href="#ar">العربية</a></p>
+
+<section id="en" dir="ltr">
+  <h1>Privacy Policy — “Wasfati”</h1>
+  <p class="meta">Developer: Oasis Forge · Effective date: 28 September 2026 · Contact:
+    <a href="mailto:oasisforge.support@gmail.com">oasisforge.support@gmail.com</a></p>
+
+  <p>Oasis Forge respects your privacy. This policy explains what data the “Wasfati” app
+    handles and how it is used. By using the app, you agree to the following.</p>
+
+  <h2>1. Data we collect</h2>
+  <p>We do not collect any personal data ourselves. The app requires no sign-in and no account. Your
+    recipes, photos, cookbooks, tags, notes and settings are stored only in the app's private
+    storage on your device, and they are erased when the app is removed or its data is
+    cleared.</p>
+  <p>Most of what the app does never leaves your device — including every link you import,
+    which your phone reads directly from the website itself (section 2). There are two
+    exceptions. AI import (section 3): when your phone can't read a page on its own, we send
+    only what you asked it to import to our import server, which never keeps it. And ads
+    (section 8): the free app shows ads from Google, whose ad software collects some
+    information about your device to show them. Nothing you keep in Wasfati is ever given to
+    it.</p>
+  <p>The app also keeps a random install ID on your device. It identifies no one — no name,
+    email or account stands behind it. It leaves the device only inside a backup file you
+    choose to save or share (section 7), or with an AI import request (section 3).</p>
+  <p><strong>Android backup:</strong> if backup is turned on for your Google account, Android
+    may include your recipes and settings — not their photos — in your device backup, which
+    Google stores and which you control from your device settings. We cannot access that
+    backup.</p>
+
+  <h2>2. Importing a recipe from a link</h2>
+  <p>When you paste or share a recipe link, your phone downloads that page and its photo
+    <strong>directly from the recipe's website</strong>, exactly as a browser would. That
+    website sees the request and your device's IP address, as it would for any visitor.
+    Nothing reaches us, and no server of ours is involved. Text you share into Wasfati stays
+    on your device. If the page doesn't hold the recipe data the app needs, it offers AI
+    import instead (section 3).</p>
+  <p>A social post — on Instagram, Facebook, TikTok or YouTube — works much the same way: your
+    phone reads that post's public caption and cover picture <strong>directly from the platform
+    itself</strong> (TikTok through its own public oEmbed service), logged out, and shows you
+    the caption before anything is sent. The platform sees the request and your device's IP
+    address, as it would if you'd opened the post yourself. The caption is shown to you and
+    goes to AI import only if you tap Import (section 3); the link itself never reaches us.</p>
+
+  <h2>3. Importing with AI</h2>
+  <p>Some sources need help understanding — a social post whose caption your phone couldn't
+    read on its own (an Instagram, Facebook, TikTok or YouTube post, say), a caption you paste
+    in, or photos you take or pick: a cookbook page, a handwritten recipe,
+    or a screenshot of a post. When you ask the app to import one of these, it sends what
+    you're actually importing — the text, or up to 4 photos, each first made smaller on your
+    phone — together with the app's install ID (section 1), to our import server. For a social
+    post, that's the caption your phone read (section 2) or you pasted, or a screenshot you
+    pick; the post's link itself isn't sent.</p>
+  <p>Our server sends that to <strong>Claude, Anthropic's AI model</strong>, which turns
+    it into a recipe, and sends the structured result back to your phone. The server keeps
+    nothing it is sent: no recipe text, no caption, no photo, no log of what you imported.
+    Photos are held only in memory while the request is answered, then discarded. Anthropic,
+    our service provider, deletes what it receives within 30 days — longer only when it needs
+    to enforce its usage policy or the law requires it (section 10).</p>
+  <p>The recipe that comes back opens for you to review and edit before anything is saved. Once
+    it's on your device, it stays there like any other recipe (section 1) — it leaves again
+    only if you back it up, share it, or ask to translate it.</p>
+  <p>Translating a recipe into Arabic or English works the same way: it sends only that
+    recipe's words — its title, ingredient names and steps, never its amounts or its photo —
+    to the same server, which keeps nothing of it either, and Anthropic deletes it within the
+    same 30 days. The translation is saved as a new recipe beside the original, on your
+    phone.</p>
+  <p>To hold each install to the free 10 AI imports and 10 translations a month, the server
+    keeps, under the install ID, a count of this month's imports and one of this month's
+    translations: two numbers, never anything you sent. Each count deletes itself about 40
+    days later, and the app shows it to you.</p>
+  <p>If you're a Premium subscriber, each AI import also carries that subscription's Google
+    Play purchase token — never a translation, which stays on the free 10 either way (section
+    9) — so our server can ask Google Play whether it's still active, and raise that import to
+    Premium's 100 a month. The server keeps only a one-way hash of that token, together with
+    Google Play's answer, for up to an hour, and the month's import count under that hash for
+    up to 40 days; it never keeps the token itself.</p>
+  <p>“Report a mistake”, in that review screen, opens your own mail app with a message to
+    <a href="mailto:oasisforge.support@gmail.com">oasisforge.support@gmail.com</a> holding
+    only the recipe's source link and the note you write. A photo or text you import on its own
+    has no link, so the message holds only your note; when a post's link can't be read and you
+    paste its caption or pick a screenshot of it instead, the recipe keeps that post's link, and
+    the message carries it. You see the message and send it yourself; it never goes through our server, and it never
+    includes the recipe or its photos.</p>
+
+  <h2>4. Photos</h2>
+  <p>Photos you add come from your camera or gallery through your phone's own picker, so the
+    app never browses your photo library, and it needs no camera permission. They are kept in
+    the app's private storage and leave your device only if you send them somewhere yourself,
+    such as a photo you import with AI (section 3).</p>
+
+  <h2>5. Cook timers and notifications</h2>
+  <p>Timers in cook mode are scheduled on your device, and nothing is sent anywhere.
+    Notification permission is asked the first time you start a timer. If you refuse, timers
+    still ring while the app is open.</p>
+
+  <h2>6. Permissions</h2>
+  <ul>
+    <li><strong>Internet:</strong> to download the recipe pages you choose to import (section
+      2), and to reach our import server when AI import is needed (section 3).</li>
+    <li><strong>Notifications:</strong> to alert you when a cook timer ends.</li>
+    <li><strong>Vibrate:</strong> for that same timer alert.</li>
+    <li><strong>Network state:</strong> lets Google's ad software check that you're online
+      before it asks for an ad (section 8).</li>
+    <li><strong>Advertising ID:</strong> lets Google's ad software read your device's
+      advertising ID (section 8). You can reset or delete it in your phone's settings.</li>
+    <li><strong>Google Play billing:</strong> to buy Pro or Premium through Google Play
+      (section 9).</li>
+  </ul>
+
+  <h2>7. Backups and exports</h2>
+  <p>A backup is a file the app makes only when you ask. It holds your recipes and their
+    photos, cookbooks, tags, your meal plan, your grocery list, your settings and the app's
+    random install ID. A recipe you deleted crosses only as a deletion, never its content or
+    photo. You choose where the file goes — Google Drive, your files, or any app through the
+    share sheet — and it never passes through us. Before a restore changes anything, the app
+    keeps an automatic copy of what was on your phone, on your phone. An export is a plain
+    text file of your recipes, saved the same way.</p>
+
+  <h2>8. Ads</h2>
+  <p>Wasfati is free, and it shows ads from <strong>Google AdMob</strong>: one small
+    banner at the bottom of four screens — the library, a recipe's page, the meal plan and the
+    grocery list — and one full-screen ad after an import is saved, as the saved recipe opens,
+    at most once a minute. Never in cook mode, the recipe editor, import, settings or the
+    purchase screen, and not before you've finished setting up the app. Pro or Premium (section 9)
+    removes every ad, and the app then doesn't ask Google for ads at all.</p>
+  <p><strong>What the app gives Google: nothing of yours.</strong> It never passes on your
+    recipes, cookbooks, meal plan, grocery list, searches or anything you type, and no keywords
+    made from them. A request for an ad carries nothing from the app but the request itself.</p>
+  <p><strong>What Google's ad software collects on its own</strong>, to show ads, measure them
+    and prevent fraud: your device's advertising ID; your IP address and the rough location it
+    suggests (a city or region, never GPS); details of the device (model, Android version,
+    language, screen size, network type); which ads were shown and whether you tapped one; and
+    crash and performance data about the ad software itself. It's sent to Google encrypted, and
+    Google handles it under its own privacy policy:
+    <a href="https://policies.google.com/technologies/partner-sites">How Google uses information
+    from sites or apps that use its services</a>.</p>
+  <p><strong>Your choices.</strong> In the European Economic Area, the UK and Switzerland,
+    Google's own consent form asks you before the first ad, and you can change your answer at
+    any time in Settings → Ads and subscription → Ad privacy choices. Refusing means ads that
+    aren't personalised — Google still uses some data to limit how often an ad repeats,
+    prevent fraud and count views — and never a feature taken away. Everywhere, you can reset
+    or delete your advertising ID, or turn off personalised ads, in your phone's settings
+    (Privacy → Ads, or Google → Ads).</p>
+  <p>To know whether your country's law asks for that form, the app asks Google's consent
+    service when ads are about to start, and that service sees your IP address. Your answer is
+    kept on your phone, and the ad software sends it with each ad request so Google follows
+    it.</p>
+
+  <h2>9. Purchases</h2>
+  <p><strong>Pro</strong> (a one-time purchase that removes ads) and <strong>Premium</strong>
+    (a subscription that removes ads and gives you 100 AI imports a month) are bought through
+    <strong>Google Play</strong>. Google Play takes the payment: we never see your card, your
+    name or your email. Each time the app starts, it asks Google Play which of them your Google
+    account owns, so a refund, a subscription that ended or a purchase shared with your family
+    shows up by itself; it keeps nothing else about your purchases. Premium renews until you
+    cancel it in Google Play (Settings → Ads and subscription → Manage or cancel). Google Play
+    handles payments under Google's own privacy policy.</p>
+  <p>The app has no analytics or tracking of its own.</p>
+
+  <h2>10. Deleting your information</h2>
+  <p>Delete a recipe in the app: it stays in the trash for 30 days, then it and its photo are
+    removed for good from the app's own storage. From the moment you delete it, any backup you
+    make afterward carries only the fact that it was deleted, never its content or photo. A
+    backup you saved before deleting it was made while the recipe was still there, though, and
+    keeps holding it until you remove that saved file yourself. Uninstalling the app removes
+    everything it stored.</p>
+  <p>What you send for an AI import or a translation (section 3) is never kept on our server.
+    Anthropic, our service provider, deletes it within 30 days — longer only when it needs to
+    enforce its usage policy or the law requires it. The two monthly counts kept under your
+    install ID delete themselves about 40 days later.</p>
+
+  <h2>11. Children</h2>
+  <p>The app is intended for a general audience and is not directed at children under 13, and
+    we do not knowingly collect any data from them.</p>
+
+  <h2>12. Changes to this policy</h2>
+  <p>We may update this policy as the app gains features. Any change appears on this page with
+    an updated effective date.</p>
+
+  <h2>13. Contact</h2>
+  <p>For any privacy question, email us at
+    <a href="mailto:oasisforge.support@gmail.com">oasisforge.support@gmail.com</a>. Email is
+    our only support channel.</p>
+</section>
+
+<hr class="divider">
+
+<section id="ar" dir="rtl" lang="ar">
+  <h1>سياسة الخصوصية — تطبيق «وصفاتي»</h1>
+  <p class="meta">المطوّر: Oasis Forge · تاريخ السريان: ٢٨ سبتمبر ٢٠٢٦ · للتواصل:
+    <a href="mailto:oasisforge.support@gmail.com">oasisforge.support@gmail.com</a></p>
+
+  <p>تحترم Oasis Forge خصوصيتك. توضّح هذه السياسة البيانات التي يتعامل معها تطبيق «وصفاتي»
+    وكيفية استخدامها. باستخدامك للتطبيق فأنت توافق على ما يلي.</p>
+
+  <h2>١. البيانات التي نجمعها</h2>
+  <p>لا نجمع نحن أي بيانات شخصية. التطبيق لا يطلب تسجيل دخول ولا حساباً. تُحفظ وصفاتك وصورها وكتب
+    الطبخ والوسوم والملاحظات والإعدادات في مساحة التطبيق الخاصة على جهازك فقط، وتُحذف عند إزالة
+    التطبيق أو مسح بياناته.</p>
+  <p>معظم ما يفعله التطبيق لا يغادر جهازك أبداً — بما في ذلك كل رابط تستورده، الذي يقرأه هاتفك
+    مباشرة من الموقع نفسه (البند ٢). وهناك استثناءان. الأول هو الاستيراد بالذكاء الاصطناعي
+    (البند ٣): حين لا يستطيع هاتفك قراءة صفحة بنفسه، نرسل إلى خادم الاستيراد لدينا فقط ما طلبتَ
+    استيراده، وهو خادم لا يحتفظ بشيء منه أبداً. والثاني هو الإعلانات (البند ٨): يعرض التطبيق
+    المجاني إعلانات من Google، وتجمع برمجية الإعلانات لديها بعض المعلومات عن جهازك لعرضها. ولا
+    يُعطى لها أبداً أي شيء مما تحفظه في «وصفاتي».</p>
+  <p>يحفظ التطبيق أيضاً معرّفاً عشوائياً للتثبيت على جهازك. هذا المعرّف لا يدل على أي شخص — لا
+    اسم ولا بريد إلكتروني ولا حساب خلفه. لا يغادر جهازك إلا داخل ملف نسخة احتياطية تختار أنت
+    حفظه أو مشاركته (البند ٧)، أو مع طلب استيراد بالذكاء الاصطناعي (البند ٣).</p>
+  <p><strong>النسخ الاحتياطي في أندرويد:</strong> إن كان النسخ الاحتياطي مفعّلاً لحساب Google
+    على جهازك، فقد يُضمِّن أندرويد وصفاتك وإعداداتك — دون صورها — في النسخة الاحتياطية للجهاز،
+    التي تحفظها Google وتتحكم بها أنت من إعدادات جهازك. لا يمكننا الوصول إلى هذه النسخة.</p>
+
+  <h2>٢. استيراد وصفة من رابط</h2>
+  <p>عند لصق رابط وصفة أو مشاركته مع التطبيق، ينزّل هاتفك تلك الصفحة وصورتها
+    <strong>مباشرة من موقع الوصفة</strong>، تماماً كما يفعل المتصفح. يرى ذلك الموقع الطلب
+    وعنوان IP الخاص بجهازك، كما يرى أي زائر. لا يصلنا نحن شيء، ولا يتدخّل أي خادم لنا في
+    العملية. والنص الذي تشاركه مع «وصفاتي» يبقى على جهازك. وإن لم تحمل الصفحة بيانات الوصفة
+    التي يحتاجها التطبيق، يعرض عليك الاستيراد بالذكاء الاصطناعي بدلاً من ذلك (البند ٣).</p>
+  <p>ومنشور اجتماعي على Instagram أو Facebook أو TikTok أو YouTube يسير بالطريقة نفسها تقريباً:
+    يقرأ هاتفك وصف ذلك المنشور العام وصورة غلافه <strong>مباشرة من المنصة نفسها</strong>
+    (عبر خدمة TikTok الرسمية العامة "oEmbed" في حالة TikTok)، من دون تسجيل دخول، ويعرض عليك
+    الوصف قبل إرسال أي شيء. ترى تلك المنصة الطلب وعنوان IP الخاص بجهازك، كما لو فتحتَ المنشور
+    بنفسك. ولا يُعرض عليك الوصف ويُرسل إلى الاستيراد بالذكاء الاصطناعي إلا إن ضغطت على "استيراد"
+    (البند ٣)؛ أما الرابط نفسه فلا يصلنا أبداً.</p>
+
+  <h2>٣. الاستيراد بالذكاء الاصطناعي</h2>
+  <p>بعض المصادر تحتاج مساعدة لفهمها — منشور اجتماعي لم يجد هاتفك وصفه بنفسه (على Instagram أو
+    Facebook أو TikTok أو YouTube)، أو نص تلصقه بنفسك، أو صور تلتقطها أو تختارها:
+    صفحة من كتاب طبخ، أو وصفة مكتوبة بخط اليد، أو صورة لشاشة منشور. حين تطلب من التطبيق استيراد
+    واحد من هذه، يرسل ما تستورده فعلاً — النص أو حتى ٤ صور يُصغَّر حجم كل منها على هاتفك أولاً —
+    مع معرّف التثبيت الخاص بالتطبيق (البند ١)، إلى خادم الاستيراد لدينا. وفي حالة المنشور
+    الاجتماعي، يكون ذلك الوصف الذي قرأه هاتفك (البند ٢) أو النص الذي تلصقه، أو لقطة الشاشة التي
+    تختارها؛ أما رابط المنشور نفسه فلا يُرسَل.</p>
+  <p>يرسل خادمنا ذلك إلى <strong>Claude، نموذج الذكاء الاصطناعي من Anthropic</strong>،
+    الذي يحوّله إلى وصفة، ثم يعيد النتيجة المُهيكلة إلى هاتفك. لا يحتفظ الخادم بشيء مما يُرسَل
+    إليه: لا نص الوصفة، ولا التعليق المنسوخ، ولا الصور، ولا سجل لما استوردتَه. تبقى الصور في
+    الذاكرة فقط ريثما يُجاب الطلب، ثم تُحذف. وتحذف Anthropic، مزوّد الخدمة لدينا، ما يصلها خلال
+    ٣٠ يوماً — ولا تحتفظ به مدة أطول إلا حين يلزمها ذلك لتطبيق سياسة الاستخدام لديها أو حين يفرض
+    القانون ذلك (البند ١٠).</p>
+  <p>تُفتح الوصفة التي تعود إليك للمراجعة والتعديل قبل أن تُحفظ في أي مكان. وبمجرد أن تصل إلى
+    جهازك، تبقى هناك كأي وصفة أخرى (البند ١) — ولا تغادره مرة أخرى إلا إن نسخته احتياطياً أو
+    شاركته أو طلبت ترجمته.</p>
+  <p>وترجمة الوصفة إلى العربية أو الإنجليزية تعمل بالطريقة نفسها: تُرسَل فقط كلمات تلك الوصفة —
+    عنوانها وأسماء مكوّناتها وخطواتها، لا مقاديرها ولا صورتها أبداً — إلى الخادم نفسه، الذي لا
+    يحتفظ بشيء منها هي أيضاً، وتحذفها Anthropic خلال المدة نفسها، ٣٠ يوماً. وتُحفظ الترجمة وصفةً
+    جديدة بجانب الأصلية، على هاتفك.</p>
+  <p>وليبقى كل تثبيت ضمن الحدّ المجاني — ١٠ استيرادات ذكية و١٠ ترجمات في الشهر — يحتفظ الخادم،
+    تحت معرّف التثبيت، بعدد استيرادات هذا الشهر وعدد ترجماته: رقمان فقط، لا شيء مما أرسلتَه.
+    ويُحذف كل عدد من تلقاء نفسه بعد نحو ٤٠ يوماً، ويعرضه التطبيق لك.</p>
+  <p>وإذا كنتَ مشتركاً في بريميوم، يحمل كل استيراد ذكي أيضاً رمز شراء ذلك الاشتراك من
+    Google Play — لا الترجمة أبداً، فتبقى ضمن الحدّ المجاني، ١٠ في الشهر، أياً كان الاشتراك
+    (البند ٩) — ليسأل خادمنا Google Play هل الاشتراك ما زال فعّالاً، فيرفع ذلك الاستيراد إلى
+    حدّ بريميوم، ١٠٠ في الشهر. ولا يحتفظ الخادم من ذلك الرمز إلا بقيمة تجزئة أحادية الاتجاه له،
+    مع جواب Google Play، لمدة تصل إلى ساعة، وعدد استيرادات ذلك الشهر تحت تلك القيمة لمدة تصل
+    إلى ٤٠ يوماً؛ ولا يحتفظ بالرمز نفسه أبداً.</p>
+  <p>زر «أبلغ عن خطأ» في شاشة المراجعة تلك يفتح تطبيق البريد لديك برسالة إلى
+    <a href="mailto:oasisforge.support@gmail.com">oasisforge.support@gmail.com</a> لا تحمل
+    إلا رابط مصدر الوصفة والملاحظة التي تكتبها. والصورة أو النص الذي تستورده وحده بلا رابط، فلا
+    تحمل الرسالة إلا ملاحظتك؛ أما إذا تعذّرت قراءة رابط منشور فألصقت نصّه أو اخترت لقطة شاشة له
+    بدلاً منه، فتحتفظ الوصفة برابط ذلك المنشور، وتحمله الرسالة. ترى الرسالة وترسلها
+    أنت بنفسك؛ لا تمر بخادمنا أبداً، ولا تتضمن الوصفة ولا صورها.</p>
+
+  <h2>٤. الصور</h2>
+  <p>تأتي الصور التي تضيفها من الكاميرا أو المعرض عبر منتقي الصور في هاتفك، فالتطبيق لا يتصفّح
+    مكتبة صورك ولا يحتاج إذن الكاميرا. تُحفظ الصور في مساحة التطبيق الخاصة، ولا تغادر جهازك إلا
+    إذا أرسلتها أنت، كصورة تستوردها بالذكاء الاصطناعي (البند ٣).</p>
+
+  <h2>٥. مؤقتات الطبخ والإشعارات</h2>
+  <p>مؤقتات وضع الطبخ تُجدول على جهازك، ولا يُرسل شيء إلى أي جهة. يُطلب إذن الإشعارات عند أول
+    مؤقت تشغّله، وإذا رفضته يستمر المؤقت في التنبيه ما دام التطبيق مفتوحاً.</p>
+
+  <h2>٦. الأذونات</h2>
+  <ul>
+    <li><strong>الإنترنت:</strong> لتنزيل صفحات الوصفات التي تختار استيرادها (البند ٢)،
+      وللوصول إلى خادم الاستيراد حين يلزم الاستيراد بالذكاء الاصطناعي (البند ٣).</li>
+    <li><strong>الإشعارات:</strong> لتنبيهك عند انتهاء مؤقت الطبخ.</li>
+    <li><strong>الاهتزاز:</strong> لتنبيه المؤقت نفسه.</li>
+    <li><strong>حالة الشبكة:</strong> لتتحقق برمجية إعلانات Google من اتصالك بالإنترنت قبل أن
+      تطلب إعلاناً (البند ٨).</li>
+    <li><strong>المعرّف الإعلاني:</strong> لتقرأ برمجية إعلانات Google المعرّف الإعلاني لجهازك
+      (البند ٨). ويمكنك إعادة ضبطه أو حذفه من إعدادات هاتفك.</li>
+    <li><strong>الفوترة عبر Google Play:</strong> لشراء برو أو بريميوم عبر Google Play
+      (البند ٩).</li>
+  </ul>
+
+  <h2>٧. النسخ الاحتياطي والتصدير</h2>
+  <p>النسخة الاحتياطية ملف لا يصنعه التطبيق إلا عندما تطلبه، ويضم وصفاتك وصورها وكتب الطبخ
+    والوسوم وخطة وجباتك وقائمة مشترياتك وإعداداتك ومعرّف التثبيت العشوائي الخاص بالتطبيق. أما
+    الوصفة التي حذفتها فتُنقل كحذف فقط، دون محتواها أو صورتها. أنت تختار أين يُحفظ الملف —
+    Google Drive أو ملفاتك أو أي تطبيق عبر قائمة المشاركة — ولا يمر بنا أبدًا. وقبل أن تغيّر
+    الاستعادة أي شيء، يحتفظ التطبيق بنسخة تلقائية مما كان على هاتفك، على هاتفك نفسه. والتصدير
+    ملف نصي بوصفاتك يُحفظ بالطريقة نفسها.</p>
+
+  <h2>٨. الإعلانات</h2>
+  <p>«وصفاتي» مجاني، ويعرض إعلانات شريطية من <strong>Google AdMob</strong>: شريط صغير واحد
+    أسفل أربع شاشات — المكتبة، وصفحة الوصفة، وخطة الوجبات، وقائمة المشتريات. لا يظهر أبداً في
+    وضع الطبخ ولا في محرر الوصفة ولا في الاستيراد ولا في الإعدادات ولا في شاشة الشراء، ولا قبل
+    أن تُنهي إعداد التطبيق. ويُزيل برو أو بريميوم (البند ٩) كل الإعلانات، فلا يطلب التطبيق حينها
+    أي إعلان من Google أصلاً.</p>
+  <p><strong>ما يعطيه التطبيق لـGoogle: لا شيء مما لك.</strong> لا يمرّر أبداً وصفاتك ولا كتب
+    الطبخ ولا خطة الوجبات ولا قائمة المشتريات ولا ما تبحث عنه أو تكتبه، ولا كلمات مفتاحية
+    مأخوذة منها. وطلب الإعلان لا يحمل من التطبيق شيئاً سوى الطلب نفسه.</p>
+  <p><strong>ما تجمعه برمجية إعلانات Google بنفسها</strong>، لعرض الإعلانات وقياسها ومنع
+    الاحتيال: المعرّف الإعلاني لجهازك؛ وعنوان IP والموقع التقريبي الذي يدل عليه (مدينة أو منطقة،
+    لا GPS أبداً)؛ وتفاصيل الجهاز (الطراز وإصدار أندرويد واللغة وحجم الشاشة ونوع الشبكة)؛
+    والإعلانات التي عُرضت وهل نقرتَ أحدها؛ وبيانات الأعطال والأداء الخاصة ببرمجية الإعلانات
+    نفسها. تُرسَل إلى Google مشفّرة، وتتعامل Google معها وفق سياسة الخصوصية الخاصة بها:
+    <a href="https://policies.google.com/technologies/partner-sites?hl=ar">كيف تستخدم Google
+    المعلومات من المواقع أو التطبيقات التي تستخدم خدماتها</a>.</p>
+  <p><strong>خياراتك.</strong> في المنطقة الاقتصادية الأوروبية والمملكة المتحدة وسويسرا، يسألك
+    نموذج الموافقة الخاص بـGoogle قبل أول إعلان، ويمكنك تغيير إجابتك متى شئت من الإعدادات ›
+    الإعلانات والاشتراك › خيارات الخصوصية في الإعلانات. والرفض يعني إعلانات غير مخصّصة — تستخدم
+    Google معها بعض البيانات لتحديد عدد مرات تكرار الإعلان ومنع الاحتيال وإحصاء المشاهدات — ولا
+    يعني أبداً حرمانك من أي ميزة. وفي كل مكان، يمكنك إعادة ضبط المعرّف الإعلاني أو حذفه، أو إيقاف
+    الإعلانات المخصّصة، من إعدادات هاتفك (الخصوصية › الإعلانات، أو Google › الإعلانات).</p>
+  <p>ولمعرفة ما إذا كان قانون بلدك يطلب ذلك النموذج، يسأل التطبيق خدمة الموافقة لدى Google حين
+    توشك الإعلانات أن تبدأ، وترى تلك الخدمة عنوان IP الخاص بك. تُحفظ إجابتك على هاتفك، وترسلها
+    برمجية الإعلانات مع كل طلب إعلان لتلتزم بها Google.</p>
+
+  <h2>٩. عمليات الشراء</h2>
+  <p>يُشترى <strong>برو</strong> (شراء لمرة واحدة يزيل الإعلانات) و<strong>بريميوم</strong>
+    (اشتراك يزيل الإعلانات ويمنحك ١٠٠ استيراد ذكي شهرياً) عبر <strong>Google Play</strong>.
+    تتولى Google Play الدفع: لا نرى بطاقتك ولا اسمك ولا بريدك الإلكتروني أبداً. وفي كل مرة يبدأ
+    فيها التطبيق، يسأل Google Play أيّهما يملكه حسابك في Google، فيظهر من تلقاء نفسه استرداد
+    المبلغ أو انتهاء الاشتراك أو الشراء المشترك مع عائلتك؛ ولا يحتفظ بشيء آخر عن عمليات شرائك.
+    يتجدد بريميوم حتى تلغيه من Google Play (الإعدادات › الإعلانات والاشتراك › إدارة أو إلغاء).
+    وتتعامل Google Play مع المدفوعات وفق سياسة الخصوصية الخاصة بـGoogle.</p>
+  <p>لا يحتوي التطبيق على أي أدوات تحليل أو تتبّع خاصة به.</p>
+
+  <h2>١٠. حذف بياناتك</h2>
+  <p>احذف الوصفة من داخل التطبيق: تبقى في سلة المحذوفات ٣٠ يوماً، ثم تُحذف هي وصورتها نهائياً من
+    مساحة تخزين التطبيق. ومنذ لحظة حذفها، لا تحمل أي نسخة احتياطية تصنعها بعد ذلك سوى واقعة
+    الحذف، دون محتواها أو صورتها. أما نسخة احتياطية حفظتها قبل حذفها فقد صُنعت والوصفة ما زالت
+    موجودة، وتبقى محتفظة بها إلى أن تحذف أنت ذلك الملف بنفسك. وإزالة التطبيق تحذف كل ما حفظه.</p>
+  <p>ما ترسله للاستيراد بالذكاء الاصطناعي أو للترجمة (البند ٣) لا يُحفظ على خادمنا أبداً. وتحذفه
+    Anthropic، مزوّد الخدمة لدينا، خلال ٣٠ يوماً — ولا تحتفظ به مدة أطول إلا حين يلزمها ذلك لتطبيق
+    سياسة الاستخدام لديها أو حين يفرض القانون ذلك. أما العددان الشهريان المحفوظان تحت معرّف التثبيت
+    فيُحذفان من تلقاء نفسيهما بعد نحو ٤٠ يوماً.</p>
+
+  <h2>١١. الأطفال</h2>
+  <p>التطبيق موجّه للجمهور العام وليس للأطفال دون ١٣ عاماً، ولا نجمع عن علم أي بيانات منهم.</p>
+
+  <h2>١٢. تغييرات هذه السياسة</h2>
+  <p>قد نُحدّث هذه السياسة كلما أضاف التطبيق ميزات جديدة. يظهر أي تغيير على هذه الصفحة مع
+    تاريخ سريان جديد.</p>
+
+  <h2>١٣. التواصل</h2>
+  <p>لأي سؤال عن الخصوصية، راسلنا على
+    <a href="mailto:oasisforge.support@gmail.com">oasisforge.support@gmail.com</a>.
+    البريد الإلكتروني هو قناة الدعم الوحيدة لدينا.</p>
+</section>
+
+</body>
+</html>
