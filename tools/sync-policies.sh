@@ -4,7 +4,8 @@
 # The app repo keeps the source (it changes with the app's features, and some apps test it); this site keeps an exact
 # copy.
 #
-# Usage, from anywhere, with the app repos cloned next to this one (../koora-trivia and so on):
+# Usage, from anywhere, with the app repos cloned next to this one (../koora-trivia and so on), each on an up-to-date
+# main: it copies whatever is checked out, so a feature branch would publish an unmerged draft.
 #   bash tools/sync-policies.sh           copy every policy that changed; then commit and open a PR here
 #   bash tools/sync-policies.sh --check   only list the ones that differ; exits 1 if any does
 # APPS_DIR=<folder> sets where the app repos are, if not next to this one. An app that isn't there is skipped.

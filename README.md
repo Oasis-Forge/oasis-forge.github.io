@@ -24,7 +24,8 @@ where it changes with the app's features (and some apps test it). This repo has 
 | QR Scanner + Generator | `qr-scanner-generator/docs/privacy-policy/index.html` | https://oasis-forge.github.io/qr-scanner-generator/privacy-policy/ |
 | Wasn't Me | `wasnt-me/docs/privacy-policy.md` | https://oasis-forge.github.io/wasnt-me/privacy-policy |
 
-**To publish a change:** merge it in the app's repo, then, with the app repos cloned next to this one, run
+**To publish a change:** merge it in the app's repo, then, with the app repos cloned next to this one and each on an
+up-to-date `main` (the script copies whatever is checked out), run
 
 ```
 bash tools/sync-policies.sh            # copies every policy that changed
