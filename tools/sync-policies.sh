@@ -24,12 +24,18 @@ monthly-expense-app|docs/privacy-policy.md|monthly-expense-app/privacy-policy.md
 wasfati|docs/privacy-policy.html|wasfati/privacy-policy.html
 qr-scanner-generator|docs/privacy-policy/index.html|qr-scanner-generator/privacy-policy/index.html
 wasnt-me|docs/privacy-policy.md|wasnt-me/privacy-policy.md
+lanternwild|docs/privacy-policy/index.html|lanternwild/privacy-policy/index.html
+Hisscore|docs/index.html|Hisscore/index.html
+Hisscore|docs/c/index.html|Hisscore/c/index.html
 '
 
 differ=0
 while IFS='|' read -r repo source served; do
   if [ -z "$repo" ]; then continue; fi
-  from="$apps/$repo/$source"
+  dir="$apps/$repo"
+  # A clone's folder may be in lower case (hisscore for Hisscore).
+  if [ ! -d "$dir" ]; then dir="$apps/$(echo "$repo" | tr '[:upper:]' '[:lower:]')"; fi
+  from="$dir/$source"
   to="$site/$served"
   if [ ! -f "$from" ]; then
     echo "skipped  $repo: no $from"

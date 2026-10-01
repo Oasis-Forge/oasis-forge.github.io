@@ -23,6 +23,9 @@ where it changes with the app's features (and some apps test it). This repo has 
 | Wasfati | `wasfati/docs/privacy-policy.html` | https://oasis-forge.github.io/wasfati/privacy-policy |
 | QR Scanner + Generator | `qr-scanner-generator/docs/privacy-policy/index.html` | https://oasis-forge.github.io/qr-scanner-generator/privacy-policy/ |
 | Wasn't Me | `wasnt-me/docs/privacy-policy.md` | https://oasis-forge.github.io/wasnt-me/privacy-policy |
+| Lanternwild | `lanternwild/docs/privacy-policy/index.html` | https://oasis-forge.github.io/lanternwild/privacy-policy/ |
+| Hisscore | `Hisscore/docs/index.html` | https://oasis-forge.github.io/Hisscore/ |
+| Hisscore's challenge links (not a policy) | `Hisscore/docs/c/index.html` | https://oasis-forge.github.io/Hisscore/c/ |
 
 **To publish a change:** merge it in the app's repo, then, with the app repos cloned next to this one and each on an
 up-to-date `main` (the script copies whatever is checked out), run
