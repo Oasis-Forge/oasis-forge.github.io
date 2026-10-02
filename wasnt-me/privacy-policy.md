@@ -22,6 +22,7 @@ and a friend code to Unity, the company that runs the board.
 - The names you give your pets, your cat's coat, and your settings: sound on or off, reminders on or off, and whether you've finished the first-round tips and the power-up tips.
 - Your best score and stars for each room, and on each room's hard version, the room you picked last, whether you play hard versions, and the moves you've learned.
 - Your coins, your lives and when your next life comes back, the characters, gear and treats you've bought (and the rounds left on your gear), and your own pet's look if you've made one (a cat or which dog breed, its colours, and a cat's pattern and build), and who you play as and what they wear, the hideout's upgrades you've built, and whether you've opened the hideout. For each of your pets: how close you are (its bond), the day you last fed it a treat, and whether you've found its favourite treat.
+- Purchases made with real money: their order numbers (so a purchase is never given twice), and whether ads are removed.
 - All the damage you've ever done and the rank it has reached, the day's missions, the week's challenge and your badges and how far along each one is, the stickers in your crime album, your last Daily Crime score and how many days in a row you've played it, and the day you last opened a daily gift.
 - Friends' scores: the birth month and year you gave when you first opened them (never sent anywhere), whether
   they're on, the player ID and sign-in token Unity gave the game, your friend code, a score waiting to go up while
@@ -94,6 +95,13 @@ leads to anyone. To have those deleted too, or if you no longer have the game, e
 [oasisforge.support@gmail.com](mailto:oasisforge.support@gmail.com) with your friend code, and we'll delete them. Deleting the game without leaving keeps the data at Unity, with no way for the game to reach it again: email us
 to have it deleted.
 
+## Buying with real money
+
+The store sells coins and "Remove ads" for real money. A grown-up's question comes first. Google Play (or Apple's App
+Store on iPhone) takes the payment, under its own privacy policy: the game never sees your payment details or your
+account. It gets the item bought and its order number, and keeps the order numbers on your device so a purchase is never
+given twice. Unity's In-App Purchasing, part of the game, passes the purchase between the game and the store.
+
 ## The game engine
 
 Wasn't Me is made with Unity, and uses no Unity Ads or Unity Analytics. Friends' scores, if you turn them on, use Unity
@@ -105,7 +113,7 @@ Unity collects and why.
 
 ## Permissions
 
-- **Android:** internet access, used only by friends' scores, and only if you turn them on; vibration, for a
+- **Android:** billing, so the store can sell through Google Play; internet access and network state (whether you're online), used by friends' scores (only if you turn them on) and by buying; vibration, for a
   buzz when your cat gets caught; and notifications, asked only if you turn reminders on.
 - **iOS:** permission to add photos, asked only if you save a picture from the share sheet; and notifications, asked
   only if you turn reminders on.
