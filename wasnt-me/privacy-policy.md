@@ -30,7 +30,8 @@ and a friend code to Unity, the company that runs the board.
   of the game, not from your camera), with the date, the room, your cat's name and the damage, for your last 30 busts.
   They're kept in the game's own folder on your device.
 - A log of finished rounds, for playtests: for each round its tester number, room, outcome, damage, stars and similar
-  numbers from the game. It's kept on the device until it's cleared.
+  numbers from the game, and for each tester the coins each part of the game paid and what was bought with them, on
+  which round and day of play. It's kept on the device until it's cleared.
 - The picture you last shared (see below), in the game's cache folder, until the next share replaces it or your
   device clears the cache.
 
