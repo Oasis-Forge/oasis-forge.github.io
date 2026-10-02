@@ -6,16 +6,19 @@ title: Privacy Policy – Wasn't Me
 
 # Privacy Policy
 
-_Last updated: 2 October 2026_
+_Last updated: 3 October 2026_
 
 This policy explains how **Wasn't Me** ("the game"), by Oasis Forge, handles your information, on Android and iOS.
 
 ## Summary
 
-**The game collects nothing about you,** unless you're 16 or over and turn on friends' scores. There are no ads, no
-analytics and no server of ours. What the game remembers stays on your device, and nothing leaves it unless you share it
-yourself, or turn on [friends' scores](#friends-scores-16-and-over), which send your Daily Crime scores, your cat's look
-and a friend code to Unity, the company that runs the board.
+**The game shows ads from Google AdMob, set up for children for everyone:** no personalized ads, and no advertising
+ID. To show them, Google's ad library collects some technical information from your device, such as its internet
+address and which ads were shown (see [Ads](#ads)). Apart from that, **the game collects nothing about you,** unless
+you're 16 or over and turn on friends' scores. There are no analytics and no server of ours. What the game remembers
+stays on your device, and nothing else leaves it unless you share it yourself, or turn on
+[friends' scores](#friends-scores-16-and-over), which send your Daily Crime scores, your cat's look and a friend code to
+Unity, the company that runs the board.
 
 ## Information stored on your device
 
@@ -23,6 +26,7 @@ and a friend code to Unity, the company that runs the board.
 - Your best score and stars for each room, and on each room's hard version, the room you picked last, whether you play hard versions, and the moves you've learned.
 - Your coins, your lives and when your next life comes back, the characters, gear and treats you've bought (and the rounds left on your gear), and your own pet's look if you've made one (a cat or which dog breed, its colours, and a cat's pattern and build), and who you play as and what they wear, the hideout's upgrades you've built, and whether you've opened the hideout. For each of your pets: how close you are (its bond), the day you last fed it a treat, and whether you've found its favourite treat.
 - Purchases made with real money: their order numbers (so a purchase is never given twice), and whether ads are removed.
+- How many rounds you've finished, and the round and time of the last ad between rounds, so ads stay rare.
 - All the damage you've ever done and the rank it has reached, the day's missions, the week's challenge and your badges and how far along each one is, the stickers in your crime album, your last Daily Crime score and how many days in a row you've played it, and the day you last opened a daily gift.
 - Friends' scores: the birth month and year you gave when you first opened them (never sent anywhere), whether
   they're on, the player ID and sign-in token Unity gave the game, your friend code, a score waiting to go up while
@@ -102,6 +106,36 @@ Store on iPhone) takes the payment, under its own privacy policy: the game never
 account. It gets the item bought and its order number, and keeps the order numbers on your device so a purchase is never
 given twice. Unity's In-App Purchasing, part of the game, passes the purchase between the game and the store.
 
+## Ads
+
+The game shows ads from Google AdMob: a short one between rounds now and then, and one you can choose to watch for a
+life when you're out of lives. Ads between rounds never come in your first five rounds, right after your cat gets
+caught, or in the Daily Crime, and at most one comes every three rounds and three minutes. **Remove ads** turns them
+off; the ad for a life stays, and only plays when you tap it. There are no banners, and every ad is Google's own,
+full screen, never made to look like part of the game.
+
+**Set up for children, for everyone.** Every ad request tells Google to treat it as directed to a child, with ads
+rated G (for general audiences) at most, and with personalization off. So no one gets personalized ads or remarketing,
+and nothing is used to build a profile of you. The game doesn't use your device's advertising ID: it takes out the
+permission that would let it, and Android's own ad services permissions too.
+
+**What Google collects.** To show ads, count them, limit how often they show and stop fraud, Google's ad library (the
+Google Mobile Ads SDK, part of the game) collects, as Google describes it:
+
+- your device's internet (IP) address, which may be used to estimate its general location (never its precise location);
+- how the ads are used: which were shown, watched or tapped, and when the game was opened;
+- diagnostic information about the game and the ad library, such as how long they take to start and how they perform;
+- an app set ID: a random ID Android gives the apps of one developer on a device. It isn't the advertising ID, and
+  it's not shared with other developers' apps.
+
+It's sent encrypted. Google handles it under its own [privacy policy](https://policies.google.com/privacy) (see also
+[how Google uses information from apps that use its services](https://policies.google.com/technologies/partner-sites)),
+which limits how data from requests marked as directed to children is used. Google's ad library starts with the game,
+even after "Remove ads", so the ad for a life is ready when you want it.
+
+**What we get** from AdMob is totals only: how many ads were shown and what they earned. Nothing in it says who you are,
+so we can't look up or delete anything Google holds about your device; Google's own privacy controls cover that.
+
 ## The game engine
 
 Wasn't Me is made with Unity, and uses no Unity Ads or Unity Analytics. Friends' scores, if you turn them on, use Unity
@@ -113,16 +147,22 @@ Unity collects and why.
 
 ## Permissions
 
-- **Android:** billing, so the store can sell through Google Play; internet access and network state (whether you're online), used by friends' scores (only if you turn them on) and by buying; vibration, for a
-  buzz when your cat gets caught; and notifications, asked only if you turn reminders on.
+- **Android:** billing, so the store can sell through Google Play; internet access and network state (whether you're
+  online), used by the ads, by buying and by friends' scores (only if you turn them on); vibration, for a buzz when your
+  cat gets caught; notifications, asked only if you turn reminders on; and two that Google's ad library adds for its
+  work in the background: keeping the device awake for a moment (wake lock) and running a short task while the game is
+  in the background (foreground service). The game takes out the advertising ID permissions Google's library would add.
+  It has no access to your location, contacts, photos or files.
 - **iOS:** permission to add photos, asked only if you save a picture from the share sheet; and notifications, asked
   only if you turn reminders on.
 
 ## Children
 
-The game is for a general audience. It has no ads and no chat. Friends' scores, its one online feature, are for players
-16 and over: the game asks for your birth month and year first, and players under 16 can't turn them on. Apart from
-them, we don't knowingly collect information from anyone, children included.
+The game is for a general audience, children included. Its ads are set up for children for everyone (see
+[Ads](#ads)), real-money purchases ask a grown-up's question first, and there's no chat. Friends' scores, its one other
+online feature, are for players 16 and over: the game asks for your birth month and year first, and players under 16
+can't turn them on. Apart from what Google's ad library collects to show ads, as above, we don't knowingly collect
+information from anyone, children included.
 
 ## Changes
 
