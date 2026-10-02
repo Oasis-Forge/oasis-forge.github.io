@@ -19,9 +19,9 @@ and a friend code to Unity, the company that runs the board.
 
 ## Information stored on your device
 
-- Your cat's name and coat, and your settings: sound on or off, reminders on or off, whether you've finished the first-round tips and the power-up tips, and whether test mode (for testing the game) is on.
+- The names you give your pets, your cat's coat, and your settings: sound on or off, reminders on or off, whether you've finished the first-round tips and the power-up tips, and whether test mode (for testing the game) is on.
 - Your best score and stars for each room, and on each room's hard version, the room you picked last, whether you play hard versions, and the moves you've learned.
-- Your coins, your lives and when your next life comes back, the characters, gear and treats you've bought (and the rounds left on your gear), and your own cat's colours, pattern and build if you've made one, and who you play as and what they wear, the hideout's upgrades you've built, and whether you've opened the hideout. For each of your pets: how close you are (its bond), the day you last fed it a treat, and whether you've found its favourite treat.
+- Your coins, your lives and when your next life comes back, the characters, gear and treats you've bought (and the rounds left on your gear), and your own pet's look if you've made one (a cat or which dog breed, its colours, and a cat's pattern and build), and who you play as and what they wear, the hideout's upgrades you've built, and whether you've opened the hideout. For each of your pets: how close you are (its bond), the day you last fed it a treat, and whether you've found its favourite treat.
 - All the damage you've ever done and the rank it has reached, the day's missions, the week's challenge and your badges and how far along each one is, the stickers in your crime album, your last Daily Crime score and how many days in a row you've played it, and the day you last opened a daily gift.
 - Friends' scores: the birth month and year you gave when you first opened them (never sent anywhere), whether
   they're on, the player ID and sign-in token Unity gave the game, your friend code, a score waiting to go up while
@@ -36,11 +36,11 @@ and a friend code to Unity, the company that runs the board.
 
 The developer has no access to any of it. Deleting the game deletes it all.
 
-## Your own cat's photo
+## Your own pet's photo
 
-When you make your own cat, you can fill its colours in from a photo of your pet. Your device's own photo picker lets
+When you make your own pet, you can fill its colours in from a photo of your pet. Your device's own photo picker lets
 you choose one photo, and the game gets only that photo, with no access to the rest. The game makes a small copy,
-reads its main colours, and deletes the copy at once. Only the colours are kept, as your cat's colours. The photo never
+reads its main colours, and deletes the copy at once. Only the colours are kept, as your pet's colours. The photo never
 leaves your device, and nothing is sent to us or anyone else.
 
 ## Sharing
@@ -78,7 +78,7 @@ they open by themselves in the month you turn 16.
 - each official Daily Crime score: its day, the damage, the stars, whether your cat got caught, and how many days in a
   row you've played, with your previous score;
 - your total stars (every star you've earned, on each level and its hard version), each time it goes up;
-- your cat's look: which character you play as and what it wears, or your own cat's colours, pattern and build.
+- your cat's look: which character you play as and what it wears, or your own pet's look: a cat or which dog breed, its colours, and a cat's pattern and build.
 
 Nothing you type is sent: not your cat's name, and not the names you give your friends. No email, no location, and no
 advertising or device IDs. Unity also sees your device's internet address, as every web request does. Your friends see
