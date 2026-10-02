@@ -19,9 +19,9 @@ What the game remembers stays on your device, and nothing leaves it unless you s
 
 - Your cat's name and coat, and your settings: sound on or off, reminders on or off, whether you've finished the first-round tips and the power-up tips, and whether test mode (for testing the game) is on.
 - Your best score and stars for each room, and on each room's hard version, the room you picked last, whether you play hard versions, and the moves you've learned.
-- Your coins, your lives and when your next life comes back, the characters, gear and treats you've bought (and the rounds left on your gear), and your own cat's colours, pattern and build if you've made one, and who you play as and what they wear.
+- Your coins, your lives and when your next life comes back, the characters, gear and treats you've bought (and the rounds left on your gear), and your own cat's colours, pattern and build if you've made one, and who you play as and what they wear, the hideout's upgrades you've built, and whether you've opened the hideout.
 - All the damage you've ever done and the rank it has reached, the day's missions, the week's challenge and your badges and how far along each one is, the stickers in your crime album, your last Daily Crime score and how many days in a row you've played it, and the day you last opened a daily gift.
-- Your cat's mugshots, for the mugshot wall: the photo the game takes of the room when your cat gets caught (a picture
+- Your cat's mugshots, for the mugshot wall in the hideout: the photo the game takes of the room when your cat gets caught (a picture
   of the game, not from your camera), with the date, the room, your cat's name and the damage, for your last 30 busts.
   They're kept in the game's own folder on your device.
 - A log of finished rounds, for playtests: for each round its tester number, room, outcome, damage, stars and similar
