@@ -14,11 +14,12 @@ This policy explains how **Wasn't Me** ("the game"), by Oasis Forge, handles you
 
 **The game shows ads from Google AdMob, set up for children for everyone:** no personalized ads, and no advertising
 ID. To show them, Google's ad library collects some technical information from your device, such as its internet
-address and which ads were shown (see [Ads](#ads)). Apart from that, **the game collects nothing about you,** unless
-you're 16 or over and turn on friends' scores. There are no analytics and no server of ours. What the game remembers
-stays on your device, and nothing else leaves it unless you share it yourself, or turn on
-[friends' scores](#friends-scores-16-and-over), which send your Daily Crime scores, your cat's look and a friend code to
-Unity, the company that runs the board.
+address and which ads were shown (see [Ads](#ads)). If you buy something, Unity's purchase library sends Unity a record
+of the purchase and some technical information about the device (see [Buying with real money](#buying-with-real-money)).
+Apart from that, **the game collects nothing about you,** unless you're 16 or over and turn on friends' scores. There
+are no analytics of ours and no server of ours. What the game remembers stays on your device, and nothing else leaves it
+unless you share it yourself, or turn on [friends' scores](#friends-scores-16-and-over), which send your Daily Crime
+scores, your stars, your cat's look and a friend code to Unity, the company that runs the board.
 
 ## Information stored on your device
 
@@ -40,7 +41,9 @@ Unity, the company that runs the board.
 - The picture you last shared (see below), in the game's cache folder, until the next share replaces it or your
   device clears the cache.
 
-The developer has no access to any of it. Deleting the game deletes it all.
+The developer has no access to any of it. Deleting the game deletes it all from the device. If your Android device backs
+up its apps to your Google account, Android may keep a copy of the game's save in that backup and bring it back when the
+game is installed again; you can delete it in your Google account's backups.
 
 ## Your own pet's photo
 
@@ -106,6 +109,19 @@ Store on iPhone) takes the payment, under its own privacy policy: the game never
 account. It gets the item bought and its order number, and keeps the order numbers on your device so a purchase is never
 given twice. Unity's In-App Purchasing, part of the game, passes the purchase between the game and the store.
 
+**What Unity's purchase library sends.** Unity's In-App Purchasing sends Unity Technologies a record each time a
+purchase starts, goes through, fails or is finished, and each time you restore purchases. It's sent only around
+purchases, never while you play, and we can't turn it off: it's built into Unity's library. Each record has:
+
+- the item, its price and currency, and the store's receipt for it (its order number and the store's signature, never
+  your payment details), and whether it went through or why not;
+- the game's version and when it was installed, and a random ID Unity makes for this installation of the game (on
+  iPhone, also the ID Apple gives the apps of one developer);
+- the device's model, its operating system version, its languages, its storage size and when it was last started.
+
+It's sent encrypted. Unity handles it under its
+[Game Player and App User Privacy Policy](https://unity.com/legal/game-player-and-app-user-privacy-policy).
+
 ## Ads
 
 The game shows ads from Google AdMob: a short one between rounds now and then, and one you can choose to watch for a
@@ -139,7 +155,7 @@ so we can't look up or delete anything Google holds about your device; Google's 
 ## The game engine
 
 Wasn't Me is made with Unity, and uses no Unity Ads or Unity Analytics. Friends' scores, if you turn them on, use Unity
-Gaming Services (see above). The Unity engine may
+Gaming Services, and purchases use Unity's In-App Purchasing (see above). The Unity engine may
 still send Unity Technologies limited technical information about the device, such as its model and operating system;
 it includes nothing you do or type in the game. Unity's
 [Game Player and App User Privacy Policy](https://unity.com/legal/game-player-and-app-user-privacy-policy) explains what
@@ -163,6 +179,19 @@ The game is for a general audience, children included. Its ads are set up for ch
 online feature, are for players 16 and over: the game asks for your birth month and year first, and players under 16
 can't turn them on. Apart from what Google's ad library collects to show ads, as above, we don't knowingly collect
 information from anyone, children included.
+
+## Your rights
+
+Oasis Forge makes the game and is responsible for this policy. We hold nothing about you ourselves: what's on your
+device is yours to delete, and what Google and Unity hold is covered above. Where your country's law gives you rights
+over your data (such as the GDPR in Europe and the UK, or COPPA in the US), you, or a parent for a child, can ask us to
+see it, correct it or delete it, and to stop using it, by emailing us. For friends' scores, send your friend code so
+we can find it at Unity. We answer within a month. You can also complain to your country's data protection authority.
+
+Why we use data: ads (our legitimate interest in paying for a free game, set up for children for everyone), purchases
+(to give you what you bought), and friends' scores (only once you turn them on). Google and Unity may handle data in
+the United States and other countries, under their own safeguards. Friends' scores stay at Unity until you leave or ask
+us to delete them.
 
 ## Changes
 
