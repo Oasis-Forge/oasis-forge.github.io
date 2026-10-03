@@ -24,6 +24,7 @@ monthly-expense-app|docs/privacy-policy.md|monthly-expense-app/privacy-policy.md
 wasfati|docs/privacy-policy.html|wasfati/privacy-policy.html
 qr-scanner-generator|docs/privacy-policy/index.html|qr-scanner-generator/privacy-policy/index.html
 wasnt-me|docs/privacy-policy.md|wasnt-me/privacy-policy.md
+dust-devil|docs/privacy-policy.md|dust-devil/privacy-policy.md
 lanternwild|docs/privacy-policy/index.html|lanternwild/privacy-policy/index.html
 Hisscore|docs/index.html|Hisscore/index.html
 Hisscore|docs/c/index.html|Hisscore/c/index.html
