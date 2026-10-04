@@ -28,6 +28,7 @@ dust-devil|docs/privacy-policy.md|dust-devil/privacy-policy.md
 lanternwild|docs/privacy-policy/index.html|lanternwild/privacy-policy/index.html
 Hisscore|docs/index.html|Hisscore/index.html
 Hisscore|docs/c/index.html|Hisscore/c/index.html
+Tide-Trader|docs/privacy-policy.html|tide-trader/privacy-policy.html
 '
 
 differ=0
