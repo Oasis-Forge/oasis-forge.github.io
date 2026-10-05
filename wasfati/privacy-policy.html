@@ -61,8 +61,11 @@
     phone reads that post's public caption and cover picture <strong>directly from the platform
     itself</strong> (TikTok through its own public oEmbed service), logged out, and shows you
     the caption before anything is sent. The platform sees the request and your device's IP
-    address, as it would if you'd opened the post yourself. The caption is shown to you and
-    goes to AI import only if you tap Import (section 3); the link itself never reaches our import server.</p>
+    address, as it would if you'd opened the post yourself. For a TikTok post, your phone also
+    reads, the same way and from TikTok itself, the video's automatic transcript that TikTok
+    publishes for the post, and adds it under the caption with a note, for you to check, edit
+    or delete. The caption and that transcript are shown to you and go to AI import only if you
+    tap Import (section 3); the link itself never reaches our import server.</p>
 
   <h2>3. Importing with AI</h2>
   <p>Some sources need help understanding — a social post whose caption your phone couldn't
@@ -73,7 +76,10 @@
     you're actually importing — the text, or up to 4 photos, each first made smaller on your
     phone — together with the app's install ID (section 1), to our import server. For a social
     post, that's the caption your phone read (section 2) or you pasted, or a screenshot you
-    pick; the post's link itself isn't sent. For a web page with no recipe data, it's the
+    pick; the post's link itself isn't sent. For a TikTok post, that can also include the
+    video's automatic transcript that TikTok publishes for the post, which your phone reads
+    from TikTok and adds under the caption for you to check and edit before you tap Import.
+    For a web page with no recipe data, it's the
     page's readable text, which your phone reads from the page it already downloaded (section
     2) and shows you first, to check and edit, before you tap Import; the page's link itself
     isn't sent either.</p>
@@ -255,8 +261,10 @@
     يقرأ هاتفك وصف ذلك المنشور العام وصورة غلافه <strong>مباشرة من المنصة نفسها</strong>
     (عبر خدمة TikTok الرسمية العامة "oEmbed" في حالة TikTok)، من دون تسجيل دخول، ويعرض عليك
     الوصف قبل إرسال أي شيء. ترى تلك المنصة الطلب وعنوان IP الخاص بجهازك، كما لو فتحتَ المنشور
-    بنفسك. ولا يُعرض عليك الوصف ويُرسل إلى الاستيراد بالذكاء الاصطناعي إلا إن ضغطت على "استيراد"
-    (البند ٣)؛ أما الرابط نفسه فلا يصل إلى خادم الاستيراد أبدًا.</p>
+    بنفسك. وفي حالة TikTok يقرأ هاتفك أيضاً، بالطريقة نفسها ومن TikTok نفسها، التفريغ النصي
+    التلقائي لكلام الفيديو الذي تنشره TikTok مع المنشور، ويضيفه تحت الوصف مع تنبيه لتراجعه أو
+    تعدّله أو تحذفه. ولا يُعرض عليك الوصف وهذا التفريغ ويُرسلان إلى الاستيراد بالذكاء الاصطناعي
+    إلا إن ضغطت على "استيراد" (البند ٣)؛ أما الرابط نفسه فلا يصل إلى خادم الاستيراد أبدًا.</p>
 
   <h2>٣. الاستيراد بالذكاء الاصطناعي</h2>
   <p>بعض المصادر تحتاج مساعدة لفهمها — منشور اجتماعي لم يجد هاتفك وصفه بنفسه (على Instagram أو
@@ -266,7 +274,9 @@
     واحد من هذه، يرسل ما تستورده فعلاً — النص أو حتى ٤ صور يُصغَّر حجم كل منها على هاتفك أولاً —
     مع معرّف التثبيت الخاص بالتطبيق (البند ١)، إلى خادم الاستيراد لدينا. وفي حالة المنشور
     الاجتماعي، يكون ذلك الوصف الذي قرأه هاتفك (البند ٢) أو النص الذي تلصقه، أو لقطة الشاشة التي
-    تختارها؛ أما رابط المنشور نفسه فلا يُرسَل. وفي حالة صفحة موقع لا تحمل بيانات وصفة، يكون ذلك
+    تختارها؛ أما رابط المنشور نفسه فلا يُرسَل. وفي حالة منشور TikTok قد يشمل ذلك أيضاً التفريغ
+    النصي التلقائي لكلام الفيديو الذي تنشره TikTok للمنشور، يقرؤه هاتفك من TikTok ويضيفه تحت
+    الوصف لتراجعه وتعدّله قبل أن تضغط «استيراد». وفي حالة صفحة موقع لا تحمل بيانات وصفة، يكون ذلك
     نص الصفحة المقروء، يقرؤه هاتفك من الصفحة التي نزّلها (البند ٢) ويعرضه عليك أولاً لتراجعه
     وتعدّله قبل أن تضغط «استيراد»؛ أما رابط الصفحة نفسه فلا يُرسَل هو أيضاً.</p>
   <p>يرسل خادمنا ذلك إلى <strong>Claude، نموذج الذكاء الاصطناعي من Anthropic</strong>،
