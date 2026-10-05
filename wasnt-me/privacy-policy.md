@@ -77,7 +77,7 @@ photos.
 
 Reminders are off until you turn them on. If you do, the game asks your device's permission to show notifications, and
 leaves at most one reminder on your device at a time, such as "Daily Crime #5 is ready" or "Your lives are full". They can include your cat's name (as in "Can Mittens top it?"), and show on your lock screen. They're
-scheduled by your device itself: nothing is sent to us or anyone else. Turn them off in the game's Settings
+scheduled by your device itself: nothing is sent to us or anyone else. On Android the game keeps the next reminder's time and words on your device, so it can set it again after the device restarts. Turn them off in the game's Settings
 (from the title screen), or in your device's settings.
 
 ## Friends' scores (16 and over)
@@ -191,7 +191,7 @@ Unity collects and why.
 
 - **Android:** billing, so the store can sell through Google Play; internet access and network state (whether you're
   online), used by the ads, by buying and by friends' scores (only if you turn them on); vibration, for a buzz when your
-  cat gets caught; notifications, asked only if you turn reminders on; and two that Google's ad library adds for its
+  cat gets caught; notifications, asked only if you turn reminders on; starting after the device restarts, used only to set your reminder again; and two that Google's ad library adds for its
   work in the background: keeping the device awake for a moment (wake lock) and running a short task while the game is
   in the background (foreground service). The game takes out the advertising ID permissions Google's library would add.
   It has no access to your location, contacts, photos or files.
