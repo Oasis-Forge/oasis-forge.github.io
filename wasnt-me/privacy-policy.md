@@ -23,13 +23,13 @@ your cat's look and a friend code to Unity, the company that runs the board, in 
 
 ## Information stored on your device
 
-- The names you give your pets, your cat's coat, and your settings: sound on or off, reminders on or off, calm effects on or off, and whether you've finished the first-round tips and the power-up tips.
+- The names you give your pets, your cat's coat, and your settings: sound on or off, reminders on or off, calm effects on or off, whether you've finished the first-round tips and the power-up tips, and which one-time hints you've seen.
 - Your best score and stars for each room, and on each room's hard version, the room you picked last, whether you play hard versions, and the moves you've learned.
 - Your coins, your lives and when your next life comes back, the characters, gear and treats you've bought (and the rounds left on your gear), and your own pet's look if you've made one (a cat or which dog breed, its colours, and a cat's pattern and build), and who you play as and what they wear, the hideout's upgrades you've built, and whether you've opened the hideout. For each of your pets: how close you are (its bond), the day you last fed it a treat, and whether you've found its favourite treat.
 - Purchases made with real money: their order numbers (so a purchase is never given twice), and whether ads are removed.
 - The parent's gate for purchases and ads: how many wrong answers in a row, and until when it's locked.
 - How many rounds you've finished, and the round and time of the last ad between rounds, so ads stay rare.
-- All the damage you've ever done and the rank it has reached, the day's missions, the week's challenge and your badges and how far along each one is, the stickers in your crime album, your last Daily Crime score and how many days in a row you've played it, and the day you last opened a daily gift.
+- All the damage you've ever done and the rank it has reached, the day's missions, the week's challenge and your badges and how far along each one is, the stickers in your crime album, your last Daily Crime score, how many days in a row you've played it (and whether a missed day was forgiven), your best Daily Crime score in each room, whether you've finished the House, and the day you last opened a daily gift.
 - Friends' scores: the birth month and year you gave when you first opened them (never sent anywhere), whether
   they're on, the player ID and sign-in token Unity gave the game, your friend code, a score waiting to go up while
   you're offline, the names you gave your friends (never sent anywhere), and your last place on the board.
@@ -95,8 +95,8 @@ If you're under 16, friends' scores stay closed, and nothing is sent; they open 
 - a player ID made by Unity (the game signs in anonymously: no name, email or password);
 - your friend code (four random letters the game makes, with a random number Unity adds, like KFQM#4821);
 - your friend list, and the friend requests you send and get;
-- each official Daily Crime score: its day, the damage, the stars, whether your cat got caught, and how many days in a
-  row you've played, with your previous score;
+- each official Daily Crime score: its day, the damage, the stars, whether your cat got caught, how many days in a
+  row you've played (and whether a missed day was forgiven), with your previous score;
 - your total stars (every star you've earned, on each level and its hard version), each time it goes up;
 - your cat's look: which character you play as and what it wears, or your own pet's look: a cat or which dog breed, its colours, and a cat's pattern and build.
 
@@ -122,9 +122,11 @@ Deleting the game without leaving keeps the data at Unity, with no way for the g
 it deleted.
 
 **Who holds it, and for how long.** Friends' scores are held at Unity, in a Unity project that Oasis Forge runs. We can
-see the entries there, and we delete them when you ask. The game and we delete nothing on a timer: your scores, cat's
-look and friends stay at Unity while friends' scores are on, until you leave. What stays after Leave (the empty entry and
-the code) stays until you ask us to delete it. Unity keeps its own records under its own retention rules: see its
+see the entries there, and we delete them when you ask. Your scores, cat's look and friends stay at Unity while friends'
+scores are on, until you leave. If your game sends nothing for 12 months, we delete your scores and cat's look; your
+friend code and friends stay until you leave or ask us (the code is random letters and numbers, and says nothing about
+you). The empty entry left after Leave is deleted 12 months later the same way, or sooner if you ask; the code stays
+until you ask us to delete it. Unity keeps its own records under its own retention rules: see its
 [privacy policy](https://unity.com/legal/privacy-policy).
 
 ## Buying with real money
@@ -218,7 +220,7 @@ we can find it at Unity. We answer within a month. You can also complain to your
 
 Why we use data: ads (our legitimate interest in paying for a free game, set up for children for everyone), purchases
 (to give you what you bought), and friends' scores (only once you turn them on). Google and Unity may handle data in
-the United States and other countries, under their own safeguards. Friends' scores stay at Unity until you leave or ask us to delete them (see
+the United States and other countries, under their own safeguards. Friends' scores are deleted after 12 months with nothing sent, or sooner when you leave or ask us (see
 [Friends' scores](#friends-scores-16-and-over)). For how long Google and Unity keep the data of ads and purchases, see
 Google's [retention page](https://policies.google.com/technologies/retention) and the retention part of Unity's
 [Game Player and App User Privacy Policy](https://unity.com/legal/game-player-and-app-user-privacy-policy).
