@@ -23,7 +23,7 @@ your cat's look and a friend code to Unity, the company that runs the board, in 
 
 ## Information stored on your device
 
-- The names you give your pets, your cat's coat, and your settings: sound on or off, reminders on or off, and whether you've finished the first-round tips and the power-up tips.
+- The names you give your pets, your cat's coat, and your settings: sound on or off, reminders on or off, calm effects on or off, and whether you've finished the first-round tips and the power-up tips.
 - Your best score and stars for each room, and on each room's hard version, the room you picked last, whether you play hard versions, and the moves you've learned.
 - Your coins, your lives and when your next life comes back, the characters, gear and treats you've bought (and the rounds left on your gear), and your own pet's look if you've made one (a cat or which dog breed, its colours, and a cat's pattern and build), and who you play as and what they wear, the hideout's upgrades you've built, and whether you've opened the hideout. For each of your pets: how close you are (its bond), the day you last fed it a treat, and whether you've found its favourite treat.
 - Purchases made with real money: their order numbers (so a purchase is never given twice), and whether ads are removed.
