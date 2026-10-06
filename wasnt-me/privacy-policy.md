@@ -6,7 +6,7 @@ title: Privacy Policy – Wasn't Me
 
 # Privacy Policy
 
-_Last updated: 5 October 2026_
+_Last updated: 6 October 2026_
 
 This policy explains how **Wasn't Me** ("the game"), by Oasis Forge, handles your information, on Android and iOS.
 
@@ -27,14 +27,14 @@ your cat's look and a friend code to Unity, the company that runs the board, in 
 - Your best score and stars for each room, and on each room's hard version, the room you picked last, whether you play hard versions, and the moves you've learned.
 - Your coins, your lives and when your next life comes back, the characters, gear and treats you've bought (and the rounds left on your gear), and your own pet's look if you've made one (a cat or which dog breed, its colours, and a cat's pattern and build), and who you play as and what they wear, the hideout's upgrades you've built, and whether you've opened the hideout. For each of your pets: how close you are (its bond), the day you last fed it a treat, and whether you've found its favourite treat.
 - Purchases made with real money: their order numbers (so a purchase is never given twice), and whether ads are removed.
-- The parent's gate for purchases and ads: how many wrong answers in a row, and until when it's locked.
+- The parent's gate for purchases: how many wrong answers in a row, and until when it's locked.
 - How many rounds you've finished, and the round and time of the last ad between rounds, so ads stay rare.
 - All the damage you've ever done and the rank it has reached, the day's missions, the week's challenge and your badges and how far along each one is, the stickers in your crime album, your last Daily Crime score, how many days in a row you've played it (and whether a missed day was forgiven), your best Daily Crime score in each room, whether you've finished the House, and the day you last opened a daily gift.
 - Friends' scores: the birth month and year you gave when you first opened them (never sent anywhere), whether
   they're on, the player ID and sign-in token Unity gave the game, your friend code, a score waiting to go up while
   you're offline, the names you gave your friends (never sent anywhere), and your last place on the board.
-- A copy of a save the game couldn't load, kept in case support can get it back. It holds the same things as the save.
-  Leaving friends' scores deletes it.
+- A copy of a save the game couldn't load, kept for 30 days in case support can get it back, and then deleted. It holds
+  the same things as the save. Leaving friends' scores deletes it sooner.
 - Your cat's mugshots, for the mugshot wall in the hideout: the photo the game takes of the room when your cat gets caught (a picture
   of the game, not from your camera), with the date, the room, your cat's name and the damage, for your last 30 busts.
   They're kept in the game's own folder on your device.
@@ -78,7 +78,7 @@ photos.
 Reminders are off until you turn them on. If you do, the game asks your device's permission to show notifications, and
 leaves at most one reminder on your device at a time, such as "Daily Crime #5 is ready" or "Your lives are full". They can include your cat's name (as in "Can Mittens top it?"), and show on your lock screen. They're
 scheduled by your device itself: nothing is sent to us or anyone else. On Android the game keeps the next reminder's time and words on your device, so it can set it again after the device restarts. Turn them off in the game's Settings
-(from the title screen), or in your device's settings.
+(the tab at the bottom), or in your device's settings.
 
 ## Friends' scores (16 and over)
 
