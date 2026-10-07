@@ -23,6 +23,7 @@ where it changes with the app's features (and some apps test it). This repo has 
 | Wasfati | `wasfati/docs/privacy-policy.html` | https://oasis-forge.github.io/wasfati/privacy-policy |
 | QR Scanner + Generator | `qr-scanner-generator/docs/privacy-policy/index.html` | https://oasis-forge.github.io/qr-scanner-generator/privacy-policy/ |
 | Wasn't Me | `wasnt-me/docs/privacy-policy.md` | https://oasis-forge.github.io/wasnt-me/privacy-policy |
+| One Trip | `one-trip/docs/privacy-policy.md` | https://oasis-forge.github.io/one-trip/privacy-policy |
 | Dust Devil | `dust-devil/docs/privacy-policy.md` | https://oasis-forge.github.io/dust-devil/privacy-policy |
 | Lanternwild | `lanternwild/docs/privacy-policy/index.html` | https://oasis-forge.github.io/lanternwild/privacy-policy/ |
 | Hisscore | `Hisscore/docs/index.html` | https://oasis-forge.github.io/Hisscore/ |
