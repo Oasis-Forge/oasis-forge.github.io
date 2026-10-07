@@ -30,6 +30,7 @@ Hisscore|docs/index.html|Hisscore/index.html
 Hisscore|docs/c/index.html|Hisscore/c/index.html
 Tide-Trader|docs/privacy-policy.html|tide-trader/privacy-policy.html
 Pop-Rivals|docs/privacy-policy.md|pop-rivals/privacy-policy.md
+one-trip|docs/privacy-policy.md|one-trip/privacy-policy.md
 '
 
 differ=0
