@@ -6,7 +6,7 @@ title: Privacy Policy – Dust Devil
 
 # Privacy Policy
 
-_Last updated: 3 October 2026_
+_Last updated: 7 October 2026_
 
 This policy explains how **Dust Devil** ("the game"), by Oasis Forge, handles your information, on Android and iOS.
 
@@ -15,9 +15,10 @@ This policy explains how **Dust Devil** ("the game"), by Oasis Forge, handles yo
 **The game shows ads from Google AdMob, set up for children for everyone:** no personalized ads, and no advertising
 ID. To show them, Google's ad library collects some technical information from your device, such as its internet
 address and which ads were shown (see [Ads](#ads)). Apart from that, **the game collects nothing about you,** unless
-you're 16 or over and turn on friends' scores. There are no analytics and no server of ours. What the game remembers
+you're 16 or over and turn on friends' scores. There are no analytics. Unity hosts the optional score verification
+and board. What the game remembers
 stays on your device, and nothing else leaves it unless you share it yourself, or turn on
-[friends' scores](#friends-scores-16-and-over), which send your Daily Stunt results, who you fly as and a friend code to
+[friends' scores](#friends-scores-16-and-over), which send your Daily Stunt result and replay, who you fly as and a friend code to
 Unity, the company that runs the board.
 
 ## Information stored on your device
@@ -63,13 +64,15 @@ answer stays on your device and is never sent. If you're under 16, friends' scor
 they open by themselves in the month you turn 16.
 
 **What goes to Unity** if you turn them on. The board is run by Unity Technologies, through its Unity Gaming Services
-(sign-in, friends and leaderboards):
+(sign-in, friends, Cloud Code verification and leaderboards):
 
 - a player ID made by Unity (the game signs in anonymously: no name, email or password);
 - your friend code (four random letters the game makes, with a random number Unity adds, like KFQM#4821);
 - your friend list, and the friend requests you send and get;
 - each day's Daily Stunt result (your first landing that day): its day, how far you flew, the points, and how many days
   in a row you've landed it, with your result before it;
+- that run's replay: stage, seed, launch angle and power, tuning, simulation version, and the timing of presses and
+  releases. Unity replays it to verify the result. The board's streak counts consecutive verified submissions;
 - who you fly as and what they wear.
 
 Nothing you type is sent: not the names you give your friends. No email, no location, and no advertising or device
@@ -79,11 +82,10 @@ as and your results, and only once you've both said yes. There's no public board
 Unity handles this data under its own [privacy policy](https://unity.com/legal/privacy-policy).
 
 **Leaving.** Tap **Leave friends' scores** at the bottom of the board. The game deletes your friends and requests and
-your Unity player, and clears your result at Unity to nothing. What's left there is an empty entry under a random player
-ID, and your friend code, which no longer leads to anyone. To have those deleted too, or if you no longer have the
-game, email [oasisforge.support@gmail.com](mailto:oasisforge.support@gmail.com) with your friend code, and we'll delete
-them. Deleting the game without leaving keeps the data at Unity, with no way for the game to reach it again: email us
-to have it deleted.
+your verified score through Cloud Code, then your Unity player. It forgets the sign-in on the phone.
+If Unity cannot be reached, it keeps your account and asks you to try leaving again online. If you no longer have the
+game, email [oasisforge.support@gmail.com](mailto:oasisforge.support@gmail.com) with your friend code for help deleting
+the online data. Deleting the game without leaving keeps the data at Unity; email us to have it deleted.
 
 ## Buying with real money
 
