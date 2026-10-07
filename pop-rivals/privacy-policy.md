@@ -14,7 +14,7 @@ This policy explains what information Pop Rivals ("the game") uses, why, and the
 
 ## What stays on your phone
 
-Your progress is saved only on your phone: levels, stars, coins, hearts, power-ups, skins, daily tasks, your daily streak and your settings. We never receive a copy of it. If you uninstall the game or clear its data, your progress is deleted.
+Your progress is saved only on your phone: levels, stars, coins, hearts, power-ups, skins, daily tasks, your daily streak, a recording of your best race on each level (for "Beat your best") and your settings. We never receive a copy of it. If you uninstall the game or clear its data, your progress is deleted.
 
 The game does not use analytics, tracking or crash-reporting services. It does not ask for your name, email address, contacts, location, photos or microphone.
 
