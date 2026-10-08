@@ -7,19 +7,18 @@ title: Privacy Policy – One Trip
 
 # Privacy Policy
 
-_Last updated: 7 October 2026_
+_Last updated: 7 October 2026, with ads and purchases_
 
 This policy explains how **One Trip** ("the game"), by Oasis Forge, handles your information, on Android and iOS.
 
 ## Summary
 
-**The game collects nothing about you.** There are no accounts, no chat, no analytics of ours and no server of ours.
-What the game remembers stays on your device, and nothing leaves it unless you share it yourself.
-
-Two things are on the way in an update: **ads** from Google AdMob, set up for children for everyone (no personalized
-ads, no advertising ID), and **buying coins or "Remove ads" with real money**. When they come, Google's ad library and
-Unity's purchase library will send some technical information, as described under [Ads](#ads) and
-[Buying with real money](#buying-with-real-money). Until then, neither is in the game.
+**The game shows ads from Google AdMob, set up for children for everyone:** no personalized ads, and no advertising
+ID. To show them, Google's ad library collects some technical information from your device, such as its internet
+address and which ads were shown (see [Ads](#ads)). If you buy something, Unity's purchase library sends Unity a record
+of the purchase and some technical information about the device (see [Buying with real money](#buying-with-real-money)).
+Apart from that, **the game collects nothing about you.** There are no accounts, no chat, no analytics of ours and no
+server of ours. What the game remembers stays on your device, and nothing else leaves it unless you share it yourself.
 
 ## Information stored on your device
 
@@ -29,6 +28,8 @@ Unity's purchase library will send some technical information, as described unde
 - Your Daily Trip results and how many days in a row you've played it, and your best in Tower mode.
 - Your coins, your lives and when your next life comes back, the carriers, gear and treats you've bought, and who
   carries for you and with what.
+- Purchases made with real money: their order numbers (so a purchase is never given twice), and whether ads are removed.
+- How many trips you've walked, and the trip and time of the last ad between trips, so ads stay rare.
 - The shared house: the rooms you've built, what's in the fridge, how close you are to each of your carriers, and your
   collections (the pantry and the wall of shame).
 - The receipt picture and the doorbell-cam clip you last shared (see below), in the game's cache folder, until the
@@ -47,9 +48,7 @@ what that app does with it is covered by its own privacy policy.
 
 ## Buying with real money
 
-_Coming in an update. Until then the store sells for coins only, and nothing in this section happens._
-
-The store will sell coins and "Remove ads" for real money. Google Play (or Apple's App Store on iPhone) takes the
+The store sells coins and "Remove ads" for real money, after a second tap and then the store's own dialog. Google Play (or Apple's App Store on iPhone) takes the
 payment, under its own privacy policy: the game never sees your payment details or your account. It gets the item bought
 and its order number, and keeps the order numbers on your device so a purchase is never given twice. Unity's In-App
 Purchasing, part of the game, passes the purchase between the game and the store.
@@ -69,17 +68,16 @@ It's sent encrypted. Unity handles it under its
 
 ## Ads
 
-_Coming in an update. Until then the game shows no ads, and nothing in this section happens._
-
-The game will show ads from Google AdMob: a short one between trips now and then (never in your first four trips), and
-ones you choose to watch: for a life when you're out of lives, to rewind a drop ("Catch it"), or to double the coins a
+The game shows ads from Google AdMob: a short one between trips now and then (never in your first four trips, never
+right after the tower falls, and at most one every three trips and three minutes), and ones you choose to watch: for a
+life when you're out of lives, to go back a few seconds after the tower falls ("Catch it"), or to double the coins a
 trip paid. **Remove ads** turns off the ads between trips; the ones you choose stay, and only play when you tap them.
-Every ad is Google's own, full screen, never made to look like part of the game.
+There are no banners, and every ad is Google's own, full screen, never made to look like part of the game.
 
-**Set up for children, for everyone.** Every ad request will tell Google to treat it as directed to a child, with ads
-rated G (for general audiences) at most, and with personalization off. So no one gets personalized ads or remarketing,
-and nothing is used to build a profile of you. The game won't use your device's advertising ID: it takes out the
-permission that would let it.
+**Set up for children, for everyone.** Every ad request tells Google to treat it as directed to a child and under the
+age of consent, with ads rated G (for general audiences) at most, and with personalization off. So no one gets
+personalized ads or remarketing, and nothing is used to build a profile of you. The game doesn't use your device's
+advertising ID: it takes out the permission that would let it, and Android's own ad services permissions too.
 
 **What Google collects.** To show ads, count them, limit how often they show and stop fraud, Google's ad library (the
 Google Mobile Ads SDK) collects, as Google describes it:
@@ -92,7 +90,8 @@ Google Mobile Ads SDK) collects, as Google describes it:
 
 It's sent encrypted. Google handles it under its own [privacy policy](https://policies.google.com/privacy) (see also
 [how Google uses information from apps that use its services](https://policies.google.com/technologies/partner-sites)),
-which limits how data from requests marked as directed to children is used.
+which limits how data from requests marked as directed to children is used. Google's ad library starts with the game,
+even after "Remove ads", so the ads you choose are ready when you want them.
 
 **What we get** from AdMob is totals only: how many ads were shown and what they earned. Nothing in it says who you are,
 so we can't look up or delete anything Google holds about your device; Google's own privacy controls cover that.
@@ -100,6 +99,7 @@ so we can't look up or delete anything Google holds about your device; Google's 
 ## The game engine
 
 One Trip is made with Unity, and uses no Unity Ads or Unity Analytics, and Unity's hardware statistics are turned off.
+Purchases use Unity's In-App Purchasing (see above).
 The Unity engine may still send Unity Technologies limited technical information about the device, such as its model
 and operating system; it includes nothing you do in the game. Unity's
 [Game Player and App User Privacy Policy](https://unity.com/legal/game-player-and-app-user-privacy-policy) explains what
@@ -107,18 +107,18 @@ Unity collects and why.
 
 ## Permissions
 
-- **Now:** none. The game doesn't ask for your location, contacts, camera, photos or files.
-- **With ads and purchases (Android):** billing, so the store can sell through Google Play; internet access and network
-  state (whether you're online), used by the ads and by buying; and two that Google's ad library adds for its work in
-  the background: keeping the device awake for a moment (wake lock) and running a short task while the game is in the
-  background (foreground service). The game takes out the advertising ID permission Google's library would add.
+- **Android:** billing, so the store can sell through Google Play; internet access and network state (whether you're
+  online), used by the ads and by buying; and two that Google's ad library adds for its work in the background:
+  keeping the device awake for a moment (wake lock) and running a short task while the game is in the background
+  (foreground service). The game takes out the advertising ID permissions Google's library would add. It never asks
+  for your location, contacts, camera, photos or files.
 
 ## Children
 
 The game is for a general audience, children included. There's no chat, nothing anyone types is seen by others, and
-there are no accounts. When ads come, they're set up for children for everyone (see [Ads](#ads)). Apart from what
-Google's ad library and Unity's purchase library will collect, as above, we don't knowingly collect information from
-anyone, children included.
+there are no accounts. The ads are set up for children for everyone (see [Ads](#ads)). Apart from what Google's ad
+library and Unity's purchase library collect, as above, we don't knowingly collect information from anyone, children
+included.
 
 ## Your rights
 
