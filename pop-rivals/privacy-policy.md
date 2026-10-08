@@ -8,15 +8,19 @@ title: Privacy Policy – Pop Rivals
 
 **Pop Rivals**, by Oasis Forge
 
-Last updated: 4 October 2026
+Last updated: 8 October 2026
 
 This policy explains what information Pop Rivals ("the game") uses, why, and the choices you have. The short version: your game progress stays on your phone, we do not run any servers, and we do not collect personal information. The only outside services are Google's ad network and the app store you buy from.
 
 ## What stays on your phone
 
-Your progress is saved only on your phone: levels, stars, coins, hearts, power-ups, skins, daily tasks, your daily streak, a recording of your best race on each level (for "Beat your best") and your settings. We never receive a copy of it. If you uninstall the game or clear its data, your progress is deleted.
+Your progress is saved only on your phone: levels, stars, coins, hearts, power-ups, skins, daily tasks, your daily streak, a recording of your best race on each level (for "Beat your best") and your settings. We never receive a copy of it. If you uninstall the game or clear its data, your progress is deleted from the phone. If Android's own backup is switched on, Android may keep a copy of the game's save in your Google account's backup and put it back when you install the game again. That backup is kept by Google for you; we cannot see it.
 
 The game does not use analytics, tracking or crash-reporting services. It does not ask for your name, email address, contacts, location, photos or microphone.
+
+## Feedback
+
+If you choose **Send feedback** in Settings, your own email app opens with a message to us. It already contains the game's version, your phone's model and Android version, and how many races you played and won on each level, so we can see where the game is too hard or too easy. You can read, change or delete any of it before sending, and nothing is sent unless you send the email yourself. We use what you send only to reply and to improve the game, and we delete it when it is no longer needed.
 
 ## Ads
 
@@ -48,7 +52,7 @@ The game is not directed at children under 13, and we do not knowingly collect p
 
 ## Your rights
 
-Because we do not collect or store personal information, there is no account or personal data held by us to access, correct or delete. Your progress can be deleted at any time by uninstalling the game or by choosing **Start over from level 1** in Settings. For information Google holds in connection with ads, use the links above or your Google account settings.
+Because we do not collect or store personal information, there is no account or personal data held by us to access, correct or delete. Your progress can be deleted at any time by uninstalling the game or by choosing **Start over from level 1** in Settings. If you have emailed us, you can ask us at the address below to delete your messages. For information Google holds in connection with ads, use the links above or your Google account settings.
 
 ## Changes to this policy
 
