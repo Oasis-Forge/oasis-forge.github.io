@@ -25,6 +25,7 @@ server of ours. What the game remembers stays on your device, and nothing else l
 - Your settings: sound on or off, and whether you've seen the first-trip tips and the bag tip.
 - Your best result on each trip (stars, whether you got home, your time), the trip you played last, and how you packed
   each trip last time (the tower and the bag), so you can pack it the same way again.
+- Your fastest clean run of each trip, as a ghost to race: where you walked and how far the tower leaned.
 - Your Daily Trip results and how many days in a row you've played it, and your best in Tower mode.
 - Your coins, your lives and when your next life comes back, the carriers, gear and treats you've bought, and who
   carries for you and with what.
