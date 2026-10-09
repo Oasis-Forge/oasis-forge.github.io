@@ -7,7 +7,7 @@ title: Privacy Policy – One Trip
 
 # Privacy Policy
 
-_Last updated: 7 October 2026, with ads and purchases_
+_Last updated: 9 October 2026: a question for grown-ups before a purchase_
 
 This policy explains how **One Trip** ("the game"), by Oasis Forge, handles your information, on Android and iOS.
 
@@ -48,7 +48,7 @@ what that app does with it is covered by its own privacy policy.
 
 ## Buying with real money
 
-The store sells coins and "Remove ads" for real money, after a second tap and then the store's own dialog. Google Play (or Apple's App Store on iPhone) takes the
+The store sells coins and "Remove ads" for real money, after a question for grown-ups and then the store's own dialog. Google Play (or Apple's App Store on iPhone) takes the
 payment, under its own privacy policy: the game never sees your payment details or your account. It gets the item bought
 and its order number, and keeps the order numbers on your device so a purchase is never given twice. Unity's In-App
 Purchasing, part of the game, passes the purchase between the game and the store.
