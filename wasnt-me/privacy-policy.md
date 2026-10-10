@@ -6,7 +6,7 @@ title: Privacy Policy – Wasn't Me
 
 # Privacy Policy
 
-_Last updated: 6 October 2026_
+_Last updated: 10 October 2026_
 
 This policy explains how **Wasn't Me** ("the game"), by Oasis Forge, handles your information, on Android and iOS.
 
@@ -179,6 +179,13 @@ even after "Remove ads", so the ad for a life is ready when you want it.
 
 **What we get** from AdMob is totals only: how many ads were shown and what they earned. Nothing in it says who you are,
 so we can't look up or delete anything Google holds about your device; Google's own privacy controls cover that.
+
+## Updates
+
+On Android, as the game opens, it asks the Google Play Store app on your device whether a newer version of the game
+is out, through Google's in-app updates library. That check is between your device and Google Play, which already
+knows the apps installed from it: the game sends nothing of its own. If there is one, Google Play's own screen updates
+the game.
 
 ## The game engine
 
