@@ -8,7 +8,7 @@ title: Privacy Policy – Territory Conquest
 
 **Territory Conquest**, by Oasis Forge
 
-Last updated: 23 October 2026
+Last updated: 24 October 2026
 
 This policy explains what information Territory Conquest ("the game") uses, why, and the choices you have. In short:
 
@@ -42,13 +42,25 @@ When you play with friends, the game uses:
 - **Your public look**: the crest, frame, color, title, pinned badge and level you chose. It is sent to the game
   server and shown to the other players in your room.
 - **Game messages** sent to our game server: your moves, emotes and room actions, the room code, your account id and
-  your name. The server keeps rooms in memory only (never on disk), including after a game ends so players can see
-  the results and start a rematch, and drops a room 7 days after its last player disconnects. A server restart
-  drops every room. There is no free-text chat.
+  your name. The server keeps each room, and also saves it to its own disk so a restart does not end your game. This
+  includes the game itself, the players' account ids, names and public looks. A room is kept after a game ends so
+  players can see the results and start a rematch, and is deleted 7 days after its last player disconnects. There is
+  no free-text chat.
 - **Connection data** such as your IP address and the time you connect. Supabase and our server host, Oracle Cloud,
   see this when you connect, as with any internet service.
 
 If you choose email sign-in (when it is offered), Supabase also keeps your email address.
+
+## Blocking and reporting
+
+- **Blocking** is kept only on your phone (the list of people you blocked, their account ids and the names they had).
+  It hides their emotes and name on your phone. When you search for a quick match, the account ids of the people you
+  blocked are sent to the game server for that search, so you are not seated together; the server does not keep them.
+- **Reporting** sends a report to us. A report contains: the time, your account id and name, the account id and name
+  of the player you report, the reason you pick (offensive name, harassment, cheating or something else), the short
+  note you may add (up to 200 characters) and the room code. Only we see reports (through the game server's log and
+  a file on the server). We use them to review and remove abusive players, and we keep them for 90 days, then they
+  are deleted.
 
 ## What we don't collect
 
@@ -59,7 +71,7 @@ Privacy page first.
 ## Why we use it
 
 To sign you in, put you in a room with your friends, run fair games on the server, and keep the service safe (for
-example, removing abusive players).
+example, reviewing reports and removing abusive players).
 
 ## Sharing
 
