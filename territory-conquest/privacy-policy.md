@@ -8,12 +8,13 @@ title: Privacy Policy – Territory Conquest
 
 **Territory Conquest**, by Oasis Forge
 
-Last updated: 22 October 2026
+Last updated: 23 October 2026
 
 This policy explains what information Territory Conquest ("the game") uses, why, and the choices you have. In short:
 
-- Games against bots, your profile and your progress stay on your phone.
-- Playing with friends online uses a guest account with the name you choose.
+- Games against bots and your progress stay on your phone.
+- Playing with friends online uses a guest account with the name you choose, and shows your public look to the
+  players in your room.
 - There are no ads, analytics or tracking.
 
 The game is for players aged 18 and over.
@@ -22,11 +23,13 @@ The game is for players aged 18 and over.
 
 These are saved only on your phone, and we never receive a copy:
 
-- your profile, XP, badges and stats;
+- your XP, badges, goals and stats;
 - match history and campaign progress;
-- the looks you equipped and a record of what you bought;
+- a record of what you bought;
 - your settings;
-- a saved game against bots.
+- a saved game against bots;
+- a log of recent errors, which stays on your phone unless you copy it yourself (for example to send us a bug
+  report).
 
 Uninstalling the game, or choosing **Reset local data** in Settings, deletes them.
 
@@ -36,9 +39,12 @@ When you play with friends, the game uses:
 
 - **A guest account** created by our sign-in provider, Supabase. It holds an account id, the display name you chose,
   and the fact that you confirmed you are 18 or over.
+- **Your public look**: the crest, frame, color, title, pinned badge and level you chose. It is sent to the game
+  server and shown to the other players in your room.
 - **Game messages** sent to our game server: your moves, emotes and room actions, the room code, your account id and
-  your name. The server keeps rooms in memory only and drops them when the game ends or the room sits idle for
-  7 days. There is no free-text chat.
+  your name. The server keeps rooms in memory only (never on disk), including after a game ends so players can see
+  the results and start a rematch, and drops a room 7 days after its last player disconnects. A server restart
+  drops every room. There is no free-text chat.
 - **Connection data** such as your IP address and the time you connect. Supabase and our server host, Oracle Cloud,
   see this when you connect, as with any internet service.
 
