@@ -7,7 +7,7 @@ title: Privacy Policy – One Trip
 
 # Privacy Policy
 
-_Last updated: 9 October 2026: a question for grown-ups before a purchase_
+_Last updated: 25 October 2026: the vibration setting_
 
 This policy explains how **One Trip** ("the game"), by Oasis Forge, handles your information, on Android and iOS.
 
@@ -22,17 +22,20 @@ server of ours. What the game remembers stays on your device, and nothing else l
 
 ## Information stored on your device
 
-- Your settings: sound on or off, and whether you've seen the first-trip tips and the bag tip.
+- Your settings: sound on or off, vibration on or off, and whether you've seen the first-trip tips and the bag tip.
 - Your best result on each trip (stars, whether you got home, your time), the trip you played last, and how you packed
   each trip last time (the tower and the bag), so you can pack it the same way again.
 - Your fastest clean run of each trip, as a ghost to race: where you walked and how far the tower leaned.
-- Your Daily Trip results and how many days in a row you've played it, and your best in Tower mode.
+- Your Daily Trip results and how many days in a row you've played it, the streak's milestones it has paid, a saved
+  leftovers day and the missed days it forgave, and your best in Tower mode.
 - Your coins, your lives and when your next life comes back, the carriers, gear and treats you've bought, and who
   carries for you and with what.
+- The looks you own (bought or won as prizes: bags, doormats and cars) and the ones you wear.
 - Purchases made with real money: their order numbers (so a purchase is never given twice), and whether ads are removed.
-- How many trips you've walked, and the trip and time of the last ad between trips, so ads stay rare.
-- The shared house: the rooms you've built, what's in the fridge, how close you are to each of your carriers, and your
-  collections (the pantry and the wall of shame).
+- How many trips you've walked (your first trips use no life), and the trip and time of the last ad between trips, so
+  ads stay rare; and how many times you doubled a trip's coins today, so it stays at five a day.
+- The shared house: the rooms you've built, what's in the fridge, the treats you've cooked, how close you are to each
+  of your carriers, and your collections (the pantry and the wall of shame).
 - The receipt picture and the doorbell-cam clip you last shared (see below), in the game's cache folder, until the
   next share replaces them or your device clears its cache.
 
@@ -72,7 +75,8 @@ It's sent encrypted. Unity handles it under its
 The game shows ads from Google AdMob: a short one between trips now and then (never in your first four trips, never
 right after the tower falls, and at most one every three trips and three minutes), and ones you choose to watch: for a
 life when you're out of lives, to go back a few seconds after the tower falls ("Catch it"), or to double the coins a
-trip paid. **Remove ads** turns off the ads between trips; the ones you choose stay, and only play when you tap them.
+trip paid (at most five times a day). **Remove ads** turns off the ads between trips, and doubles coins with no ad; the
+ones you choose stay, and only play when you tap them.
 There are no banners, and every ad is Google's own, full screen, never made to look like part of the game.
 
 **Set up for children, for everyone.** Every ad request tells Google to treat it as directed to a child and under the
@@ -111,7 +115,7 @@ Unity collects and why.
 - **Android:** billing, so the store can sell through Google Play; internet access and network state (whether you're
   online), used by the ads and by buying; and two that Google's ad library adds for its work in the background:
   keeping the device awake for a moment (wake lock) and running a short task while the game is in the background
-  (foreground service). The game takes out the advertising ID permissions Google's library would add. It never asks
+  (foreground service); and vibration, for the short buzz on each step (Settings turns it off). The game takes out the advertising ID permissions Google's library would add. It never asks
   for your location, contacts, camera, photos or files.
 
 ## Children
