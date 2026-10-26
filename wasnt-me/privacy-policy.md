@@ -6,7 +6,7 @@ title: Privacy Policy – Wasn't Me
 
 # Privacy Policy
 
-_Last updated: 25 October 2026_
+_Last updated: 26 October 2026_
 
 This policy explains how **Wasn't Me** ("the game"), by Oasis Forge, handles your information, on Android and iOS.
 
@@ -25,12 +25,12 @@ your cat's look and a friend code to Unity, the company that runs the board, in 
 
 - The names you give your pets, your cat's coat, and your settings: sound on or off, reminders on or off, calm effects on or off, whether you've finished the first-round tips and the power-up tips, and which one-time hints you've seen.
 - Your best score and stars for each room, and on each room's hard version, the room you picked last, whether you play hard versions, and the moves you've learned.
-- Your coins, your lives and when your next life comes back, the characters, gear and treats you've bought (and the rounds left on your gear), and your own pet's look if you've made one (a cat or which dog breed, its colours, and a cat's pattern and build), and who you play as and what they wear, the hideout's upgrades you've built, and whether you've opened the hideout. For each of your pets: how close you are (its bond), the day you last fed it a treat, and whether you've found its favourite treat.
+- Your coins, your lives and when your next life comes back, the characters, gear and treats you've bought (and the rounds left on your gear), and your own pet's look if you've made one (a cat or which dog breed, its colours, and a cat's pattern and build), and who you play as and what they wear, the hideout's upgrades you've built, and whether you've opened the hideout, and the one store item you've pinned to save for, if any. For each of your pets: how close you are (its bond), the day you last fed it a treat, and whether you've found its favourite treat.
 - Purchases made with real money: their order numbers (so a purchase is never given twice), and whether ads are removed.
 - A few readings of your phone's clock (the time, the time since the phone started, and how far the clock looks to have been set ahead), so the day's rewards and lives can't be had by changing the date. They never leave your device.
 - The parent's gate for purchases: how many wrong answers in a row, and until when it's locked.
 - How many rounds you've finished, and the round and time of the last ad between rounds, so ads stay rare.
-- All the damage you've ever done and the rank it has reached, the day's missions, the week's challenge and your badges and how far along each one is, the stickers in your crime album, your last Daily Crime score, how many days in a row you've played it (and whether a missed day was forgiven), your best Daily Crime score in each room, whether you've finished the House, and the day you last opened a daily gift.
+- All the damage you've ever done and the rank it has reached, the day's missions, the week's challenge and your badges and how far along each one is, the stickers in your crime album, your last Daily Crime score, how many days in a row you've played it (and whether a missed day was forgiven), your best Daily Crime score in each room, how many Daily Crimes you've played in all (for the stamps in your album), the last home whose "you finished it" card you've seen, and the day you last opened a daily gift.
 - Friends' scores: the birth month and year you gave when you first opened them (never sent anywhere), whether
   they're on, the player ID and sign-in token Unity gave the game, your friend code, a score waiting to go up while
   you're offline, the names you gave your friends (never sent anywhere), and your last place on the board.
@@ -71,6 +71,8 @@ Sharing a sticker from your crime album does the same with the sticker and a lin
 turned on friends' scores, **Share** on the board shares a picture of your friend code with your cat, and a line with
 the code. The **Copy** buttons put the same text, or your friend code, on your device's clipboard. Nothing is sent
 anywhere unless you choose an app and send it; what that app does with it is covered by its own privacy policy.
+
+**Share** shows you the picture first, before anything is sent. A switch there says "My cat" instead of your cat's name on the picture and in the text; the game remembers your choice on your device.
 
 On iOS, saving the picture to Photos from the share sheet asks for permission to add photos. The game never reads your
 photos.
