@@ -7,7 +7,7 @@ title: Privacy Policy – One Trip
 
 # Privacy Policy
 
-_Last updated: 25 October 2026: the vibration setting_
+_Last updated: 26 October 2026: more saved settings and goals (what is stored on your device)_
 
 This policy explains how **One Trip** ("the game"), by Oasis Forge, handles your information, on Android and iOS.
 
@@ -22,12 +22,13 @@ server of ours. What the game remembers stays on your device, and nothing else l
 
 ## Information stored on your device
 
-- Your settings: sound on or off, vibration on or off, and whether you've seen the first-trip tips and the bag tip.
+- Your settings: sound on or off, vibration on or off, "Less shaking" on or off, and whether you have seen the first-trip tips and the bag tip.
 - Your best result on each trip (stars, whether you got home, your time), the trip you played last, and how you packed
+- The goal you pinned on each trip, and which goals you met on your best run of it (so the game can suggest two to go for together).
   each trip last time (the tower and the bag), so you can pack it the same way again.
 - Your fastest clean run of each trip, as a ghost to race: where you walked and how far the tower leaned.
 - Your Daily Trip results and how many days in a row you've played it, the streak's milestones it has paid, a saved
-  leftovers day and the missed days it forgave, and your best in Tower mode.
+  leftovers day and the missed days it forgave (these also fill the Daily album), and your best in Tower mode: the biggest load and the most items you got home in one go.
 - Your coins, your lives and when your next life comes back, the carriers, gear and treats you've bought, and who
   carries for you and with what.
 - The looks you own (bought or won as prizes: bags, doormats and cars) and the ones you wear.
@@ -35,6 +36,7 @@ server of ours. What the game remembers stays on your device, and nothing else l
 - How many trips you've walked (your first trips use no life), and the trip and time of the last ad between trips, so
   ads stay rare; and how many times you doubled a trip's coins today, so it stays at five a day.
 - The shared house: the rooms you've built, what's in the fridge, the treats you've cooked, how close you are to each
+- The carrier, room or look you are saving coins for, and the recipe you pinned in the fridge (and whether you have seen the fridge tip).
   of your carriers, and your collections (the pantry and the wall of shame).
 - The receipt picture and the doorbell-cam clip you last shared (see below), in the game's cache folder, until the
   next share replaces them or your device clears its cache.
