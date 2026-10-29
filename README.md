@@ -32,6 +32,7 @@ where it changes with the app's features (and some apps test it). This repo has 
 | Pop Rivals | `Pop-Rivals/docs/privacy-policy.md` (the repo was called `Blast-Duel` before) | https://oasis-forge.github.io/pop-rivals/privacy-policy |
 | Stick It | `Stick-It/docs/privacy-policy.md` | https://oasis-forge.github.io/stick-it/privacy-policy |
 | Territory Conquest | `territory-conquest/docs/privacy-policy.md` | https://oasis-forge.github.io/territory-conquest/privacy-policy |
+| Two Rooms | `Two-Rooms/docs/privacy-policy.md` (cloned as `Two Rooms`) | https://oasis-forge.github.io/two-rooms/privacy-policy |
 
 **To publish a change:** merge it in the app's repo, then, with the app repos cloned next to this one and each on an
 up-to-date `main` (the script copies whatever is checked out), run
