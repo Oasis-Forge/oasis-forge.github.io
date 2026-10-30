@@ -35,12 +35,14 @@
     storage on your device, and they are erased when the app is removed or its data is
     cleared.</p>
   <p>Most of what the app does never leaves your device — including every link you import,
-    which your phone reads directly from the website itself (section 2). There are two
+    which your phone reads directly from the website itself (section 2). There are three
     exceptions. AI import (section 3): when your phone can't read a page on its own, we send
-    only what you asked it to import to our import server, which never keeps it. And ads
+    only what you asked it to import to our import server, which never keeps it. Usage
+    statistics and crash reports (section 10): the app tells Google Firebase which key steps
+    happen, in fixed words, and sends crash traces; you can turn that off in Settings. And ads
     (section 8): the free app shows ads from Google, whose ad software collects some
     information about your device to show them. Nothing you keep in Wasfati is ever given to
-    it.</p>
+    Firebase or to Google's ad software.</p>
   <p>The app also keeps a random install ID on your device. It identifies no one — no name,
     email or account stands behind it. It leaves the device only inside a backup file you
     choose to save or share (section 7), or with an AI import request (section 3).</p>
@@ -97,7 +99,7 @@
     sent: no recipe text, no caption, no photo, no log of what you imported. Photos are held only
     in memory while the request is answered, then discarded. Google, our service provider, keeps
     what it receives for up to 55 days to detect abuse, and doesn't use it to improve its
-    products (section 10).</p>
+    products (section 11).</p>
   <p>The recipe that comes back opens for you to review and edit before anything is saved. Once
     it's on your device, it stays there like any other recipe (section 1) — it leaves again
     only if you back it up, share it, or ask to translate it.</p>
@@ -157,6 +159,8 @@
       advertising ID (section 8). You can reset or delete it in your phone's settings.</li>
     <li><strong>Google Play billing:</strong> to buy Pro or Premium through Google Play
       (section 9).</li>
+    <li><strong>Install referrer (Google Play):</strong> lets Firebase learn that an install
+      followed one of our Google ads (section 10).</li>
   </ul>
 
   <h2>7. Backups and exports</h2>
@@ -210,9 +214,46 @@
     days before the trial ends, the app shows a notification with the date and the price, so
     you can cancel before you're charged. The reminder is scheduled on your device and nothing
     is sent anywhere; if you cancel the trial, the app removes it.</p>
-  <p>The app has no analytics or tracking of its own.</p>
+  <p>Whether you own Pro or Premium is one of the few facts the usage statistics record
+    (section 10); the rest of your purchases stay with Google Play.</p>
 
-  <h2>10. Deleting your information</h2>
+  <h2>10. Usage statistics and crash reports</h2>
+  <p>To see where the app can be improved and to fix crashes, Wasfati uses <strong>Google
+    Firebase</strong> (Analytics and Crashlytics). As everywhere in the app, there is no account
+    and no sign-in: Firebase knows an install only by a random app-instance ID of its
+    own.</p>
+  <p><strong>What it collects:</strong> that app-instance ID; your device's advertising ID; the
+    device model, Android version and language; a rough location worked out from your IP
+    address (a country or city, never GPS); which key steps happen in the app — an import
+    saved, cook mode started, the walkthrough finished, a backup saved, a grocery list or a
+    plan entry added — as fixed words, such as the kind of import and the platform its link
+    came from (TikTok, Instagram, YouTube, Facebook or a website); the app's language, digits
+    style, look and plan (free, Pro or Premium); Firebase's own automatic events (first open,
+    session start, app update and Google Play purchases); and, when the app crashes or hits an
+    error, a crash report with the error's type and where in the code it happened.</p>
+  <p><strong>What it never gets:</strong> your recipes, photos, links, captions, searches,
+    cookbook or tag names, grocery items, meal plan, or anything you type, and no error message
+    that could quote them. Nothing about statistics passes through our import server.</p>
+  <p><strong>Why:</strong> to see where new users get stuck, to fix crashes on phones we can't
+    test on, and, if you installed after tapping one of our Google ads, to tell Google Ads
+    that the install went on to save its first recipe, so the campaign can learn which ads
+    find people who use the app. Google signals and Analytics' ad personalisation are off.</p>
+  <p><strong>How long:</strong> Analytics keeps usage statistics for 14 months and Crashlytics
+    keeps crash reports for 90 days; Google then deletes them. Google handles the data under
+    its own privacy policy and the Firebase terms:
+    <a href="https://firebase.google.com/support/privacy">Privacy and security in
+    Firebase</a>.</p>
+  <p><strong>Your choices.</strong> In Settings → About → “Share usage statistics” you can
+    turn usage statistics and crash reports off at any time. It takes effect at once, without
+    a restart, and clears the app-instance ID on your phone; it stays off until you turn it on
+    again, and a restored backup never changes it. Pro or Premium doesn't change it either. In
+    the European Economic Area, the UK and Switzerland, Firebase follows your answer in the same
+    consent form as ads (section 8): until you answer, and if you refuse, analytics storage
+    and ad data are denied, so Firebase gets only the limited signals Google's consent mode
+    allows; if you agree, they are allowed. You can change your answer in Settings → Ads and
+    subscription → Ad privacy choices. Builds made for development never send anything.</p>
+
+  <h2>11. Deleting your information</h2>
   <p>Delete a recipe in the app: it stays in the trash for 30 days, then it and its photo are
     removed for good from the app's own storage. From the moment you delete it, any backup you
     make afterward carries only the fact that it was deleted, never its content or photo. A
@@ -223,39 +264,44 @@
     Google, our service provider, keeps it for up to 55 days to detect abuse, and doesn't use it
     to improve its products. The two monthly counts kept under your
     install ID delete themselves about 40 days later.</p>
+  <p>Usage statistics and crash reports (section 10) are deleted by Google after 14 months and
+    90 days. Turning the switch off clears the app-instance ID on your phone at once, and
+    uninstalling removes it too.</p>
 
-  <h2>11. Children</h2>
+  <h2>12. Children</h2>
   <p>The app is intended for a general audience and is not directed at children under 13, and
     we do not knowingly collect any data from them. AI import and translation (section 3) are
     for people 18 and over, because they rely on Google's Gemini; children should not use
     them.</p>
 
-  <h2>12. Who is responsible</h2>
+  <h2>13. Who is responsible</h2>
   <p>Oasis Forge, the developer of Wasfati, is responsible for the data this policy describes.
     You can reach us at
     <a href="mailto:oasisforge.support@gmail.com">oasisforge.support@gmail.com</a>.</p>
 
-  <h2>13. Why we handle data</h2>
-  <p>We handle the little data we do for three reasons: because you ask for it (an AI import or
-    translation you start); to provide what you bought (your Google Play purchases); and
-    with your consent, where the law asks for it (ads, section 8).</p>
+  <h2>14. Why we handle data</h2>
+  <p>We handle the little data we do for four reasons: because you ask for it (an AI import or
+    translation you start); to provide what you bought (your Google Play purchases); with your
+    consent, where the law asks for it (ads, section 8, and usage statistics, section 10); and
+    to improve the app and fix crashes (usage statistics and crash reports, section 10),
+    which you can turn off at any time.</p>
 
-  <h2>14. Your rights</h2>
+  <h2>15. Your rights</h2>
   <p>You can ask us what data we hold about you, ask us to delete it, or object to how it is
     used. Email us at
     <a href="mailto:oasisforge.support@gmail.com">oasisforge.support@gmail.com</a>. Most of your
     data never leaves your phone, and uninstalling Wasfati deletes it from the phone (a backup
     file you saved stays where you saved it).</p>
 
-  <h2>15. Transfers to other countries</h2>
-  <p>Our import server (on Cloudflare) and Google (Gemini, AdMob and Google Play) may process
-    data outside your country, under their own data-protection terms.</p>
+  <h2>16. Transfers to other countries</h2>
+  <p>Our import server (on Cloudflare) and Google (Gemini, AdMob, Firebase and Google Play)
+    may process data outside your country, under their own data-protection terms.</p>
 
-  <h2>16. Changes to this policy</h2>
+  <h2>17. Changes to this policy</h2>
   <p>We may update this policy as the app gains features. Any change appears on this page with
     an updated effective date.</p>
 
-  <h2>17. Contact</h2>
+  <h2>18. Contact</h2>
   <p>For any privacy question, email us at
     <a href="mailto:oasisforge.support@gmail.com">oasisforge.support@gmail.com</a>. Email is
     our only support channel.</p>
@@ -276,11 +322,13 @@
     الطبخ والوسوم والملاحظات والإعدادات في مساحة التطبيق الخاصة على جهازك فقط، وتُحذف عند إزالة
     التطبيق أو مسح بياناته.</p>
   <p>معظم ما يفعله التطبيق لا يغادر جهازك أبداً — بما في ذلك كل رابط تستورده، الذي يقرأه هاتفك
-    مباشرة من الموقع نفسه (البند ٢). وهناك استثناءان. الأول هو الاستيراد بالذكاء الاصطناعي
+    مباشرة من الموقع نفسه (البند ٢). وهناك ثلاثة استثناءات. الأول هو الاستيراد بالذكاء الاصطناعي
     (البند ٣): حين لا يستطيع هاتفك قراءة صفحة بنفسه، نرسل إلى خادم الاستيراد لدينا فقط ما طلبتَ
-    استيراده، وهو خادم لا يحتفظ بشيء منه أبداً. والثاني هو الإعلانات (البند ٨): يعرض التطبيق
+    استيراده، وهو خادم لا يحتفظ بشيء منه أبداً. والثاني هو إحصاءات الاستخدام وتقارير الأعطال
+    (البند ١٠): يخبر التطبيق Google Firebase بالخطوات الرئيسية التي تحدث، بكلمات ثابتة، ويرسل
+    آثار الأعطال، ويمكنك إيقاف ذلك من الإعدادات. والثالث هو الإعلانات (البند ٨): يعرض التطبيق
     المجاني إعلانات من Google، وتجمع برمجية الإعلانات لديها بعض المعلومات عن جهازك لعرضها. ولا
-    يُعطى لها أبداً أي شيء مما تحفظه في «وصفاتي».</p>
+    يُعطى لـFirebase ولا لبرمجية إعلانات Google أبداً أي شيء مما تحفظه في «وصفاتي».</p>
   <p>يحفظ التطبيق أيضاً معرّفاً عشوائياً للتثبيت على جهازك. هذا المعرّف لا يدل على أي شخص — لا
     اسم ولا بريد إلكتروني ولا حساب خلفه. لا يغادر جهازك إلا داخل ملف نسخة احتياطية تختار أنت
     حفظه أو مشاركته (البند ٧)، أو مع طلب استيراد بالذكاء الاصطناعي (البند ٣).</p>
@@ -329,7 +377,7 @@
     يحوّله إلى وصفة، ثم يعيد النتيجة المُهيكلة إلى هاتفك. لا يحتفظ الخادم بشيء مما يُرسَل إليه: لا
     نص الوصفة، ولا التعليق المنسوخ، ولا الصور، ولا سجل لما استوردتَه. تبقى الصور في الذاكرة فقط
     ريثما يُجاب الطلب، ثم تُحذف. وتحتفظ Google، مزوّد الخدمة لدينا، بما يصلها مدة أقصاها ٥٥ يوماً
-    لكشف إساءة الاستخدام، ولا تستخدمه لتحسين منتجاتها (البند ١٠).</p>
+    لكشف إساءة الاستخدام، ولا تستخدمه لتحسين منتجاتها (البند ١١).</p>
   <p>تُفتح الوصفة التي تعود إليك للمراجعة والتعديل قبل أن تُحفظ في أي مكان. وبمجرد أن تصل إلى
     جهازك، تبقى هناك كأي وصفة أخرى (البند ١) — ولا تغادره مرة أخرى إلا إن نسخته احتياطياً أو
     شاركته أو طلبت ترجمته.</p>
@@ -383,6 +431,8 @@
       (البند ٨). ويمكنك إعادة ضبطه أو حذفه من إعدادات هاتفك.</li>
     <li><strong>الفوترة عبر Google Play:</strong> لشراء برو أو بريميوم عبر Google Play
       (البند ٩).</li>
+    <li><strong>مرجع التثبيت (Google Play):</strong> ليعرف Firebase أن التثبيت جاء بعد إعلان
+      من إعلاناتنا على Google (البند ١٠).</li>
   </ul>
 
   <h2>٧. النسخ الاحتياطي والتصدير</h2>
@@ -431,9 +481,43 @@
   <p>يمكن أن تبدأ الخطة السنوية لبريميوم بتجربة مجانية، حين تعرضها عليك Google Play. وقبل
     يومين من انتهاء التجربة يعرض التطبيق إشعاراً بالتاريخ والسعر، لتلغي قبل أن يُخصم منك
     شيء. يُجدول التذكير على جهازك ولا يُرسل شيء إلى أي جهة؛ وإن ألغيتَ التجربة أزاله التطبيق.</p>
-  <p>لا يحتوي التطبيق على أي أدوات تحليل أو تتبّع خاصة به.</p>
+  <p>كونك تملك برو أو بريميوم واحدة من الحقائق القليلة التي تسجّلها إحصاءات الاستخدام
+    (البند ١٠)؛ أما باقي مشترياتك فتبقى عند Google Play.</p>
 
-  <h2>١٠. حذف بياناتك</h2>
+  <h2>١٠. إحصاءات الاستخدام وتقارير الأعطال</h2>
+  <p>لنرى أين يمكن تحسين التطبيق ولنصلح الأعطال، يستخدم «وصفاتي» <strong>Google Firebase</strong>
+    (Analytics وCrashlytics). وكما في كل التطبيق، لا حساب ولا تسجيل دخول: لا يعرف Firebase
+    التثبيت إلا بمعرّف عشوائي خاص به لنسخة التطبيق.</p>
+  <p><strong>ما يجمعه:</strong> معرّف نسخة التطبيق هذا؛ والمعرّف الإعلاني لجهازك؛ وطراز الجهاز
+    وإصدار أندرويد واللغة؛ وموقعاً تقريبياً يُستنتج من عنوان IP (دولة أو مدينة، لا GPS أبداً)؛
+    والخطوات الرئيسية التي تحدث في التطبيق — استيراد محفوظ، أو بدء وضع الطبخ، أو إنهاء الجولة
+    التعريفية، أو حفظ نسخة احتياطية، أو إضافة مشتريات أو بند في الخطة — بكلمات ثابتة، مثل نوع
+    الاستيراد والمنصة التي جاء منها رابطه (TikTok أو Instagram أو YouTube أو Facebook أو موقع)؛
+    ولغة التطبيق وشكل الأرقام والطراز والخطة (مجانية أو برو أو بريميوم)؛ والأحداث التلقائية
+    الخاصة بـFirebase (أول فتح وبدء الجلسة وتحديث التطبيق وعمليات الشراء من Google Play)؛ وعند
+    تعطّل التطبيق أو وقوع خطأ، تقريراً عن العطل فيه نوع الخطأ ومكانه في الشيفرة.</p>
+  <p><strong>ما لا يصله أبداً:</strong> وصفاتك وصورك وروابطك وأوصاف المنشورات وما تبحث عنه وأسماء
+    كتب الطبخ والوسوم وعناصر المشتريات وخطة الوجبات وكل ما تكتبه، ولا أي رسالة خطأ قد تقتبس
+    منها. ولا يمرّ شيء من الإحصاءات عبر خادم الاستيراد لدينا.</p>
+  <p><strong>لماذا:</strong> لنرى أين يتوقف المستخدمون الجدد، ولنصلح الأعطال في هواتف لا نستطيع
+    تجربتها، ولنُخبر إعلانات Google، إن ثبّتَّ التطبيق بعد نقرة على أحد إعلاناتنا، بأن التثبيت
+    انتهى بحفظ أول وصفة، فتتعلّم الحملة أي إعلانات تجد من يستخدم التطبيق. وإشارات Google
+    (Google signals) وتخصيص الإعلانات في Analytics مُعطَّلان.</p>
+  <p><strong>كم المدة:</strong> يحتفظ Analytics بإحصاءات الاستخدام ١٤ شهراً، ويحتفظ Crashlytics
+    بتقارير الأعطال ٩٠ يوماً، ثم تحذفها Google. وتتعامل Google مع البيانات وفق سياسة الخصوصية
+    الخاصة بها وشروط Firebase:
+    <a href="https://firebase.google.com/support/privacy?hl=ar">الخصوصية والأمان في Firebase</a>.</p>
+  <p><strong>خياراتك.</strong> من الإعدادات › عن وصفاتي › «مشاركة إحصاءات الاستخدام» يمكنك إيقاف
+    إحصاءات الاستخدام وتقارير الأعطال في أي وقت. يسري ذلك فوراً دون إعادة تشغيل، ويمسح معرّف
+    نسخة التطبيق على هاتفك؛ ويبقى متوقفاً حتى تعيد تشغيله، ولا تغيّره نسخة احتياطية تستعيدها
+    أبداً. ولا يغيّره برو ولا بريميوم. وفي المنطقة الاقتصادية الأوروبية والمملكة المتحدة وسويسرا،
+    يتبع Firebase إجابتك في نموذج الموافقة نفسه الخاص بالإعلانات (البند ٨): ما لم تجب، وإن
+    رفضتَ، يُمنَع تخزين Analytics وبيانات الإعلانات، فلا يصل Firebase إلا الإشارات المحدودة التي
+    يسمح بها وضع الموافقة لدى Google؛ وإن وافقتَ سُمح بها. ويمكنك تغيير إجابتك من الإعدادات ›
+    الإعلانات والاشتراك › خيارات الخصوصية في الإعلانات. ولا ترسل نُسخ التطبيق المصنوعة للتطوير
+    أي شيء.</p>
+
+  <h2>١١. حذف بياناتك</h2>
   <p>احذف الوصفة من داخل التطبيق: تبقى في سلة المحذوفات ٣٠ يوماً، ثم تُحذف هي وصورتها نهائياً من
     مساحة تخزين التطبيق. ومنذ لحظة حذفها، لا تحمل أي نسخة احتياطية تصنعها بعد ذلك سوى واقعة
     الحذف، دون محتواها أو صورتها. أما نسخة احتياطية حفظتها قبل حذفها فقد صُنعت والوصفة ما زالت
@@ -442,38 +526,42 @@
     Google، مزوّد الخدمة لدينا، مدة أقصاها ٥٥ يوماً لكشف إساءة الاستخدام، ولا تستخدمه لتحسين
     منتجاتها. أما العددان الشهريان المحفوظان تحت معرّف التثبيت
     فيُحذفان من تلقاء نفسيهما بعد نحو ٤٠ يوماً.</p>
+  <p>وتحذف Google إحصاءات الاستخدام وتقارير الأعطال (البند ١٠) بعد ١٤ شهراً و٩٠ يوماً. وإيقاف
+    المفتاح يمسح فوراً معرّف نسخة التطبيق على هاتفك، وإزالة التطبيق تمسحه أيضاً.</p>
 
-  <h2>١١. الأطفال</h2>
+  <h2>١٢. الأطفال</h2>
   <p>التطبيق موجّه للجمهور العام وليس للأطفال دون ١٣ عاماً، ولا نجمع عن علم أي بيانات منهم.
     والاستيراد والترجمة بالذكاء الاصطناعي (البند ٣) لمن عمره ١٨ عاماً فأكثر، لأنهما يعتمدان
     على Gemini من Google؛ وعلى الأطفال ألا يستخدموهما.</p>
 
-  <h2>١٢. من المسؤول</h2>
+  <h2>١٣. من المسؤول</h2>
   <p>Oasis Forge، مطوّرة «وصفاتي»، هي المسؤولة عن البيانات التي تصفها هذه السياسة. يمكنك
     مراسلتنا على
     <a href="mailto:oasisforge.support@gmail.com">oasisforge.support@gmail.com</a>.</p>
 
-  <h2>١٣. لماذا نتعامل مع البيانات</h2>
-  <p>نتعامل مع القليل الذي نتعامل معه من البيانات لثلاثة أسباب: لأنك تطلب ذلك (استيراد أو
+  <h2>١٤. لماذا نتعامل مع البيانات</h2>
+  <p>نتعامل مع القليل الذي نتعامل معه من البيانات لأربعة أسباب: لأنك تطلب ذلك (استيراد أو
     ترجمة بالذكاء الاصطناعي تبدؤها بنفسك)؛ ولنقدّم لك ما اشتريته (مشترياتك عبر Google Play)؛
-    ولموافقتك حيث يشترط القانون ذلك (الإعلانات، البند ٨).</p>
+    ولموافقتك حيث يشترط القانون ذلك (الإعلانات، البند ٨، وإحصاءات الاستخدام، البند ١٠)؛
+    ولتحسين التطبيق وإصلاح الأعطال (إحصاءات الاستخدام وتقارير الأعطال، البند ١٠)، ويمكنك
+    إيقاف ذلك في أي وقت.</p>
 
-  <h2>١٤. حقوقك</h2>
+  <h2>١٥. حقوقك</h2>
   <p>يمكنك أن تسألنا عن البيانات التي نحتفظ بها عنك، أو تطلب حذفها، أو تعترض على استخدامها.
     راسلنا على
     <a href="mailto:oasisforge.support@gmail.com">oasisforge.support@gmail.com</a>. ومعظم
     بياناتك لا تغادر هاتفك أبداً، وإزالة «وصفاتي» تحذفها من الهاتف (أما ملف نسخة احتياطية
     حفظتَه فيبقى حيث حفظتَه).</p>
 
-  <h2>١٥. النقل إلى دول أخرى</h2>
-  <p>قد يعالج خادم الاستيراد لدينا (على Cloudflare) وGoogle (Gemini وAdMob وGoogle Play)
+  <h2>١٦. النقل إلى دول أخرى</h2>
+  <p>قد يعالج خادم الاستيراد لدينا (على Cloudflare) وGoogle (Gemini وAdMob وFirebase وGoogle Play)
     البيانات خارج بلدك، وفق شروط حماية البيانات الخاصة بكل منهما.</p>
 
-  <h2>١٦. تغييرات هذه السياسة</h2>
+  <h2>١٧. تغييرات هذه السياسة</h2>
   <p>قد نُحدّث هذه السياسة كلما أضاف التطبيق ميزات جديدة. يظهر أي تغيير على هذه الصفحة مع
     تاريخ سريان جديد.</p>
 
-  <h2>١٧. التواصل</h2>
+  <h2>١٨. التواصل</h2>
   <p>لأي سؤال عن الخصوصية، راسلنا على
     <a href="mailto:oasisforge.support@gmail.com">oasisforge.support@gmail.com</a>.
     البريد الإلكتروني هو قناة الدعم الوحيدة لدينا.</p>
