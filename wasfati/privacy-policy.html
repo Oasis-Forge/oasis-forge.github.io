@@ -23,7 +23,7 @@
 
 <section id="en" dir="ltr">
   <h1>Privacy Policy — “Wasfati”</h1>
-  <p class="meta">Developer: Oasis Forge · Effective date: 31 October 2026 · Contact:
+  <p class="meta">Developer: Oasis Forge · Effective date: 1 November 2026 · Contact:
     <a href="mailto:oasisforge.support@gmail.com">oasisforge.support@gmail.com</a></p>
 
   <p>Oasis Forge respects your privacy. This policy explains what data the “Wasfati” app
@@ -35,14 +35,17 @@
     storage on your device, and they are erased when the app is removed or its data is
     cleared.</p>
   <p>Most of what the app does never leaves your device — including every link you import,
-    which your phone reads directly from the website itself (section 2). There are three
+    which your phone reads directly from the website itself (section 2). There are five
     exceptions. AI import (section 3): when your phone can't read a page on its own, we send
     only what you asked it to import to our import server, which never keeps it. Usage
     statistics and crash reports (section 10): the app tells Google Firebase which key steps
     happen, in fixed words, and sends crash traces; you can turn that off in Settings. And ads
     (section 8): the free app shows ads from Google, whose ad software collects some
-    information about your device to show them. Nothing you keep in Wasfati is ever given to
-    Firebase or to Google's ad software.</p>
+    information about your device to show them. And messages from us (section 11): to
+    deliver them, Google holds a registration token for your install, and you can switch the
+    messages off in Settings. And messages inside the app (section 12): Firebase fetches them
+    with a random ID for your install, and they follow the same switch as the statistics.
+    Nothing you keep in Wasfati is ever given to Firebase or to Google's ad software.</p>
   <p>The app also keeps a random install ID on your device. It identifies no one — no name,
     email or account stands behind it. It leaves the device only inside a backup file you
     choose to save or share (section 7), or with an AI import request (section 3).</p>
@@ -99,7 +102,7 @@
     sent: no recipe text, no caption, no photo, no log of what you imported. Photos are held only
     in memory while the request is answered, then discarded. Google, our service provider, keeps
     what it receives for up to 55 days to detect abuse, and doesn't use it to improve its
-    products (section 11).</p>
+    products (section 13).</p>
   <p>The recipe that comes back opens for you to review and edit before anything is saved. Once
     it's on your device, it stays there like any other recipe (section 1) — it leaves again
     only if you back it up, share it, or ask to translate it.</p>
@@ -142,14 +145,19 @@
   <h2>5. Cook timers and notifications</h2>
   <p>Timers in cook mode are scheduled on your device, and nothing is sent anywhere.
     Notification permission is asked the first time you start a timer. If you refuse, timers
-    still ring while the app is open.</p>
+    still ring while the app is open. Messages from us are a separate matter (section 11).</p>
 
   <h2>6. Permissions</h2>
   <ul>
     <li><strong>Internet:</strong> to download the recipe pages you choose to import (section
       2), and to reach our import server when AI import is needed (section 3).</li>
-    <li><strong>Notifications:</strong> to alert you when a cook timer ends, and to remind you
-      before a Premium trial charges (section 9).</li>
+    <li><strong>Notifications:</strong> to alert you when a cook timer ends, to remind you
+      before a Premium trial charges (section 9), and to send you our own tips and news if you
+      allow them (section 11).</li>
+    <li><strong>Wake lock:</strong> holds your phone awake for the moment one of our messages
+      is handed to the app (section 11).</li>
+    <li><strong>Receive messages from Firebase Cloud Messaging:</strong> how Google delivers
+      one of our messages to this app (section 11).</li>
     <li><strong>Run at startup:</strong> so a reminder scheduled for later, like the trial
       reminder, still comes after your phone restarts.</li>
     <li><strong>Vibrate:</strong> for that same timer alert.</li>
@@ -227,14 +235,20 @@
     device model, Android version and language; a rough location worked out from your IP
     address (a country or city, never GPS); which key steps happen in the app — an import
     saved, cook mode started, the walkthrough finished, a backup saved, a grocery list or a
-    plan entry added — as fixed words, such as the kind of import and the platform its link
+    plan entry added, a recipe shared, a built-in recipe saved, the way you came into the
+    import screen, a notification or in-app message you tapped (only which screen it opens),
+    your answer to the notification question (allowed, refused or not now), the built-in example
+    import (opened or saved), what you do on the first-visit sheet of the built-in recipes
+    (go on to import, or close it),
+    and when the app asks Google Play for its rating prompt — as fixed words, such as the kind of import and the platform its link
     came from (TikTok, Instagram, YouTube, Facebook or a website); which screens of the app
     you open (the library, a recipe, cook mode, the plans and so on, named from a fixed list,
     never after a recipe or a cookbook); the steps of a purchase — the plans opened, the plan
     tab you switch to, a purchase started and its result (bought, cancelled, failed or
     waiting) for Pro, Premium monthly or Premium yearly, with no price, order or account
     detail; the app's language, digits
-    style, look and plan (free, Pro or Premium); Firebase's own automatic events (first open,
+    style, look and plan (free, Pro or Premium); roughly how many imports you have saved, in
+    four ranges only (none, one, two to four, five or more); Firebase's own automatic events (first open,
     session start, app update and Google Play purchases); and, when the app crashes or hits an
     error, a crash report with the error's type and where in the code it happened.</p>
   <p><strong>What it never gets:</strong> your recipes, photos, links, captions, searches,
@@ -259,7 +273,61 @@
     allows; if you agree, they are allowed. You can change your answer in Settings → Ads and
     subscription → Ad privacy choices. Builds made for development never send anything.</p>
 
-  <h2>11. Deleting your information</h2>
+  <h2>11. Messages from us (push notifications)</h2>
+  <p>We may send you short messages through <strong>Firebase Cloud Messaging</strong>, Google's
+    message-delivery service: tips for using the app, new features, seasonal recipes (for
+    Ramadan, for example) and our own Pro and Premium offers. We write and send each message by
+    hand from the Firebase console. We never send another company's ad, and a message never
+    says anything about your own recipes, plans or lists. Any price in an offer is the one
+    Google Play shows.</p>
+  <p><strong>What is held, and by whom:</strong> to deliver a message, Google gives your install
+    a random registration token and holds it to find your phone. The token stays between your
+    phone and Google: it never passes through our import server, and we never see it. Nothing
+    you keep in Wasfati goes with it. To choose who gets which message we use only what the
+    usage statistics already hold (section 10) — the app's language, and fixed steps such as
+    whether you have saved an import — and only for installs whose statistics are on. Each
+    message arrives on its own notification channel, “Tips and news”, apart from cook timers
+    and the trial reminder.</p>
+  <p><strong>Your choices:</strong> on Android 13 and later the app asks first: once when the
+    walkthrough ends and, if you said “Not now”, once more on a card on the library home that
+    you can close. A refusal at Android's own prompt is final; the app never asks again. You
+    can stop the messages at any time: Settings → About → “Notifications” opens Android's
+    notification settings for the app, where you can switch off “Tips and news” alone (cook
+    timers and the trial reminder keep working) or all notifications. A message that arrives
+    while the app is open shows nothing. Builds made for development never register.</p>
+  <p>Google handles the token under its own privacy policy and the Firebase terms:
+    <a href="https://firebase.google.com/support/privacy">Privacy and security in
+    Firebase</a>.</p>
+
+  <h2>12. Messages inside the app</h2>
+  <p>We may also show you a short message inside the app, through <strong>Firebase In-App
+    Messaging</strong>, Google's service for this: tips for using the app, new features,
+    seasonal recipes (for Ramadan, for example) and our own Pro and Premium offers. As with
+    messages in section 11, we write and schedule each one by hand in the Firebase console. We
+    never show another company's ad, and a message never says anything about your own
+    recipes, plans or lists. Any price in an offer is the one Google Play shows. A message
+    appears as a card or a banner, and never over cook mode, the recipe editor, an import, the
+    plans or purchase screens, or the first time you open the app. Its button can open a screen
+    of the app, and never sends you to a web page (apart from Google Play, to update the
+    app).</p>
+  <p><strong>What is fetched and reported:</strong> to find the messages meant for your
+    install, Firebase asks Google's servers for them using Firebase's installation ID, a random
+    ID for your install that is not your name or an account, together with the app's version
+    and language. It then reports to Google Analytics, as Firebase's own automatic events,
+    that a message was shown, tapped or dismissed. Nothing you keep in Wasfati goes with it,
+    and a message never shows it. To choose who sees which message we use only what the usage
+    statistics already hold (section 10): the app's language, and fixed steps such as whether
+    you have saved an import.</p>
+  <p><strong>Your choices:</strong> messages inside the app follow the usage statistics
+    switch, Settings → About → “Share usage statistics”. Turning it off stops them at once:
+    nothing more is fetched, nothing is reported and none is shown. Turning it back on brings
+    them back from the next time you open the app. Builds made for development never fetch
+    them. The app asks for no permission for this.</p>
+  <p>Google handles this data under its own privacy policy and the Firebase terms:
+    <a href="https://firebase.google.com/support/privacy">Privacy and security in
+    Firebase</a>.</p>
+
+  <h2>13. Deleting your information</h2>
   <p>Delete a recipe in the app: it stays in the trash for 30 days, then it and its photo are
     removed for good from the app's own storage. From the moment you delete it, any backup you
     make afterward carries only the fact that it was deleted, never its content or photo. A
@@ -274,40 +342,43 @@
     90 days. Turning the switch off clears the app-instance ID on your phone at once, and
     uninstalling removes it too.</p>
 
-  <h2>12. Children</h2>
+  <h2>14. Children</h2>
   <p>The app is intended for a general audience and is not directed at children under 13, and
     we do not knowingly collect any data from them. AI import and translation (section 3) are
     for people 18 and over, because they rely on Google's Gemini; children should not use
     them.</p>
 
-  <h2>13. Who is responsible</h2>
+  <h2>15. Who is responsible</h2>
   <p>Oasis Forge, the developer of Wasfati, is responsible for the data this policy describes.
     You can reach us at
     <a href="mailto:oasisforge.support@gmail.com">oasisforge.support@gmail.com</a>.</p>
 
-  <h2>14. Why we handle data</h2>
-  <p>We handle the little data we do for four reasons: because you ask for it (an AI import or
+  <h2>16. Why we handle data</h2>
+  <p>We handle the little data we do for five reasons: because you ask for it (an AI import or
     translation you start); to provide what you bought (your Google Play purchases); with your
-    consent, where the law asks for it (ads, section 8, and usage statistics, section 10); and
-    to improve the app and fix crashes (usage statistics and crash reports, section 10),
-    which you can turn off at any time.</p>
+    consent, where the law asks for it (ads, section 8, usage statistics, section 10,
+    messages from us, section 11, which Android asks you to allow, and messages inside the
+    app, section 12, which follow the statistics switch); to improve the app and
+    fix crashes (usage statistics and crash reports, section 10), which you can turn off at
+    any time; and to tell you about tips, features and offers if you allow it (sections 11 and
+    12).</p>
 
-  <h2>15. Your rights</h2>
+  <h2>17. Your rights</h2>
   <p>You can ask us what data we hold about you, ask us to delete it, or object to how it is
     used. Email us at
     <a href="mailto:oasisforge.support@gmail.com">oasisforge.support@gmail.com</a>. Most of your
     data never leaves your phone, and uninstalling Wasfati deletes it from the phone (a backup
     file you saved stays where you saved it).</p>
 
-  <h2>16. Transfers to other countries</h2>
+  <h2>18. Transfers to other countries</h2>
   <p>Our import server (on Cloudflare) and Google (Gemini, AdMob, Firebase and Google Play)
     may process data outside your country, under their own data-protection terms.</p>
 
-  <h2>17. Changes to this policy</h2>
+  <h2>19. Changes to this policy</h2>
   <p>We may update this policy as the app gains features. Any change appears on this page with
     an updated effective date.</p>
 
-  <h2>18. Contact</h2>
+  <h2>20. Contact</h2>
   <p>For any privacy question, email us at
     <a href="mailto:oasisforge.support@gmail.com">oasisforge.support@gmail.com</a>. Email is
     our only support channel.</p>
@@ -317,7 +388,7 @@
 
 <section id="ar" dir="rtl" lang="ar">
   <h1>سياسة الخصوصية — تطبيق «وصفاتي»</h1>
-  <p class="meta">المطوّر: Oasis Forge · تاريخ السريان: ٣١ أكتوبر ٢٠٢٦ · للتواصل:
+  <p class="meta">المطوّر: Oasis Forge · تاريخ السريان: ١ نوفمبر ٢٠٢٦ · للتواصل:
     <a href="mailto:oasisforge.support@gmail.com">oasisforge.support@gmail.com</a></p>
 
   <p>تحترم Oasis Forge خصوصيتك. توضّح هذه السياسة البيانات التي يتعامل معها تطبيق «وصفاتي»
@@ -328,13 +399,16 @@
     الطبخ والوسوم والملاحظات والإعدادات في مساحة التطبيق الخاصة على جهازك فقط، وتُحذف عند إزالة
     التطبيق أو مسح بياناته.</p>
   <p>معظم ما يفعله التطبيق لا يغادر جهازك أبداً — بما في ذلك كل رابط تستورده، الذي يقرأه هاتفك
-    مباشرة من الموقع نفسه (البند ٢). وهناك ثلاثة استثناءات. الأول هو الاستيراد بالذكاء الاصطناعي
+    مباشرة من الموقع نفسه (البند ٢). وهناك خمسة استثناءات. الأول هو الاستيراد بالذكاء الاصطناعي
     (البند ٣): حين لا يستطيع هاتفك قراءة صفحة بنفسه، نرسل إلى خادم الاستيراد لدينا فقط ما طلبتَ
     استيراده، وهو خادم لا يحتفظ بشيء منه أبداً. والثاني هو إحصاءات الاستخدام وتقارير الأعطال
     (البند ١٠): يخبر التطبيق Google Firebase بالخطوات الرئيسية التي تحدث، بكلمات ثابتة، ويرسل
     آثار الأعطال، ويمكنك إيقاف ذلك من الإعدادات. والثالث هو الإعلانات (البند ٨): يعرض التطبيق
-    المجاني إعلانات من Google، وتجمع برمجية الإعلانات لديها بعض المعلومات عن جهازك لعرضها. ولا
-    يُعطى لـFirebase ولا لبرمجية إعلانات Google أبداً أي شيء مما تحفظه في «وصفاتي».</p>
+    المجاني إعلانات من Google، وتجمع برمجية الإعلانات لديها بعض المعلومات عن جهازك لعرضها.
+    والرابع هو رسائل منا (البند ١١): لتوصيلها تحتفظ Google برمز تسجيل لتثبيتك، ويمكنك إيقاف
+    الرسائل من الإعدادات. وخامسها رسائل داخل التطبيق (البند ١٢): يجلبها Firebase
+    بمعرّف عشوائي لتثبيتك، وتتبع المفتاح نفسه الخاص بالإحصاءات. ولا يُعطى لـFirebase ولا لبرمجية
+    إعلانات Google أبداً أي شيء مما تحفظه في «وصفاتي».</p>
   <p>يحفظ التطبيق أيضاً معرّفاً عشوائياً للتثبيت على جهازك. هذا المعرّف لا يدل على أي شخص — لا
     اسم ولا بريد إلكتروني ولا حساب خلفه. لا يغادر جهازك إلا داخل ملف نسخة احتياطية تختار أنت
     حفظه أو مشاركته (البند ٧)، أو مع طلب استيراد بالذكاء الاصطناعي (البند ٣).</p>
@@ -383,7 +457,7 @@
     يحوّله إلى وصفة، ثم يعيد النتيجة المُهيكلة إلى هاتفك. لا يحتفظ الخادم بشيء مما يُرسَل إليه: لا
     نص الوصفة، ولا التعليق المنسوخ، ولا الصور، ولا سجل لما استوردتَه. تبقى الصور في الذاكرة فقط
     ريثما يُجاب الطلب، ثم تُحذف. وتحتفظ Google، مزوّد الخدمة لدينا، بما يصلها مدة أقصاها ٥٥ يوماً
-    لكشف إساءة الاستخدام، ولا تستخدمه لتحسين منتجاتها (البند ١١).</p>
+    لكشف إساءة الاستخدام، ولا تستخدمه لتحسين منتجاتها (البند ١٣).</p>
   <p>تُفتح الوصفة التي تعود إليك للمراجعة والتعديل قبل أن تُحفظ في أي مكان. وبمجرد أن تصل إلى
     جهازك، تبقى هناك كأي وصفة أخرى (البند ١) — ولا تغادره مرة أخرى إلا إن نسخته احتياطياً أو
     شاركته أو طلبت ترجمته.</p>
@@ -420,14 +494,20 @@
 
   <h2>٥. مؤقتات الطبخ والإشعارات</h2>
   <p>مؤقتات وضع الطبخ تُجدول على جهازك، ولا يُرسل شيء إلى أي جهة. يُطلب إذن الإشعارات عند أول
-    مؤقت تشغّله، وإذا رفضته يستمر المؤقت في التنبيه ما دام التطبيق مفتوحاً.</p>
+    مؤقت تشغّله، وإذا رفضته يستمر المؤقت في التنبيه ما دام التطبيق مفتوحاً. أما الرسائل منا فشأن
+    آخر (البند ١١).</p>
 
   <h2>٦. الأذونات</h2>
   <ul>
     <li><strong>الإنترنت:</strong> لتنزيل صفحات الوصفات التي تختار استيرادها (البند ٢)،
       وللوصول إلى خادم الاستيراد حين يلزم الاستيراد بالذكاء الاصطناعي (البند ٣).</li>
     <li><strong>الإشعارات:</strong> لتنبيهك عند انتهاء مؤقت الطبخ، ولتذكيرك قبل أن تُحصَّل
-      رسوم التجربة المجانية لبريميوم (البند ٩).</li>
+      رسوم التجربة المجانية لبريميوم (البند ٩)، ولإرسال نصائحنا وأخبارنا إليك إن سمحتَ بها
+      (البند ١١).</li>
+    <li><strong>إبقاء الهاتف مستيقظاً (Wake lock):</strong> يُبقي هاتفك مستيقظاً للحظة وصول
+      إحدى رسائلنا إلى التطبيق (البند ١١).</li>
+    <li><strong>استقبال الرسائل من Firebase Cloud Messaging:</strong> هي الطريقة التي توصل بها
+      Google رسالتنا إلى هذا التطبيق (البند ١١).</li>
     <li><strong>التشغيل عند بدء النظام:</strong> ليصلك التذكير المجدول لوقت لاحق، كتذكير
       التجربة، حتى بعد إعادة تشغيل هاتفك.</li>
     <li><strong>الاهتزاز:</strong> لتنبيه المؤقت نفسه.</li>
@@ -497,13 +577,19 @@
   <p><strong>ما يجمعه:</strong> معرّف نسخة التطبيق هذا؛ والمعرّف الإعلاني لجهازك؛ وطراز الجهاز
     وإصدار أندرويد واللغة؛ وموقعاً تقريبياً يُستنتج من عنوان IP (دولة أو مدينة، لا GPS أبداً)؛
     والخطوات الرئيسية التي تحدث في التطبيق — استيراد محفوظ، أو بدء وضع الطبخ، أو إنهاء الجولة
-    التعريفية، أو حفظ نسخة احتياطية، أو إضافة مشتريات أو بند في الخطة — بكلمات ثابتة، مثل نوع
+    التعريفية، أو حفظ نسخة احتياطية، أو إضافة مشتريات أو بند في الخطة، أو مشاركة وصفة، أو حفظ
+    وصفة مدمجة في التطبيق، أو الطريقة التي وصلت بها إلى شاشة الاستيراد، أو إشعار أو رسالة داخل
+    التطبيق نقرت عليها (واسم الشاشة التي تفتحها فقط)، أو جوابك عن سؤال الإشعارات (سمحتَ أو
+    رفضتَ أو «ليس الآن»)، أو فتح المثال المدمج في التطبيق وحفظه، أو ما تفعله في الشاشة الأولى
+    للوصفات المدمجة (المتابعة إلى الاستيراد أو إغلاقها)، أو طلب التطبيق من Google Play نافذة
+    التقييم — بكلمات ثابتة، مثل نوع
     الاستيراد والمنصة التي جاء منها رابطه (TikTok أو Instagram أو YouTube أو Facebook أو موقع)؛
     وأي شاشات التطبيق تفتحها (المكتبة أو وصفة أو وضع الطبخ أو الخطط وغيرها، بأسماء من قائمة
     ثابتة، لا باسم وصفة أو كتاب طبخ أبداً)؛ وخطوات الشراء — فتح الخطط، والتبديل بين تبويبيها،
     وبدء عملية شراء ونتيجتها (تمّ الشراء أو أُلغي أو فشل أو بانتظار الدفع) لبرو أو بريميوم
     الشهري أو بريميوم السنوي، دون سعر أو رقم طلب أو أي بيانات حساب؛
-    ولغة التطبيق وشكل الأرقام والطراز والخطة (مجانية أو برو أو بريميوم)؛ والأحداث التلقائية
+    ولغة التطبيق وشكل الأرقام والطراز والخطة (مجانية أو برو أو بريميوم)؛ وتقريباً كم استيراداً
+    حفظت، في أربع فئات فقط (لا شيء أو واحد أو من اثنين إلى أربعة أو خمسة فأكثر)؛ والأحداث التلقائية
     الخاصة بـFirebase (أول فتح وبدء الجلسة وتحديث التطبيق وعمليات الشراء من Google Play)؛ وعند
     تعطّل التطبيق أو وقوع خطأ، تقريراً عن العطل فيه نوع الخطأ ومكانه في الشيفرة.</p>
   <p><strong>ما لا يصله أبداً:</strong> وصفاتك وصورك وروابطك وأوصاف المنشورات وما تبحث عنه وأسماء
@@ -527,7 +613,50 @@
     الإعلانات والاشتراك › خيارات الخصوصية في الإعلانات. ولا ترسل نُسخ التطبيق المصنوعة للتطوير
     أي شيء.</p>
 
-  <h2>١١. حذف بياناتك</h2>
+  <h2>١١. رسائل منا (الإشعارات)</h2>
+  <p>قد نرسل إليك رسائل قصيرة عبر <strong>Firebase Cloud Messaging</strong>، خدمة Google لتوصيل
+    الرسائل: نصائح لاستخدام التطبيق، ومزايا جديدة، ووصفات موسمية (لرمضان مثلاً)، وعروضنا نحن
+    على برو وبريميوم. نكتب كل رسالة ونرسلها بأنفسنا من لوحة Firebase. لا نرسل أبداً إعلاناً
+    لشركة أخرى، ولا تقول رسالة شيئاً عن وصفاتك أو خططك أو قوائمك. وأي سعر في عرض هو السعر الذي
+    يعرضه Google Play.</p>
+  <p><strong>ما يُحفظ ومن يحفظه:</strong> لتوصيل الرسالة تمنح Google تثبيتك رمز تسجيل عشوائياً
+    وتحتفظ به لتصل إلى هاتفك. يبقى الرمز بين هاتفك وGoogle: لا يمرّ عبر خادم الاستيراد لدينا،
+    ولا نراه أبداً. ولا يذهب معه شيء مما تحفظه في «وصفاتي». ولنختار من تصله كل رسالة لا نستخدم إلا
+    ما تحتفظ به إحصاءات الاستخدام أصلاً (البند ١٠) — لغة التطبيق، وخطوات ثابتة مثل هل حفظتَ
+    استيراداً — وللتثبيتات التي إحصاءاتها مفعّلة فقط. وتصل كل رسالة عبر قناة إشعارات خاصة بها
+    اسمها «نصائح وأخبار»، منفصلة عن مؤقتات الطبخ وتذكير التجربة.</p>
+  <p><strong>خياراتك:</strong> في أندرويد ١٣ وما بعده يسألك التطبيق أولاً: مرة عند انتهاء الجولة
+    التعريفية، ثم مرة أخرى، إن قلتَ «ليس الآن»، في بطاقة على شاشة المكتبة يمكنك إغلاقها. والرفض
+    عند نافذة أندرويد نفسها نهائي؛ لا يسأل التطبيق بعده أبداً. ويمكنك إيقاف الرسائل في أي
+    وقت: من الإعدادات › عن وصفاتي › «الإشعارات» تفتح إعدادات الإشعارات في أندرويد للتطبيق،
+    فتُوقف «نصائح وأخبار» وحدها (فتبقى مؤقتات الطبخ وتذكير التجربة تعمل) أو الإشعارات كلها.
+    والرسالة التي تصل والتطبيق مفتوح لا تظهر. ولا تسجّل نُسخ التطبيق المصنوعة للتطوير شيئاً.</p>
+  <p>تتعامل Google مع الرمز وفق سياسة الخصوصية الخاصة بها وشروط Firebase:
+    <a href="https://firebase.google.com/support/privacy?hl=ar">الخصوصية والأمان في Firebase</a>.</p>
+
+  <h2>١٢. رسائل داخل التطبيق</h2>
+  <p>قد نعرض عليك أيضاً رسالة قصيرة داخل التطبيق عبر <strong>Firebase In-App Messaging</strong>،
+    خدمة Google لذلك: نصائح لاستخدام التطبيق، ومزايا جديدة، ووصفات موسمية (لرمضان مثلاً)،
+    وعروضنا نحن على برو وبريميوم. وكما في رسائل البند ١١، نكتب كل رسالة ونجدولها بأنفسنا من
+    لوحة Firebase. لا نعرض أبداً إعلاناً لشركة أخرى، ولا تقول رسالة شيئاً عن وصفاتك أو خططك أو
+    قوائمك. وأي سعر في عرض هو السعر الذي يعرضه Google Play. تظهر الرسالة بطاقةً أو شريطاً
+    علوياً، ولا تظهر أبداً فوق وضع الطبخ أو محرّر الوصفة أو الاستيراد أو شاشتي الخطط والشراء، ولا
+    في أول مرة تفتح فيها التطبيق. وقد يفتح زرّها إحدى شاشات التطبيق، ولا يأخذك أبداً إلى صفحة
+    ويب (عدا Google Play لتحديث التطبيق).</p>
+  <p><strong>ما يُجلب وما يُبلَّغ عنه:</strong> لتصل إلى الرسائل المخصصة لتثبيتك يطلبها Firebase من
+    خوادم Google بمعرّف التثبيت الخاص بـFirebase، وهو معرّف عشوائي لتثبيتك وليس اسمك ولا حساباً،
+    مع إصدار التطبيق ولغته. ثم يبلّغ Google Analytics، بأحداث Firebase التلقائية، بأن رسالة
+    عُرضت أو نُقرت أو أُغلقت. ولا يذهب معه شيء مما تحفظه في «وصفاتي»، ولا تعرضه الرسالة أبداً.
+    ولنختار من يرى أي رسالة لا نستخدم إلا ما تحتفظ به إحصاءات الاستخدام أصلاً (البند ١٠) —
+    لغة التطبيق، وخطوات ثابتة مثل هل حفظتَ استيراداً.</p>
+  <p><strong>خياراتك:</strong> تتبع الرسائل داخل التطبيق مفتاح إحصاءات الاستخدام، من الإعدادات ›
+    عن وصفاتي › «مشاركة إحصاءات الاستخدام». إيقافه يوقفها فوراً: لا يُجلب شيء بعد ذلك، ولا يُبلَّغ
+    عن شيء، ولا تظهر رسالة. وإعادة تشغيله تُعيدها من المرة التالية التي تفتح فيها التطبيق. ولا
+    تجلبها نُسخ التطبيق المصنوعة للتطوير. ولا يطلب التطبيق أي إذن لهذا.</p>
+  <p>تتعامل Google مع هذه البيانات وفق سياسة الخصوصية الخاصة بها وشروط Firebase:
+    <a href="https://firebase.google.com/support/privacy?hl=ar">الخصوصية والأمان في Firebase</a>.</p>
+
+  <h2>١٣. حذف بياناتك</h2>
   <p>احذف الوصفة من داخل التطبيق: تبقى في سلة المحذوفات ٣٠ يوماً، ثم تُحذف هي وصورتها نهائياً من
     مساحة تخزين التطبيق. ومنذ لحظة حذفها، لا تحمل أي نسخة احتياطية تصنعها بعد ذلك سوى واقعة
     الحذف، دون محتواها أو صورتها. أما نسخة احتياطية حفظتها قبل حذفها فقد صُنعت والوصفة ما زالت
@@ -539,39 +668,41 @@
   <p>وتحذف Google إحصاءات الاستخدام وتقارير الأعطال (البند ١٠) بعد ١٤ شهراً و٩٠ يوماً. وإيقاف
     المفتاح يمسح فوراً معرّف نسخة التطبيق على هاتفك، وإزالة التطبيق تمسحه أيضاً.</p>
 
-  <h2>١٢. الأطفال</h2>
+  <h2>١٤. الأطفال</h2>
   <p>التطبيق موجّه للجمهور العام وليس للأطفال دون ١٣ عاماً، ولا نجمع عن علم أي بيانات منهم.
     والاستيراد والترجمة بالذكاء الاصطناعي (البند ٣) لمن عمره ١٨ عاماً فأكثر، لأنهما يعتمدان
     على Gemini من Google؛ وعلى الأطفال ألا يستخدموهما.</p>
 
-  <h2>١٣. من المسؤول</h2>
+  <h2>١٥. من المسؤول</h2>
   <p>Oasis Forge، مطوّرة «وصفاتي»، هي المسؤولة عن البيانات التي تصفها هذه السياسة. يمكنك
     مراسلتنا على
     <a href="mailto:oasisforge.support@gmail.com">oasisforge.support@gmail.com</a>.</p>
 
-  <h2>١٤. لماذا نتعامل مع البيانات</h2>
-  <p>نتعامل مع القليل الذي نتعامل معه من البيانات لأربعة أسباب: لأنك تطلب ذلك (استيراد أو
+  <h2>١٦. لماذا نتعامل مع البيانات</h2>
+  <p>نتعامل مع القليل الذي نتعامل معه من البيانات لخمسة أسباب: لأنك تطلب ذلك (استيراد أو
     ترجمة بالذكاء الاصطناعي تبدؤها بنفسك)؛ ولنقدّم لك ما اشتريته (مشترياتك عبر Google Play)؛
-    ولموافقتك حيث يشترط القانون ذلك (الإعلانات، البند ٨، وإحصاءات الاستخدام، البند ١٠)؛
-    ولتحسين التطبيق وإصلاح الأعطال (إحصاءات الاستخدام وتقارير الأعطال، البند ١٠)، ويمكنك
-    إيقاف ذلك في أي وقت.</p>
+    ولموافقتك حيث يشترط القانون ذلك (الإعلانات، البند ٨، وإحصاءات الاستخدام، البند ١٠،
+    والرسائل منا، البند ١١، التي يطلب منك أندرويد السماح بها، والرسائل داخل التطبيق، البند ١٢،
+    التي تتبع مفتاح الإحصاءات)؛ ولتحسين التطبيق وإصلاح الأعطال
+    (إحصاءات الاستخدام وتقارير الأعطال، البند ١٠)، ويمكنك إيقاف ذلك في أي وقت؛ ولنخبرك
+    بالنصائح والمزايا والعروض إن سمحتَ بذلك (البندان ١١ و١٢).</p>
 
-  <h2>١٥. حقوقك</h2>
+  <h2>١٧. حقوقك</h2>
   <p>يمكنك أن تسألنا عن البيانات التي نحتفظ بها عنك، أو تطلب حذفها، أو تعترض على استخدامها.
     راسلنا على
     <a href="mailto:oasisforge.support@gmail.com">oasisforge.support@gmail.com</a>. ومعظم
     بياناتك لا تغادر هاتفك أبداً، وإزالة «وصفاتي» تحذفها من الهاتف (أما ملف نسخة احتياطية
     حفظتَه فيبقى حيث حفظتَه).</p>
 
-  <h2>١٦. النقل إلى دول أخرى</h2>
+  <h2>١٨. النقل إلى دول أخرى</h2>
   <p>قد يعالج خادم الاستيراد لدينا (على Cloudflare) وGoogle (Gemini وAdMob وFirebase وGoogle Play)
     البيانات خارج بلدك، وفق شروط حماية البيانات الخاصة بكل منهما.</p>
 
-  <h2>١٧. تغييرات هذه السياسة</h2>
+  <h2>١٩. تغييرات هذه السياسة</h2>
   <p>قد نُحدّث هذه السياسة كلما أضاف التطبيق ميزات جديدة. يظهر أي تغيير على هذه الصفحة مع
     تاريخ سريان جديد.</p>
 
-  <h2>١٨. التواصل</h2>
+  <h2>٢٠. التواصل</h2>
   <p>لأي سؤال عن الخصوصية، راسلنا على
     <a href="mailto:oasisforge.support@gmail.com">oasisforge.support@gmail.com</a>.
     البريد الإلكتروني هو قناة الدعم الوحيدة لدينا.</p>
