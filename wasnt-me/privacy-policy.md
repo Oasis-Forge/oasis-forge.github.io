@@ -42,8 +42,8 @@ your cat's look and a friend code to Unity, the company that runs the board, in 
   They're kept in the game's own folder on your device.
 - A log of finished rounds, used by our playtests to balance the game: for each round its room, outcome, damage, stars
   and similar numbers from the game (and a tester number, used only in our own playtests), and the coins each part of
-  the game paid and what was bought with them, on which round and day of play. Nothing in it says who you are, it never
-  leaves your device, and it's deleted with the game or when you clear the game's data in your device's settings.
+  the game paid and what was bought with them, on which round and day of play. Nothing in it says who you are, the game
+  never sends it anywhere, and it's deleted with the game or when you clear the game's data in your device's settings.
 - The picture you last shared (see below), in the game's cache folder. Sharing again deletes the old picture, so only
   the last one stays, until your device clears the cache.
 
@@ -240,6 +240,8 @@ Google's [retention page](https://policies.google.com/technologies/retention) an
 ## Deleting your data
 
 - **On your device:** delete the game, or clear its data in your device's settings.
+  A copy in your Google account's backups (see
+  [Information stored on your device](#information-stored-on-your-device)) is deleted there.
 - **Friends' scores, in the game:** tap **Leave friends' scores** (see [Leaving](#friends-scores-16-and-over)).
 - **Friends' scores, without the game:** email [oasisforge.support@gmail.com](mailto:oasisforge.support@gmail.com)
   with your friend code, and we'll delete your entry, scores, friends and friend code at Unity within a month.

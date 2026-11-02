@@ -47,8 +47,8 @@ Unity, the company that runs the board.
 
 The developer has no access to any of it on your device. Deleting the game deletes it all from the device. If your
 Android device backs up its apps to your Google account, Android may keep a copy of the game's save in that backup,
-and bring it back when the game is installed again. That save holds the answer to the age question and, if you turned
-friends' scores on, their sign-in (the player ID and sign-in token). You can delete the backup in your Google
+and bring it back when the game is installed again. Among other things, that save holds the answer to the age question
+and, if you turned friends' scores on, their sign-in (the player ID and sign-in token). You can delete the backup in your Google
 account's backups.
 
 ## Sharing
@@ -91,9 +91,10 @@ name, email or location.
 Unity handles this data under its own [privacy policy](https://unity.com/legal/privacy-policy).
 
 **Leaving.** Tap **Leave friends' scores** at the bottom of the board. The game deletes your friends and requests and
-your verified score, then your Unity player. It forgets the sign-in on the phone. If the score can't be deleted, it's
-cleared to nothing (no result, no details), and we delete the empty entry when you ask. If Unity cannot be reached, the
-game keeps your account and asks you to try leaving again online.
+your verified score, then your Unity player. It forgets the sign-in on the phone. A score that was never verified
+can't be deleted by the game, so it's cleared to nothing (no result, no details), and we delete the empty entry when
+you ask. If Unity cannot be reached, or the score can't be deleted, the game keeps your account and asks you to try
+leaving again online.
 
 **Who holds it, and for how long.** Friends' scores are held at Unity, in a Unity project that Oasis Forge runs. We can
 see the entries there, and we delete them when you ask. They stay while friends' scores are on, until you leave or ask
@@ -182,6 +183,8 @@ over who turn them on, we don't knowingly collect information from anyone, child
 ## Deleting your data
 
 - **On your device:** delete the game, or clear its data in your device's settings.
+  A copy in your Google account's backups (see
+  [Information stored on your device](#information-stored-on-your-device)) is deleted there.
 - **Friends' scores, in the game:** tap **Leave friends' scores** (see [Friends' scores](#friends-scores-16-and-over)).
 - **Friends' scores, without the game:** email [oasisforge.support@gmail.com](mailto:oasisforge.support@gmail.com)
   with your friend code, and we'll delete your entry, results, friends and friend code at Unity within a month.
