@@ -40,10 +40,9 @@ your cat's look and a friend code to Unity, the company that runs the board, in 
 - Your cat's mugshots, for the mugshot wall in the hideout: the photo the game takes of the room when your cat gets caught (a picture
   of the game, not from your camera), with the date, the room, your cat's name and the damage, for your last 30 busts.
   They're kept in the game's own folder on your device.
-- A log of finished rounds, used by our playtests to balance the game: for each round its room, outcome, damage, stars
-  and similar numbers from the game (and a tester number, used only in our own playtests), and the coins each part of
-  the game paid and what was bought with them, on which round and day of play. Nothing in it says who you are, the game
-  never sends it anywhere, and it's deleted with the game or when you clear the game's data in your device's settings.
+- Versions before 0.21.3 also kept a log of finished rounds for our playtests (each round's room, outcome, damage,
+  stars and coins, with no detail about who you are). The game never sent it anywhere, and version 0.21.3 and later
+  delete it the first time they start.
 - The picture you last shared (see below), in the game's cache folder. Sharing again deletes the old picture, so only
   the last one stays, until your device clears the cache.
 
