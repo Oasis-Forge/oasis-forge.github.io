@@ -6,7 +6,7 @@ title: Privacy Policy – Wasn't Me
 
 # Privacy Policy
 
-_Last updated: 26 October 2026_
+_Last updated: 2 November 2026_
 
 This policy explains how **Wasn't Me** ("the game"), by Oasis Forge, handles your information, on Android and iOS.
 
@@ -40,9 +40,10 @@ your cat's look and a friend code to Unity, the company that runs the board, in 
 - Your cat's mugshots, for the mugshot wall in the hideout: the photo the game takes of the room when your cat gets caught (a picture
   of the game, not from your camera), with the date, the room, your cat's name and the damage, for your last 30 busts.
   They're kept in the game's own folder on your device.
-- A log of finished rounds, for playtests: for each round its tester number, room, outcome, damage, stars and similar
-  numbers from the game, and for each tester the coins each part of the game paid and what was bought with them, on
-  which round and day of play. It's kept on the device until it's cleared.
+- A log of finished rounds, used by our playtests to balance the game: for each round its room, outcome, damage, stars
+  and similar numbers from the game (and a tester number, used only in our own playtests), and the coins each part of
+  the game paid and what was bought with them, on which round and day of play. Nothing in it says who you are, the game
+  never sends it anywhere, and it's deleted with the game or when you clear the game's data in your device's settings.
 - The picture you last shared (see below), in the game's cache folder. Sharing again deletes the old picture, so only
   the last one stays, until your device clears the cache.
 
@@ -235,6 +236,15 @@ the United States and other countries, under their own safeguards. Friends' scor
 [Friends' scores](#friends-scores-16-and-over)). For how long Google and Unity keep the data of ads and purchases, see
 Google's [retention page](https://policies.google.com/technologies/retention) and the retention part of Unity's
 [Game Player and App User Privacy Policy](https://unity.com/legal/game-player-and-app-user-privacy-policy).
+
+## Deleting your data
+
+- **On your device:** delete the game, or clear its data in your device's settings.
+  A copy in your Google account's backups (see
+  [Information stored on your device](#information-stored-on-your-device)) is deleted there.
+- **Friends' scores, in the game:** tap **Leave friends' scores** (see [Leaving](#friends-scores-16-and-over)).
+- **Friends' scores, without the game:** email [oasisforge.support@gmail.com](mailto:oasisforge.support@gmail.com)
+  with your friend code, and we'll delete your entry, scores, friends and friend code at Unity within a month.
 
 ## Changes
 
