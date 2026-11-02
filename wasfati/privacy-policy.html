@@ -23,7 +23,7 @@
 
 <section id="en" dir="ltr">
   <h1>Privacy Policy — “Wasfati”</h1>
-  <p class="meta">Developer: Oasis Forge · Effective date: 1 November 2026 · Contact:
+  <p class="meta">Developer: Oasis Forge · Effective date: 2 November 2026 · Contact:
     <a href="mailto:oasisforge.support@gmail.com">oasisforge.support@gmail.com</a></p>
 
   <p>Oasis Forge respects your privacy. This policy explains what data the “Wasfati” app
@@ -34,18 +34,20 @@
     recipes, photos, cookbooks, tags, notes and settings are stored only in the app's private
     storage on your device, and they are erased when the app is removed or its data is
     cleared.</p>
-  <p>Most of what the app does never leaves your device — including every link you import,
+  <p>Most of what the app does never leaves your device — including the links you import,
     which your phone reads directly from the website itself (section 2). There are five
     exceptions. AI import (section 3): when your phone can't read a page on its own, we send
     only what you asked it to import to our import server, which never keeps it. Usage
     statistics and crash reports (section 10): the app tells Google Firebase which key steps
-    happen, in fixed words, and sends crash traces; you can turn that off in Settings. And ads
+    happen, in fixed words, sends the link of an import that failed, and sends crash traces;
+    you can turn that off in Settings. And ads
     (section 8): the free app shows ads from Google, whose ad software collects some
     information about your device to show them. And messages from us (section 11): to
     deliver them, Google holds a registration token for your install, and you can switch the
     messages off in Settings. And messages inside the app (section 12): Firebase fetches them
     with a random ID for your install, and they follow the same switch as the statistics.
-    Nothing you keep in Wasfati is ever given to Firebase or to Google's ad software.</p>
+    Apart from that failed link, nothing you keep in Wasfati is ever given to Firebase or to
+    Google's ad software.</p>
   <p>The app also keeps a random install ID on your device. It identifies no one — no name,
     email or account stands behind it. It leaves the device only inside a backup file you
     choose to save or share (section 7), or with an AI import request (section 3).</p>
@@ -58,7 +60,7 @@
   <p>When you paste or share a recipe link, your phone downloads that page and its photo
     <strong>directly from the recipe's website</strong>, exactly as a browser would. That
     website sees the request and your device's IP address, as it would for any visitor.
-    Nothing reaches us, and no server of ours is involved. Text you share into Wasfati stays
+    No server of ours is involved. Text you share into Wasfati stays
     on your device. If the page doesn't hold the recipe data the app needs, your phone reads
     the page's own text instead, shows it to you, and offers to import it with AI (section 3);
     the page's link itself never reaches our import server.</p>
@@ -80,6 +82,10 @@
     words. For a Facebook or Instagram video, our server usually fetches the video
     itself for a moment and passes only its sound (rarely, a short video whole) to Google in the
     same import, because Google often can't open those links; we never store it.</p>
+  <p>If an import from a link fails because the page holds no recipe or couldn't be read, that
+    link can go to Google Firebase with your usage statistics, without anything after a “?” or
+    “#” (section 10). It never goes to our import server, and a link that imports is never
+    sent.</p>
 
   <h2>3. Importing with AI</h2>
   <p>Some sources need help understanding — a social post whose caption your phone couldn't
@@ -145,7 +151,8 @@
     own mail app with a message to the same address holding only that link, why it couldn't
     be imported in fixed words (for example “not a recipe”), and the app's version, with room for a note.
     Never the caption, the transcript or any text you pasted. You see it and send it
-    yourself, or not at all.</p>
+    yourself, or not at all. That's apart from usage statistics, which can already carry a
+    failed link (section 10).</p>
 
   <h2>4. Photos</h2>
   <p>Photos you add come from your camera or gallery through your phone's own picker, so the
@@ -254,7 +261,11 @@
     and when the app asks Google Play for its rating prompt — as fixed words, such as the kind of import and the platform its link
     came from (TikTok, Instagram, YouTube, Facebook or a website), and, for an AI import that
     was saved or failed, whether it had the video's transcript or a video link and roughly how
-    long its caption was (none, short or long — the words themselves are never sent); which screens of the app
+    long its caption was (none, short or long — the words themselves are never sent); the
+    link of an import that failed because the page held no recipe or couldn't be read — the
+    site's address and the page's path, without anything after a “?” or “#”, cut at 100
+    characters, and never for a private post, a link that holds an email address, or a link
+    that imports; which screens of the app
     you open (the library, a recipe, cook mode, the plans and so on, named from a fixed list,
     never after a recipe or a cookbook); the steps of a purchase — the plans opened, the plan
     tab you switch to, a purchase started and its result (bought, cancelled, failed or
@@ -264,10 +275,10 @@
     four ranges only (none, one, two to four, five or more); Firebase's own automatic events (first open,
     session start, app update and Google Play purchases); and, when the app crashes or hits an
     error, a crash report with the error's type and where in the code it happened.</p>
-  <p><strong>What it never gets:</strong> your recipes, photos, links, captions, searches,
-    cookbook or tag names, grocery items, meal plan, or anything you type, and no error message
+  <p><strong>What it never gets:</strong> your recipes, photos, captions, searches,
+    any link other than a failed import's, cookbook or tag names, grocery items, meal plan, or anything you type, and no error message
     that could quote them. Nothing about statistics passes through our import server.</p>
-  <p><strong>Why:</strong> to see where new users get stuck, to fix crashes on phones we can't
+  <p><strong>Why:</strong> to see where new users get stuck and which links fail to import, to fix crashes on phones we can't
     test on, and, if you installed after tapping one of our Google ads, to tell Google Ads
     that the install went on to save its first recipe, so the campaign can learn which ads
     find people who use the app. Google signals and Analytics' ad personalisation are off.</p>
@@ -401,7 +412,7 @@
 
 <section id="ar" dir="rtl" lang="ar">
   <h1>سياسة الخصوصية — تطبيق «وصفاتي»</h1>
-  <p class="meta">المطوّر: Oasis Forge · تاريخ السريان: ١ نوفمبر ٢٠٢٦ · للتواصل:
+  <p class="meta">المطوّر: Oasis Forge · تاريخ السريان: ٢ نوفمبر ٢٠٢٦ · للتواصل:
     <a href="mailto:oasisforge.support@gmail.com">oasisforge.support@gmail.com</a></p>
 
   <p>تحترم Oasis Forge خصوصيتك. توضّح هذه السياسة البيانات التي يتعامل معها تطبيق «وصفاتي»
@@ -411,16 +422,16 @@
   <p>لا نجمع نحن أي بيانات شخصية. التطبيق لا يطلب تسجيل دخول ولا حساباً. تُحفظ وصفاتك وصورها وكتب
     الطبخ والوسوم والملاحظات والإعدادات في مساحة التطبيق الخاصة على جهازك فقط، وتُحذف عند إزالة
     التطبيق أو مسح بياناته.</p>
-  <p>معظم ما يفعله التطبيق لا يغادر جهازك أبداً — بما في ذلك كل رابط تستورده، الذي يقرأه هاتفك
+  <p>معظم ما يفعله التطبيق لا يغادر جهازك أبداً — بما في ذلك الروابط التي تستوردها، والتي يقرؤها هاتفك
     مباشرة من الموقع نفسه (البند ٢). وهناك خمسة استثناءات. الأول هو الاستيراد بالذكاء الاصطناعي
     (البند ٣): حين لا يستطيع هاتفك قراءة صفحة بنفسه، نرسل إلى خادم الاستيراد لدينا فقط ما طلبتَ
     استيراده، وهو خادم لا يحتفظ بشيء منه أبداً. والثاني هو إحصاءات الاستخدام وتقارير الأعطال
-    (البند ١٠): يخبر التطبيق Google Firebase بالخطوات الرئيسية التي تحدث، بكلمات ثابتة، ويرسل
+    (البند ١٠): يخبر التطبيق Google Firebase بالخطوات الرئيسية التي تحدث، بكلمات ثابتة، ويرسل رابط الاستيراد الذي تعذّر، ويرسل
     آثار الأعطال، ويمكنك إيقاف ذلك من الإعدادات. والثالث هو الإعلانات (البند ٨): يعرض التطبيق
     المجاني إعلانات من Google، وتجمع برمجية الإعلانات لديها بعض المعلومات عن جهازك لعرضها.
     والرابع هو رسائل منا (البند ١١): لتوصيلها تحتفظ Google برمز تسجيل لتثبيتك، ويمكنك إيقاف
     الرسائل من الإعدادات. وخامسها رسائل داخل التطبيق (البند ١٢): يجلبها Firebase
-    بمعرّف عشوائي لتثبيتك، وتتبع المفتاح نفسه الخاص بالإحصاءات. ولا يُعطى لـFirebase ولا لبرمجية
+    بمعرّف عشوائي لتثبيتك، وتتبع المفتاح نفسه الخاص بالإحصاءات. وباستثناء ذلك الرابط، لا يُعطى لـFirebase ولا لبرمجية
     إعلانات Google أبداً أي شيء مما تحفظه في «وصفاتي».</p>
   <p>يحفظ التطبيق أيضاً معرّفاً عشوائياً للتثبيت على جهازك. هذا المعرّف لا يدل على أي شخص — لا
     اسم ولا بريد إلكتروني ولا حساب خلفه. لا يغادر جهازك إلا داخل ملف نسخة احتياطية تختار أنت
@@ -432,7 +443,7 @@
   <h2>٢. استيراد وصفة من رابط</h2>
   <p>عند لصق رابط وصفة أو مشاركته مع التطبيق، ينزّل هاتفك تلك الصفحة وصورتها
     <strong>مباشرة من موقع الوصفة</strong>، تماماً كما يفعل المتصفح. يرى ذلك الموقع الطلب
-    وعنوان IP الخاص بجهازك، كما يرى أي زائر. لا يصلنا نحن شيء، ولا يتدخّل أي خادم لنا في
+    وعنوان IP الخاص بجهازك، كما يرى أي زائر. ولا يتدخّل أي خادم لنا في
     العملية. والنص الذي تشاركه مع «وصفاتي» يبقى على جهازك. وإن لم تحمل الصفحة بيانات الوصفة
     التي يحتاجها التطبيق، يقرأ هاتفك نص الصفحة نفسه ويعرضه عليك، ويعرض عليك استيراده
     بالذكاء الاصطناعي بدلاً من ذلك (البند ٣)؛ أما رابط الصفحة نفسه فلا يصل إلى خادم الاستيراد أبدًا.</p>
@@ -452,6 +463,9 @@
     وفي فيديو من فيسبوك أو إنستغرام، يجلب خادمنا الفيديو عادةً بنفسه لحظةً ولا يمرّر إلى Google إلا
     صوته (ونادرًا فيديو قصيرًا كاملًا) في الاستيراد نفسه، لأن Google كثيرًا ما يتعذّر عليه فتح تلك
     الروابط، ولا نحفظه أبدًا.</p>
+  <p>وإذا تعذّر الاستيراد من رابط لأن الصفحة لا تحمل وصفة أو تعذّرت قراءتها، فقد يذهب ذلك الرابط إلى
+    Google Firebase مع إحصاءات الاستخدام، من دون ما يأتي بعد «?» أو «#» (البند ١٠). ولا يصل أبداً إلى
+    خادم الاستيراد لدينا، ولا يُرسَل أبداً رابط تم استيراده.</p>
 
   <h2>٣. الاستيراد بالذكاء الاصطناعي</h2>
   <p>بعض المصادر تحتاج مساعدة لفهمها — منشور اجتماعي لم يجد هاتفك وصفه بنفسه (على Instagram أو
@@ -507,7 +521,8 @@
   <p>وحين يتعذّر استيراد رابط، يعمل زر «أرسل لنا الرابط» بالطريقة نفسها: يفتح تطبيق البريد لديك
     برسالة إلى العنوان نفسه لا تحمل إلا ذلك الرابط، وسبب تعذّر استيراده بكلمات ثابتة بالإنجليزية (مثل “not a recipe”)، ورقم
     إصدار التطبيق، مع مكان لملاحظتك. ولا تحمل أبداً الوصف ولا التفريغ النصي ولا أي نص ألصقتَه.
-    تراها وترسلها أنت بنفسك، أو لا ترسلها.</p>
+    تراها وترسلها أنت بنفسك، أو لا ترسلها. وهذا منفصل عن إحصاءات الاستخدام، التي قد تحمل أصلاً
+    الرابط الذي تعذّر استيراده (البند ١٠).</p>
 
   <h2>٤. الصور</h2>
   <p>تأتي الصور التي تضيفها من الكاميرا أو المعرض عبر منتقي الصور في هاتفك، فالتطبيق لا يتصفّح
@@ -608,6 +623,9 @@
     الاستيراد والمنصة التي جاء منها رابطه (TikTok أو Instagram أو YouTube أو Facebook أو موقع)،
     وللاستيراد الذكي الذي حُفظ أو تعذّر: هل حمل التفريغ النصي للفيديو أو رابط الفيديو، وطول وصفه
     تقريباً (بلا وصف أو قصير أو طويل — ولا تُرسَل الكلمات نفسها أبداً)؛
+    ورابط الاستيراد الذي تعذّر لأن الصفحة لا تحمل وصفة أو تعذّرت قراءتها — عنوان الموقع ومسار الصفحة،
+    من دون ما يأتي بعد «?» أو «#»، ومقتطعاً عند ١٠٠ حرف، ولا يُرسَل أبداً لمنشور خاص أو رابط يحمل بريداً
+    إلكترونياً أو رابط تم استيراده؛
     وأي شاشات التطبيق تفتحها (المكتبة أو وصفة أو وضع الطبخ أو الخطط وغيرها، بأسماء من قائمة
     ثابتة، لا باسم وصفة أو كتاب طبخ أبداً)؛ وخطوات الشراء — فتح الخطط، والتبديل بين تبويبيها،
     وبدء عملية شراء ونتيجتها (تمّ الشراء أو أُلغي أو فشل أو بانتظار الدفع) لبرو أو بريميوم
@@ -616,10 +634,10 @@
     حفظت، في أربع فئات فقط (لا شيء أو واحد أو من اثنين إلى أربعة أو خمسة فأكثر)؛ والأحداث التلقائية
     الخاصة بـFirebase (أول فتح وبدء الجلسة وتحديث التطبيق وعمليات الشراء من Google Play)؛ وعند
     تعطّل التطبيق أو وقوع خطأ، تقريراً عن العطل فيه نوع الخطأ ومكانه في الشيفرة.</p>
-  <p><strong>ما لا يصله أبداً:</strong> وصفاتك وصورك وروابطك وأوصاف المنشورات وما تبحث عنه وأسماء
+  <p><strong>ما لا يصله أبداً:</strong> وصفاتك وصورك وأوصاف المنشورات وما تبحث عنه وأي رابط غير رابط الاستيراد الذي تعذّر وأسماء
     كتب الطبخ والوسوم وعناصر المشتريات وخطة الوجبات وكل ما تكتبه، ولا أي رسالة خطأ قد تقتبس
     منها. ولا يمرّ شيء من الإحصاءات عبر خادم الاستيراد لدينا.</p>
-  <p><strong>لماذا:</strong> لنرى أين يتوقف المستخدمون الجدد، ولنصلح الأعطال في هواتف لا نستطيع
+  <p><strong>لماذا:</strong> لنرى أين يتوقف المستخدمون الجدد وأي الروابط يتعذّر استيرادها، ولنصلح الأعطال في هواتف لا نستطيع
     تجربتها، ولنُخبر إعلانات Google، إن ثبّتَّ التطبيق بعد نقرة على أحد إعلاناتنا، بأن التثبيت
     انتهى بحفظ أول وصفة، فتتعلّم الحملة أي إعلانات تجد من يستخدم التطبيق. وإشارات Google
     (Google signals) وتخصيص الإعلانات في Analytics مُعطَّلان.</p>
