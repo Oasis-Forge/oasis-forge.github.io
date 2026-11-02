@@ -6,9 +6,9 @@ title: Privacy Policy – Monthly Expenses
 
 # Privacy Policy
 
-_Last updated: 1 October 2026_
+_Last updated: 2 November 2026_
 
-This policy explains how the **Monthly Expenses** app ("the app") handles your information. It covers the app on Android, iOS, macOS, Windows, and Linux.
+This policy explains how the **Monthly Expenses** app ("the app"), by Oasis Forge, handles your information. It covers the app on Android, iOS, macOS, Windows, and Linux.
 
 ## Summary
 
@@ -22,9 +22,10 @@ On Windows, Linux and macOS there are no ads, and the app makes no network conne
 
 ## Information stored on your device
 
-- Your transactions (amount, category, account, date, and an optional title and note), transfers between accounts, accounts and their opening balances, categories, budgets, recurring transactions, and notes (text, and an optional due date, amount, and category). They are saved in a local database.
+- Your transactions (amount, category, account, date, and an optional title and note), transfers between accounts, accounts and their opening balances, categories, budgets, savings goals, recurring transactions, and notes (text, and an optional due date, amount, and category). They are saved in a local database.
 - Reminders you set on a note, which your device shows at the time you chose. They are scheduled with your device's own notification system and hold only the note's text, or, when app lock is on, nothing but the app's name.
-- Items you delete, which stay in the app's trash for 30 days so you can restore them, and are then removed for good.
+- Other notifications: alerts about your budgets, and a weekly reminder. They hold only short text about your own numbers, and they too are scheduled on your device by its own notification system, and nothing is sent anywhere for them.
+- Items you delete (including savings goals, and an account deleted with its entries), which stay in the app's trash for 30 days so you can restore them, and are then removed for good.
 - Up to five automatic backups of your data, saved in the app's private folder before each restore so the restore can be undone.
 - Your settings, such as currency, theme, the first day of the month and week, and whether app lock and the backup reminder are on.
 
@@ -92,6 +93,8 @@ App lock is optional and off by default. When it is on, the app asks your device
 - **Advertising ID** (Android `com.google.android.gms.permission.AD_ID`): used by AdMob as described above. Android lets you delete or reset this identifier in your device settings, and the app has no other way to recognise you.
 - **Tracking** (iOS App Tracking Transparency): iOS's own prompt, asked once after the setup page, the walkthrough and any consent form, so that ads may be chosen using the identifier for advertisers. Saying no still shows ads, just not personalised ones, and you can change the answer later in your iPhone's **Settings → Privacy & Security → Tracking**. It is never asked once "Remove ads" is bought.
 - **Network state** (Android `ACCESS_NETWORK_STATE`) and Android's own advertising services (`ACCESS_ADSERVICES_AD_ID`, `ACCESS_ADSERVICES_ATTRIBUTION`, `ACCESS_ADSERVICES_TOPICS`): declared by Google's ad library, not by us. The last of these is Android's **Topics** system, by which the operating system — not this app — may give an advertiser a broad interest category worked out from the apps you use. It is governed by your consent answer and by your Android settings, and it is never told anything you have recorded here. Buying "Remove ads" means the library is never started, so none of it runs.
+- **Billing** (Android `com.android.vending.BILLING`): declared by Google Play's purchase library, used only so you can buy "Remove ads" through Google Play.
+- **Notifications** (Android `POST_NOTIFICATIONS`, and notifications on iOS), **starting after the device restarts** (Android `RECEIVE_BOOT_COMPLETED`) and **vibration** (Android `VIBRATE`): used only for the reminders the app schedules on your device (note reminders, budget alerts and the weekly and backup reminders), and to set them again after a restart. Nothing is sent over the network for them.
 - **Camera** and **microphone:** used only when you choose to attach a photo or record a voice note. Both stay on your device.
 - **Biometrics** (Android `USE_BIOMETRIC`, Face ID on iOS): used only for app lock.
 - **Files:** the app has no general access to your files. It reads or writes only the files you choose in the system file dialog.
@@ -105,6 +108,19 @@ Delete items in the app, or uninstall the app to remove all of its data, includi
 ## Children
 
 The app is not directed at children and we do not knowingly collect information from them. We collect nothing from anyone; what the ad network receives is described under **Advertising** above, and buying "Remove ads" stops even that.
+
+## Your rights
+
+Oasis Forge makes the app and is responsible for this policy. We hold nothing about you ourselves: what's on your device
+is yours to delete, and what Google receives for ads is covered under **Advertising** above. Where your country's law
+gives you rights over your data (such as the GDPR in Europe and the UK), you can ask us to see it, correct it or delete
+it, and to stop using it, by emailing us. We answer within a month. You can also complain to your country's data
+protection authority.
+
+Why data is used: ads, on the basis of your consent where the law asks for it (the consent form in the EEA, the UK and
+Switzerland, and iOS's tracking prompt), and otherwise our legitimate interest in paying for a free app; and the "Remove
+ads" purchase, to give you what you bought. Google may handle data in the United States and other countries, under its
+own safeguards, and keeps it as its [retention page](https://policies.google.com/technologies/retention) describes.
 
 ## Changes to this policy
 

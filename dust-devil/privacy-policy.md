@@ -6,7 +6,7 @@ title: Privacy Policy – Dust Devil
 
 # Privacy Policy
 
-_Last updated: 7 October 2026_
+_Last updated: 2 November 2026_
 
 This policy explains how **Dust Devil** ("the game"), by Oasis Forge, handles your information, on Android and iOS.
 
@@ -14,10 +14,10 @@ This policy explains how **Dust Devil** ("the game"), by Oasis Forge, handles yo
 
 **The game shows ads from Google AdMob, set up for children for everyone:** no personalized ads, and no advertising
 ID. To show them, Google's ad library collects some technical information from your device, such as its internet
-address and which ads were shown (see [Ads](#ads)). Apart from that, **the game collects nothing about you,** unless
-you're 16 or over and turn on friends' scores. There are no analytics. Unity hosts the optional score verification
-and board. What the game remembers
-stays on your device, and nothing else leaves it unless you share it yourself, or turn on
+address and which ads were shown (see [Ads](#ads)). If you buy something, Unity's purchase library sends Unity a record
+of the purchase and some technical information about the device (see [Buying with real money](#buying-with-real-money)).
+Apart from that, **the game collects nothing about you,** unless you're 16 or over and turn on friends' scores. There
+are no analytics. What the game remembers stays on your device, and nothing else leaves it unless you share it yourself, or turn on
 [friends' scores](#friends-scores-16-and-over), which send your Daily Stunt result and replay, who you fly as and a friend code to
 Unity, the company that runs the board.
 
@@ -45,7 +45,11 @@ Unity, the company that runs the board.
 - The picture you last shared (see below), in the game's cache folder, until the next share replaces it or your device
   clears the cache.
 
-The developer has no access to any of it. Deleting the game deletes it all.
+The developer has no access to any of it on your device. Deleting the game deletes it all from the device. If your
+Android device backs up its apps to your Google account, Android may keep a copy of the game's save in that backup,
+and bring it back when the game is installed again. That save holds the answer to the age question and, if you turned
+friends' scores on, their sign-in (the player ID and sign-in token). You can delete the backup in your Google
+account's backups.
 
 ## Sharing
 
@@ -76,16 +80,26 @@ they open by themselves in the month you turn 16.
 - who you fly as and what they wear.
 
 Nothing you type is sent: not the names you give your friends. No email, no location, and no advertising or device
-IDs. Unity also sees your device's internet address, as every web request does. Your friends see your code, who you fly
-as and your results, and only once you've both said yes. There's no public board.
+IDs. Unity also sees your device's internet address, as every web request does.
+
+**Who can see it.** Your code, results and who you fly as are stored at Unity, under a random player ID. The game
+shows them only to your friends, the people you and they have both said yes to, and there's no public board. But
+Unity's board isn't private to friends: someone with a changed copy of the game could ask Unity for it, and read the
+results and looks of players who turned friends' scores on. That's why friends' scores hold nothing you type, and no
+name, email or location.
 
 Unity handles this data under its own [privacy policy](https://unity.com/legal/privacy-policy).
 
 **Leaving.** Tap **Leave friends' scores** at the bottom of the board. The game deletes your friends and requests and
-your verified score through Cloud Code, then your Unity player. It forgets the sign-in on the phone.
-If Unity cannot be reached, it keeps your account and asks you to try leaving again online. If you no longer have the
-game, email [oasisforge.support@gmail.com](mailto:oasisforge.support@gmail.com) with your friend code for help deleting
-the online data. Deleting the game without leaving keeps the data at Unity; email us to have it deleted.
+your verified score, then your Unity player. It forgets the sign-in on the phone. If the score can't be deleted, it's
+cleared to nothing (no result, no details), and we delete the empty entry when you ask. If Unity cannot be reached, the
+game keeps your account and asks you to try leaving again online.
+
+**Who holds it, and for how long.** Friends' scores are held at Unity, in a Unity project that Oasis Forge runs. We can
+see the entries there, and we delete them when you ask. They stay while friends' scores are on, until you leave or ask
+us to delete them. Deleting the game without leaving keeps them at Unity, with no way for the game to reach them again:
+email us to have them deleted (see [Deleting your data](#deleting-your-data)). Unity keeps its own records under its
+own retention rules: see its [privacy policy](https://unity.com/legal/privacy-policy).
 
 ## Buying with real money
 
@@ -93,6 +107,20 @@ The store sells coins and "Remove ads" for real money. A grown-up's question com
 Store on iPhone) takes the payment, under its own privacy policy: the game never sees your payment details or your
 account. It gets the item bought and its order number, and keeps the order numbers on your device so a purchase is
 never given twice. Unity's In-App Purchasing, part of the game, passes the purchase between the game and the store.
+
+**What Unity's purchase library sends.** Unity's In-App Purchasing sends Unity Technologies a record each time a
+purchase starts, goes through, fails or is finished, and each time you restore purchases. The records are sent only
+around purchases, never while you play, and we can't turn them off: they're built into Unity's library. Unity's library
+may also contact Unity as the game starts, to fetch its own settings. Each record has:
+
+- the item, its price and currency, and the store's receipt for it (its order number and the store's signature, never
+  your payment details), and whether it went through or why not;
+- the game's version and when it was installed, and a random ID Unity makes for this installation of the game (on
+  iPhone, also the ID Apple gives the apps of one developer);
+- the device's model, its operating system version, its languages, its storage size and when it was last started.
+
+It's sent encrypted. Unity handles it under its
+[Game Player and App User Privacy Policy](https://unity.com/legal/game-player-and-app-user-privacy-policy).
 
 ## Ads
 
@@ -127,7 +155,7 @@ so we can't look up or delete anything Google holds about your device; Google's 
 ## The game engine
 
 Dust Devil is made with Unity, and uses no Unity Ads or Unity Analytics. Friends' scores, if you turn them on, use Unity
-Gaming Services (see above). The Unity engine may still send Unity Technologies limited technical information about the
+Gaming Services, and purchases use Unity's In-App Purchasing (see above). The Unity engine may still send Unity Technologies limited technical information about the
 device, such as its model and operating system; it includes nothing you do or type in the game. Unity's
 [Game Player and App User Privacy Policy](https://unity.com/legal/game-player-and-app-user-privacy-policy) explains what
 Unity collects and why.
@@ -147,8 +175,32 @@ Unity collects and why.
 The game is for a general audience, children included. Its ads are set up for children for everyone (see
 [Ads](#ads)), real-money purchases ask a grown-up's question first, and there's no chat. Friends' scores, its one other
 online feature, are for players 16 and over: the game asks for your birth month and year first, and players under 16
-can't turn them on. Apart from what Google's ad library collects to show ads, as above, we don't knowingly collect
-information from anyone, children included.
+can't turn them on. Apart from what Google's ad library collects to show ads, what Unity's purchase library records
+when something is bought (see [Buying with real money](#buying-with-real-money)), and friends' scores for players 16 and
+over who turn them on, we don't knowingly collect information from anyone, children included.
+
+## Deleting your data
+
+- **On your device:** delete the game, or clear its data in your device's settings.
+- **Friends' scores, in the game:** tap **Leave friends' scores** (see [Friends' scores](#friends-scores-16-and-over)).
+- **Friends' scores, without the game:** email [oasisforge.support@gmail.com](mailto:oasisforge.support@gmail.com)
+  with your friend code, and we'll delete your entry, results, friends and friend code at Unity within a month.
+
+## Your rights
+
+Oasis Forge makes the game and is responsible for this policy. What's on your device is yours to delete. Friends'
+scores, if you turn them on, sit in a Unity project that Oasis Forge runs: we can see them there, and we delete them
+when you ask. What Google and Unity hold for ads and purchases is covered above. Where your country's law gives you
+rights over your data (such as the GDPR in Europe and the UK, or COPPA in the US), you, or a parent for a child, can ask
+us to see it, correct it or delete it, and to stop using it, by emailing us. For friends' scores, send your friend code
+so we can find it at Unity. We answer within a month. You can also complain to your country's data protection
+authority.
+
+Why we use data: ads (our legitimate interest in paying for a free game, set up for children for everyone), purchases
+(to give you what you bought), and friends' scores (only once you turn them on). Google and Unity may handle data in
+the United States and other countries, under their own safeguards. For how long Google and Unity keep the data of ads
+and purchases, see Google's [retention page](https://policies.google.com/technologies/retention) and the retention part
+of Unity's [Game Player and App User Privacy Policy](https://unity.com/legal/game-player-and-app-user-privacy-policy).
 
 ## Changes
 
