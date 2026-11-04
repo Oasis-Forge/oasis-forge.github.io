@@ -6,7 +6,7 @@ title: Privacy Policy – Wasn't Me
 
 # Privacy Policy
 
-_Last updated: 2 November 2026_
+_Last updated: 4 November 2026_
 
 This policy explains how **Wasn't Me** ("the game"), by Oasis Forge, handles your information, on Android and iOS.
 
@@ -25,7 +25,7 @@ your cat's look and a friend code to Unity, the company that runs the board, in 
 
 - The names you give your pets, your cat's coat, and your settings: sound on or off, reminders on or off, calm effects on or off, whether you've finished the first-round tips and the power-up tips, and which one-time hints you've seen.
 - Your best score and stars for each room, and on each room's hard version, the room you picked last, whether you play hard versions, and the moves you've learned.
-- Your coins, your lives and when your next life comes back, the characters, gear and treats you've bought (and the rounds left on your gear), and your own pet's look if you've made one (a cat or which dog breed, its colours, and a cat's pattern and build), and who you play as and what they wear, the hideout's upgrades you've built, and whether you've opened the hideout, and the one store item you've pinned to save for, if any. For each of your pets: how close you are (its bond), the day you last fed it a treat, and whether you've found its favourite treat.
+- Your coins, your lives and when your next life comes back, whether a round was left paused at a risky moment (so closing the game then costs the life quitting would, with that round's damage if it was a Daily Crime), the characters, gear and treats you've bought (and the rounds left on your gear), and your own pet's look if you've made one (a cat or which dog breed, its colours, and a cat's pattern and build), and who you play as and what they wear, the hideout's upgrades you've built, and whether you've opened the hideout, and the one store item you've pinned to save for, if any. For each of your pets: how close you are (its bond), the day you last fed it a treat, and whether you've found its favourite treat.
 - Purchases made with real money: their order numbers (so a purchase is never given twice), and whether ads are removed.
 - A few readings of your phone's clock (the time, the time since the phone started, and how far the clock looks to have been set ahead), so the day's rewards and lives can't be had by changing the date. They never leave your device.
 - The parent's gate for purchases: how many wrong answers in a row, and until when it's locked.
@@ -33,17 +33,17 @@ your cat's look and a friend code to Unity, the company that runs the board, in 
 - All the damage you've ever done and the rank it has reached, the day's missions, the week's challenge and your badges and how far along each one is, the stickers in your crime album, your last Daily Crime score, how many days in a row you've played it (and whether a missed day was forgiven), your best Daily Crime score in each room, how many Daily Crimes you've played in all (for the stamps in your album), the last home whose "you finished it" card you've seen, and the day you last opened a daily gift.
 - Friends' scores: the birth month and year you gave when you first opened them (never sent anywhere), whether
   they're on, the player ID and sign-in token Unity gave the game, your friend code, a score waiting to go up while
-  you're offline, the names you gave your friends (never sent anywhere), and your last place on the board.
+  you're offline (and how many times Unity turned it down, so it stops trying), the names you gave your friends (never sent anywhere), and your last place on the board.
 - A copy of a save the game couldn't load, or that a newer version of the game made (if you go back to an older
   version), kept for 30 days in case support can get it back, and then deleted. It holds the same things as the save.
   Leaving friends' scores deletes it sooner.
 - Your cat's mugshots, for the mugshot wall in the hideout: the photo the game takes of the room when your cat gets caught (a picture
   of the game, not from your camera), with the date, the room, your cat's name and the damage, for your last 30 busts.
   They're kept in the game's own folder on your device.
-- A log of finished rounds, used by our playtests to balance the game: for each round its room, outcome, damage, stars
-  and similar numbers from the game (and a tester number, used only in our own playtests), and the coins each part of
-  the game paid and what was bought with them, on which round and day of play. Nothing in it says who you are, the game
-  never sends it anywhere, and it's deleted with the game or when you clear the game's data in your device's settings.
+- A log of finished rounds, for playtests: for each round its tester number, room, outcome, damage, stars and similar
+  numbers from the game, and for each tester the coins each part of the game paid and what was bought with them, on
+  which round and day of play. Only development builds (made for testing) keep it; the game you install from a store
+  doesn't, and deletes an old one when it starts.
 - The picture you last shared (see below), in the game's cache folder. Sharing again deletes the old picture, so only
   the last one stays, until your device clears the cache.
 
