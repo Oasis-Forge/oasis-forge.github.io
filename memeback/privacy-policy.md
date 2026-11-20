@@ -9,14 +9,14 @@ This policy covers the Memeback app ("the app"), published by **Oasis Forge**.
 
 ## Summary
 
-Your images, their text and your sounds never leave your phone. The app uses the internet only to download its search model once, to handle purchases, and to send usage counts, with no name, account or pictures, that you can turn off. The other downloads are optional, each one happens once and only when you ask for it: the reading languages, the meaning add-on and the sticker cut-out model.
+Your images, their text and your sounds never leave your phone. The app uses the internet only to download its search model once, to handle purchases, to show ads from Google unless you remove them, and to send usage counts, with no name, account or pictures, that you can turn off. The other downloads are optional, each one happens once and only when you ask for it: the reading languages, the meaning add-on and the sticker cut-out model.
 
-Memeback is free, with a one-time purchase that unlocks extra features. It shows no ads, has no account, and is not included in Android's cloud backup.
+Memeback is free, with one-time purchases that unlock extra features or remove ads. The free version shows ads from Google (see **Ads** below), never in the keyboard or the widget. The app has no account and is not included in Android's cloud backup.
 
-## The three uses of the internet
+## The uses of the internet
 
 1. **Downloads of the search model, reading languages, the multilingual add-on and the sticker cut-out model.** Only after you tap a download button. The files come from the model publisher's address on Hugging Face (`huggingface.co`, and the storage servers it redirects to) over HTTPS. That host sees your phone's IP address and which files you asked for, as any website does. Nothing about your pictures, the words in them, your searches or your phone is sent. The cut-out model is small (about 4.7 MB) and is used only by the sticker maker.
-2. **Purchases through Google Play.** The one-time unlock is bought and restored through Google Play on your phone. Google handles the payment and keeps the record of the purchase; we never see your payment details. The app asks Google Play only whether the unlock is owned. The price you see is the price Google Play gives the app.
+2. **Purchases through Google Play.** The one-time products (the unlock, Remove ads and the bundle) are bought and restored through Google Play on your phone. Google handles the payment and keeps the record of the purchase; we never see your payment details. The app asks Google Play only which products are owned. The price you see is the price Google Play gives the app.
 3. **Usage counts through Google's Firebase Analytics**, only in versions of the app that include it, and **only if you agree**: the counts are off until you say yes. The app asks once ("Help improve Memeback?"), and nothing is sent, and Google's automatic collection does not start, before you say yes. You can turn them off at any time with the switch "Usage counts" in Settings; nothing is sent after you do. The counts are:
    - `search` with one of two words: whether the search used words or meaning;
    - `send` with the place it was sent from (app, keyboard or panel) and, for sends from the app, whether it was a picture or a sound;
@@ -24,11 +24,13 @@ Memeback is free, with a one-time purchase that unlocks extra features. It shows
 
    They never contain what you type or search, the words in a picture, the name of a picture or a sound, the size of your library, or anything you made. Stickers, captions, motion clips, private shelf items and the home-screen widget are not counted at all. Once you agree, Firebase Analytics also collects by itself, as Google documents: a random app instance id (reset when you turn the counts off or reinstall), the automatic events `first_open`, `session_start`, `user_engagement`, `app_update`, `os_update`, `app_remove` and `app_clear_data`, and with them the app version, the phone model, the Android version, the language and the country as Google derives them from the connection. Memeback switches off the advertising id, the Android id, ad personalisation and automatic screen reporting, and denies ad storage and ad data sharing. A build of the app that was made without a Firebase configuration sends no counts at all and does not show the switch.
 
-The keyboard never uses the network. Making captions, motion, stickers and sounds, the private shelf and the home-screen widget use no network either, apart from the one-time downloads in use 1.
+4. **Ads from Google (AdMob)**, in the free version only. See **Ads** below for what Google's software reads and how you stay in control.
+
+The keyboard never uses the network and never shows ads. Making captions, motion, stickers and sounds, the private shelf and the home-screen widget use no network either, apart from the one-time downloads in use 1.
 
 ## Information stored on your device
 
-The app keeps one small database on your phone. For each picture, GIF or short video in your gallery it holds the name, folder, size, dates, the words the app read from it, whether it looks like a meme, and any correction you made ("Not a meme" or "Add as meme"). It also holds a short fingerprint of how the picture looks (a difference hash) and, for pictures that share a file size with another meme, the file's SHA-256 checksum, both used only to find duplicates; the pairs you marked "Not duplicates"; and a few numbers about the words in the picture that help decide whether it is a meme. The pictures themselves are never copied into the database. For the search by meaning it also holds, for each meme, a list of numbers (a vector) the search model made from the picture on the phone, and the moods of your memes. If you star a meme, or send one with Share or Copy, the app remembers the star and when and how often you sent it. It also holds whether the one-time unlock is owned (so it works offline) and how many sound memes you made. The database stays on the phone, is never uploaded, is not included in Android's cloud backup or in a transfer to a new phone (so favourites and corrections do not move with you), and is removed when you uninstall the app.
+The app keeps one small database on your phone. For each picture, GIF or short video in your gallery it holds the name, folder, size, dates, the words the app read from it, whether it looks like a meme, and any correction you made ("Not a meme" or "Add as meme"). It also holds a short fingerprint of how the picture looks (a difference hash) and, for pictures that share a file size with another meme, the file's SHA-256 checksum, both used only to find duplicates; the pairs you marked "Not duplicates"; and a few numbers about the words in the picture that help decide whether it is a meme. The pictures themselves are never copied into the database. For the search by meaning it also holds, for each meme, a list of numbers (a vector) the search model made from the picture on the phone, and the moods of your memes. If you star a meme, or send one with Share or Copy, the app remembers the star and when and how often you sent it. It also holds which one-time products are owned (so they work offline) and how many sound memes you made. The database stays on the phone, is never uploaded, is not included in Android's cloud backup or in a transfer to a new phone (so favourites and corrections do not move with you), and is removed when you uninstall the app.
 
 **GIFs and videos.** If you allow it, Memeback also reads GIFs and short videos (up to one minute) from your gallery. For an animated GIF it reads the first, middle and last frames; for a video it takes three still frames, on the phone, reads the words in them and works out what they show, exactly as it does for a picture. The frames are discarded as soon as they are read; only the words and the numbers that describe the meaning are kept, on your phone, along with the kind of file and its length. Videos longer than one minute are not opened. Nothing about your GIFs or videos is sent anywhere. If you do not allow video access, nothing changes for your pictures and GIFs.
 
@@ -60,7 +62,7 @@ The optional "daily throwback" widget shows one of your own old memes on your ph
 
 ## Information we collect
 
-We collect nothing ourselves and the app has no servers. The only information that leaves the phone for us is the usage counts described above, handled by Google's Firebase Analytics, and the purchase record, which Google Play keeps. What you enter in the app, and everything you make with it, is never shared with anyone.
+We collect nothing ourselves and the app has no servers. The only information that leaves the phone for us is the usage counts described above, handled by Google's Firebase Analytics, and the purchase record, which Google Play keeps. In the free version, Google's ad software also receives the data described under **Ads**; that is Google's, not ours. What you enter in the app, and everything you make with it, is never shared with anyone.
 
 ## Permissions
 
@@ -71,19 +73,31 @@ The app declares these permissions:
 - **Selected photos (`READ_MEDIA_VISUAL_USER_SELECTED`, Android 14 and newer).** Lets the app know when you chose "selected photos" instead of all of them.
 - **Microphone (`RECORD_AUDIO`).** Audio is recorded on the phone when you tap Record, stays on the phone, and is never collected. It is asked for only when you tap Record, after the app shows its own explanation.
 - **Biometrics (`USE_BIOMETRIC`).** Lets the app show the phone's own lock prompt before the private shelf opens. The prompt is Android's; the app never receives a fingerprint, a face or a PIN, only the answer yes or no.
-- **Internet (`INTERNET`) and network state (`ACCESS_NETWORK_STATE`).** For the three uses of the internet above. The network state tells the app whether you are on Wi-Fi or mobile data, so a Wi-Fi download waits for Wi-Fi.
-- **Google Play purchases (`com.android.vending.BILLING`).** Lets the app ask Google Play whether the unlock is owned and start the purchase.
+- **Internet (`INTERNET`) and network state (`ACCESS_NETWORK_STATE`).** For the uses of the internet above. The network state tells the app whether you are on Wi-Fi or mobile data, so a Wi-Fi download waits for Wi-Fi.
+- **Google Play purchases (`com.android.vending.BILLING`).** Lets the app ask Google Play which products are owned and start a purchase.
+- **Advertising ID (`AD_ID`).** Lets Google's ad software read your device's advertising ID to show ads. It is not used when you have removed ads, unless you choose to watch an ad for a free sound meme, and you can reset or delete the advertising ID in your phone's settings.
+- **Foreground service (`FOREGROUND_SERVICE`).** A normal permission that comes with Google's ad software, which may run short background work on Android 8 to 11. The app starts no service of its own with it.
 - **Keeping the phone awake briefly (`WAKE_LOCK`).** Added by the analytics library, so it can finish sending a count; the app itself does not use it.
 
 If you refuse the photo permission, the app cannot find memes and tells you so. You can change your answers at any time in the phone's settings for the app.
 
 ## The meme keyboard
 
-Memeback has an optional keyboard, "Memeback memes", that you turn on yourself in Android's settings. It is a full typing keyboard with a meme button. Memeback's keyboard sees what you type only to put it in the field; it is not stored or sent. It never reads what is already in the app you are typing in, and it does not learn from your typing, suggest words or keep a clipboard history. The meme button opens the meme search, which has its own search box; the only other thing the keyboard sends to an app is the picture you tap. It makes no network connection and keeps no history of what you type or search for. In a password field it only types and does not open the memes. It never shows private shelf items. It records, on your phone, which memes you sent, so that recently used memes come first. If you turn on your keyboard's incognito mode, or type in a password field, nothing is recorded. A copy of a picture you send is kept in the app's temporary storage for up to a day; a video is sent as a link to the file and never copied.
+Memeback has an optional keyboard, "Memeback memes", that you turn on yourself in Android's settings. It is a full typing keyboard with a meme button. Before you turn the keyboard on, the app shows this on a full screen and asks you to confirm it: "Memeback's keyboard handles the keys you press to type into the field. What you type is not stored, learned, or sent anywhere." Memeback's keyboard sees what you type only to put it in the field; it is not stored or sent. It never reads what is already in the app you are typing in, and it does not learn from your typing, suggest words or keep a clipboard history. The meme button opens the meme search, which has its own search box; the only other thing the keyboard sends to an app is the picture you tap. It makes no network connection and keeps no history of what you type or search for. In a password field it only types and does not open the memes. It never shows private shelf items. It records, on your phone, which memes you sent, so that recently used memes come first. If you turn on your keyboard's incognito mode, or type in a password field, nothing is recorded. A copy of a picture you send is kept in the app's temporary storage for up to a day; a video is sent as a link to the file and never copied.
 
-## No account, no ads
+## Ads
 
-The app has no account and shows no ads. Nothing in it is tied to who you are.
+**Ads.** The free version of Memeback shows ads from Google (AdMob). To show them, Google's software on your phone uses your device's advertising ID, IP address and some device and app information, and may use them to personalise ads. Where the law asks for it (the EEA, the UK, Switzerland and other places), Google's own consent form asks you first, and you can change your answer any time under Settings, **Ad choices**. Ads never appear in the Memeback keyboard or the home-screen widget, and no picture, text read from a picture, search or sound is ever sent to Google or to advertisers. Buying **Remove ads** (or the bundle) turns ads off and Google's ad software is not asked for ads, and you will not be asked for ad consent, unless you choose to watch an ad for a free sound meme.
+
+The ad software is Google's. It may share with Google, for advertising, analytics and fraud prevention: the advertising ID and other device identifiers, the approximate location it works out from your IP address, ad interactions, app and Android version, phone model, screen size, language and network type, and its own crash and performance data. Ad requests carry no keywords, no content address and no targeting from the app. Memeback's usage counts are separate and unchanged: Firebase's advertising ID collection and ad personalisation stay off.
+
+## Purchases
+
+**Purchases.** Purchases go through Google Play. Memeback receives from Google Play only whether you own each product; it sees no payment details and no account name.
+
+## No account
+
+The app has no account. Nothing in it is tied to who you are.
 
 ## Deleting your information
 
@@ -91,7 +105,7 @@ In the app, Settings has **Delete everything Memeback keeps**. It removes the ap
 
 ## Children
 
-The app is for people 16 and over and is not directed at children. We do not knowingly collect information from anyone under 16, and the app collects no personal information.
+The app is for people 13 and over and is not directed at children. We do not knowingly collect information from anyone under 13, and we collect no personal information ourselves; in the free version Google's ad software handles the data described under **Ads**.
 
 ## Changes to this policy
 
