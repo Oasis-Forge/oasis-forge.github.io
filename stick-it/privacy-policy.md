@@ -8,7 +8,7 @@ title: Privacy Policy – Stick It
 
 **Stick It**, by Oasis Forge
 
-Last updated: 7 October 2026
+Last updated: 21 November 2026
 
 This policy explains what information Stick It ("the game") uses, why, and the choices you have. In short:
 
