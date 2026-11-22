@@ -5,10 +5,10 @@ title: Privacy Policy - Sundown
 # Sundown privacy policy
 
 Publisher: Oasis Forge.
-Last updated: 22 November 2026.
+Last updated: 23 November 2026.
 Privacy contact: oasisforge.support@gmail.com.
 
-Sundown is a single-player survival game. It has no account of its own. Your progress and settings are kept on your device. A few Google and ad services work with the game. This page says what each one does and what it receives.
+Sundown is a single-player survival game. It has no account of its own. Your progress and settings are kept on your device. A few Google services work with the game. This page says what each one does and what it receives.
 
 ## What stays on your device
 
@@ -45,16 +45,29 @@ Firebase is part of the app and starts with collection switched off. It may cont
 
 ## Optional: rewarded ads
 
-The only ad in the game is on the home radio. "Supply drop" lets you choose to watch a short ad for a small in-game crate. There are no other ads and none are forced. If you own the Supporter pack, the offer is not shown.
+The only ad in the game is on the home radio. "Supply drop" lets you choose to watch a short ad for a small in-game crate. There are no other ads and none are forced.
 
-The ad service starts the first time you tap **Watch ad**; nothing is loaded and no ad request is made before that. The ad service is **Unity LevelPlay**, with **Unity Ads** as its ad network. To show an ad, it receives data from your phone:
+Nothing is loaded and no ad request is made until you tap **Watch ad**. Then **Google AdMob** (Google Mobile Ads) loads an ad.
+
+**Google's consent form:** before the ad, Google's consent form (Google's User Messaging Platform) may appear. It appears only where the law requires it, such as the EEA and the UK. It lets you accept or refuse personalised ads.
+
+**What Google receives:** to show the ad, Google receives data from your phone:
 
 - your device's advertising id
 - your IP address, and an approximate location worked out from it
 - device and app details
 - whether you watched or skipped the ad
 
-It uses these to choose and measure ads and to prevent fraud. The game asks for non-personalised ads only. You can reset or delete your advertising id in Android settings (Settings > Privacy > Ads). The ad service is a separate controller of the data it collects: see [Unity's privacy policy](https://unity.com/legal/privacy-policy).
+Google uses this data to show and measure ads and to prevent fraud.
+
+**Personalised ads:** in the regions where the consent form applies, personalised ads are used only if you agree in it. Elsewhere, ads may be personalised.
+
+**Changing your choice:**
+
+- In **Settings > Privacy > Ad privacy choices**, at any time. The row appears once Google's form applies to you.
+- In Android settings (Settings > Privacy > Ads), in every region: opt out of ads personalisation, or reset or delete your advertising id.
+
+**Who controls the data:** Google is a separate controller of the data it collects for ads. See [Google's privacy policy](https://policies.google.com/privacy) and [how Google uses information from sites or apps that use its services](https://policies.google.com/technologies/partner-sites). Your consent choice is stored by Google's consent library on your device; Oasis Forge does not receive it.
 
 ## Feedback by email
 
@@ -62,7 +75,7 @@ If you email us, we receive your message and address. We use them to answer you 
 
 ## Children
 
-Sundown contains horror and blood and is for ages 16 and up. It is not directed at children, and we do not knowingly collect data from children.
+Sundown contains horror and blood and is for ages 16 and up. It is not directed at children, and we do not knowingly collect data from children. Ads are requested with a Teen content rating, and the game does not ask Google to treat any user as a child.
 
 ## Deleting your data
 
