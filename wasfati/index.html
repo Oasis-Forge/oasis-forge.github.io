@@ -1,74 +1,193 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>وصفاتي — Wasfati · Oasis Forge</title>
-<meta name="description" content="احفظ الوصفات من تيك توك وإنستغرام ويوتيوب وأي موقع كوصفات عربية مرتّبة، ثم اطبخ وخطّط وجباتك وتسوّق من قائمة واحدة. Save recipes from TikTok, Instagram, YouTube and any website, then cook, plan and shop.">
-<meta name="theme-color" content="#B04E26">
-<link rel="canonical" href="https://oasis-forge.github.io/wasfati/">
-<link rel="icon" href="icon.png">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Oasis Forge">
-<meta property="og:title" content="وصفاتي — Wasfati">
-<meta property="og:description" content="Save recipes from TikTok, Instagram, YouTube and any website as clean recipes, then cook, plan meals and shop from one list.">
-<meta property="og:url" content="https://oasis-forge.github.io/wasfati/">
-<meta property="og:image" content="https://oasis-forge.github.io/wasfati/icon.png">
-<style>
-  :root { --bg:#fffaf6; --card:#ffffff; --text:#1a1a1a; --muted:#5c4a3f; --accent:#B04E26; --line:#ecdcd0; }
-  * { box-sizing:border-box; }
-  body { margin:0; background:var(--bg); color:var(--text);
-         font:16px/1.7 -apple-system, "Segoe UI", Tahoma, Arial, sans-serif; }
-  main { max-width:560px; margin:0 auto; padding:40px 16px 32px; text-align:center; }
-  img.icon { width:112px; height:112px; border-radius:24px; box-shadow:0 8px 24px rgba(0,0,0,.18); }
-  h1 { font-size:28px; margin:20px 0 4px; }
-  p { color:var(--muted); margin:6px 0; }
-  .stores { display:flex; flex-direction:column; gap:12px; margin:28px 0; }
-  .btn { display:block; padding:14px 16px; border-radius:14px; font-weight:700; text-decoration:none; }
-  a.btn { background:var(--accent); color:#fff; }
-  span.btn { border:1px solid var(--line); color:var(--muted); background:var(--card); }
-  section { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:16px; margin-top:16px; }
-  section h2 { font-size:18px; margin:0 0 6px; color:var(--text); }
-  section a, footer a { color:var(--accent); }
-  [lang="en"] { direction:ltr; }
-  footer { margin-top:28px; font-size:14px; color:var(--muted); }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>وصفاتي — Wasfati · Oasis Forge</title>
+  <meta name="description" content="احفظ الوصفات من تيك توك وإنستغرام ويوتيوب وأي موقع كوصفات عربية مرتّبة، ثم اطبخ وخطّط وجباتك وتسوّق من قائمة واحدة. Save recipes from TikTok, Instagram, YouTube and any website, then cook, plan and shop.">
+  <meta name="theme-color" content="#B04E26">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://oasis-forge.github.io/wasfati/">
+  <link rel="icon" href="icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Oasis Forge">
+  <meta property="og:title" content="وصفاتي — Wasfati">
+  <meta property="og:description" content="Save recipes from TikTok, Instagram, YouTube and any website as clean recipes, then cook, plan meals and shop from one list.">
+  <meta property="og:url" content="https://oasis-forge.github.io/wasfati/">
+  <meta property="og:image" content="https://oasis-forge.github.io/wasfati/icon.png">
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-<main>
-  <img class="icon" src="icon.png" alt="وصفاتي" width="112" height="112">
-  <h1>وصفاتي</h1>
-  <p><strong>احفظ أي وصفة، واطبخ وخطّط وتسوّق من مكان واحد.</strong></p>
-  <p>شارك وصفة من تيك توك أو إنستغرام أو يوتيوب أو أي موقع، فيرتّبها وصفاتي لك وصفةً عربية واضحة: مقادير ودرجات وخطوات. ثم اطبخ خطوة بخطوة، وخطّط وجبات أسبوعك، وأضف المقادير إلى قائمة المشتريات.</p>
+  <a class="skip" href="#main"><span data-en="Skip to content">انتقل إلى المحتوى</span></a>
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <symbol id="leaf" viewBox="0 0 24 24"><path d="M5 20C5 10 13 4 21 3c0 9-3 16-11 16-4 0-7-4-6-7"/><path d="M5 20 16 9"/></symbol>
+      <symbol id="arrow-left" viewBox="0 0 24 24"><path d="M19 12H5m6-6-6 6 6 6"/></symbol>
+      <symbol id="arrow-right" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+      <symbol id="book" viewBox="0 0 24 24"><path d="M12 6C9 4 5 4 2 5v15c3-1 7-1 10 1 3-2 7-2 10-1V5c-3-1-7-1-10 1v15M6 9h2m8 0h2M6 13h2m8 0h2"/></symbol>
+      <symbol id="check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></symbol>
+      <symbol id="shield" viewBox="0 0 24 24"><path d="m12 2 8 4v6c0 5-8 10-8 10S4 17 4 12V6l8-4Z"/><path d="m8 12 3 3 5-6"/></symbol>
+      <symbol id="mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+      <symbol id="globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></symbol>
+      <symbol id="youtube" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="5"/><path d="m10 9 5 3-5 3Z"/></symbol>
+      <symbol id="instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></symbol>
+      <symbol id="tiktok" viewBox="0 0 24 24"><path d="M14 3v12a5 5 0 1 1-5-5M14 3c0 4 3 6 7 6M17 3v12"/></symbol>
+      <symbol id="play-store" viewBox="0 0 24 28"><path d="M3 2v24l20-12L3 2Z"/><path d="m3 2 13 16m-13 8 13-16"/></symbol>
+      <symbol id="apple" viewBox="0 0 24 28"><path fill="currentColor" stroke="none" d="M17.2 4.5c1-1.2 1.7-2.8 1.5-4.5-1.5.1-3.2 1-4.2 2.2-1 1-1.8 2.7-1.5 4.2 1.6.1 3.2-.8 4.2-1.9ZM20.8 15c0-3.2 2.6-4.7 2.7-4.8-1.5-2.2-3.9-2.5-4.7-2.5-2-.2-3.8 1.1-4.8 1.1s-2.5-1.1-4.1-1C7.8 7.8 5.8 9 4.7 10.9c-2.2 3.8-.6 9.5 1.6 12.6 1 1.5 2.2 3.2 3.8 3.1 1.5-.1 2.1-1 4-1s2.4 1 4.1.9c1.7 0 2.7-1.5 3.7-3 .9-1.1 1.6-2.5 2.1-4-2.1-.9-3.2-2.5-3.2-4.5Z"/></symbol>
+      <symbol id="forge" viewBox="0 0 24 24"><path d="m12 2 3 3 4 .5.5 4 3 2.5-3 3-.5 4-4 .5-3 3-3-3-4-.5-.5-4L1 12l3-2.5.5-4L9 5Z"/></symbol>
+    </defs>
+  </svg>
 
-  <div lang="en">
-    <h1>Wasfati</h1>
-    <p><strong>Save any recipe, then cook, plan and shop in one place.</strong></p>
-    <p>Share a recipe from TikTok, Instagram, YouTube or any website and Wasfati turns it into a clean recipe with ingredients and steps. Cook step by step, plan your week's meals and add ingredients to one grocery list.</p>
-  </div>
+  <header class="topbar wrap">
+    <a class="brand" href="#main" aria-label="وصفاتي — بداية الصفحة" data-en-aria-label="Wasfati — back to top">
+      <img src="icon.png" width="46" height="46" alt="وصفاتي" data-en-alt="Wasfati">
+      <span><strong><span data-en="Wasfati">وصفاتي</span></strong><small><span data-en="By ">من </span><bdi lang="en">Oasis Forge</bdi></small></span>
+    </a>
+    <nav aria-label="التنقل الرئيسي" data-en-aria-label="Main navigation">
+      <a class="nav-detail" href="#how-it-works"><span data-en="How it works">كيف يعمل</span></a>
+      <a class="nav-detail" href="#screenshots"><span data-en="App tour">جولة في التطبيق</span></a>
+      <a class="nav-detail" href="#support"><span data-en="Support">الدعم</span></a>
+      <button class="language-link" id="language-toggle" type="button" lang="en" aria-label="Switch to English" hidden><span>English</span><svg aria-hidden="true"><use href="#globe"/></svg></button>
+    </nav>
+  </header>
 
-  <div class="stores">
-    <a class="btn" href="https://play.google.com/store/apps/details?id=com.oasisforge.wasfati">Google Play</a>
-    <!-- After the App Store release, replace the span with:
-    <a class="btn" href="https://apps.apple.com/app/id6835355868">App Store</a>
-    -->
-    <span class="btn">قريبًا على App Store · Coming soon to the App Store</span>
-  </div>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><svg aria-hidden="true"><use href="#leaf"/></svg><span data-en="From the first save to the last bite">من أول «احفظ» إلى آخر لقمة</span></p>
+        <h1 id="hero-title"><span class="sr-only"><span data-en="Wasfati — ">وصفاتي — </span></span><span data-en="Your recipes,">كل وصفاتك،</span><em><span data-en="around one table.">على سفرة واحدة.</span></em></h1>
+        <p class="hero-summary"><strong><span data-en="Save any recipe. Cook, plan and shop in one place.">احفظ أي وصفة، واطبخ وخطّط وتسوّق من مكان واحد.</span></strong></p>
+        <p class="hero-description"><span data-en="Share a recipe link from your favourite app. Your ingredients and steps are ready to cook.">شارك رابط الوصفة من تطبيقك المفضّل؛ مقاديرها وخطواتها صارت جاهزة للطبخ.</span></p>
+        <div class="stores" aria-label="تحميل وصفاتي" data-en-aria-label="Download Wasfati">
+          <a class="store" href="https://play.google.com/store/apps/details?id=com.oasisforge.wasfati" aria-label="حمّل وصفاتي من Google Play" data-en-aria-label="Get Wasfati on Google Play"><svg aria-hidden="true"><use href="#play-store"/></svg><span><small><span data-en="Get it on">متاح الآن على</span></small><strong lang="en">Google Play</strong></span></a>
+          <!-- After the App Store release, replace the span with:
+          <a class="store" href="https://apps.apple.com/app/id6835355868" aria-label="Download Wasfati on the App Store"><svg aria-hidden="true"><use href="#apple"/></svg><span><small>Download on the</small><strong lang="en">App Store</strong></span></a>
+          -->
+          <span class="store store-soon"><svg aria-hidden="true"><use href="#apple"/></svg><span><small><span data-en="Coming soon on">قريبًا على</span></small><strong lang="en">App Store</strong></span></span>
+        </div>
+        <p class="availability"><span data-en="Coming soon to the App Store">قريبًا على App Store</span></p>
+      </div>
+      <figure class="hero-art">
+        <div class="plate" aria-hidden="true"></div>
+        <svg class="sprig" viewBox="0 0 80 110" aria-hidden="true"><path d="M20 100C35 75 40 45 60 10M30 78C8 73 7 58 9 53c18 0 25 10 21 25ZM41 53C22 50 22 34 25 29c16 3 20 15 16 24ZM50 34C50 13 65 8 70 10c1 13-7 23-20 24ZM37 65c4-21 20-26 27-22-2 17-14 25-27 22Z"/></svg>
+        <img class="hero-phone" data-en-src="assets/hero-recipe-en.jpg" src="assets/hero-recipe-ar.jpg" alt="وصفة كبسة دجاج في وصفاتي: المقادير، وقت التحضير والطبخ، الحصص، وزر ابدأ الطبخ." data-en-alt="Chicken kabsa in Wasfati: ingredients, cooking times, servings and a start cooking button." width="640" height="1315" fetchpriority="high" decoding="async">
+        <span class="art-label"><svg aria-hidden="true"><use href="#book"/></svg><span data-en="Ingredients. Steps. Ready to cook.">مقادير، خطوات، وبالعربي.</span></span>
+        <div class="recipe-note" aria-hidden="true"><img src="assets/dish-fattoush.jpg" alt="" width="400" height="400" decoding="async"><p><span data-en="From saved to served.">من الحفظ… إلى السفرة.</span></p></div>
+        <figcaption><span data-en="Inside Wasfati · Recipe view">من داخل وصفاتي · شاشة الوصفة</span></figcaption>
+      </figure>
+    </section>
 
-  <section id="support">
-    <h2>الدعم والملاحظات</h2>
-    <p>لأي سؤال أو مشكلة أو اقتراح، راسلنا وسنرد عليك:</p>
-    <div lang="en">
-      <h2>Support and feedback</h2>
-      <p>For any question, problem or suggestion, email us and we'll get back to you:</p>
+    <div class="source-strip wrap" aria-label="مصادر الوصفات" data-en-aria-label="Recipe sources">
+      <p><span data-en="Love it? Save it from">شاهدتها وأعجبتك؟ احفظها من</span></p>
+      <div class="source-list">
+        <span><svg aria-hidden="true"><use href="#tiktok"/></svg><bdi lang="en">TikTok</bdi></span><i class="dot" aria-hidden="true"></i>
+        <span><svg aria-hidden="true"><use href="#instagram"/></svg><bdi lang="en">Instagram</bdi></span><i class="dot" aria-hidden="true"></i>
+        <span><svg aria-hidden="true"><use href="#youtube"/></svg><bdi lang="en">YouTube</bdi></span><i class="dot" aria-hidden="true"></i>
+        <span><svg aria-hidden="true"><use href="#globe"/></svg><span data-en="Or any website">أو أي موقع</span></span>
+      </div>
     </div>
-    <p><a href="mailto:oasisforge.support@gmail.com">oasisforge.support@gmail.com</a></p>
-  </section>
 
-  <footer>
-    <a href="privacy-policy.html">سياسة الخصوصية · Privacy policy</a> ·
-    <a href="https://oasis-forge.github.io/">Oasis Forge</a>
+
+    <section class="food-section wrap" aria-labelledby="food-title">
+      <div class="food-heading"><p class="eyebrow"><span data-en="A little inspiration for your table">من مطبخنا، بإلهامك</span></p><h2 id="food-title"><span data-en="Every day, a dish you love.">لكل يوم، طبق تحبّه.</span></h2></div>
+      <div class="food-strip" tabindex="0" role="region" aria-label="أطباق تلهم وصفتك القادمة" data-en-aria-label="Dishes to inspire your next recipe">
+        <figure><img src="assets/dish-kabsa.jpg" alt="كبسة" data-en-alt="Kabsa" width="400" height="400" loading="lazy" decoding="async"><figcaption><span data-en="Kabsa">كبسة</span></figcaption></figure>
+        <figure><img src="assets/dish-mansaf.jpg" alt="منسف" data-en-alt="Mansaf" width="400" height="400" loading="lazy" decoding="async"><figcaption><span data-en="Mansaf">منسف</span></figcaption></figure>
+        <figure><img src="assets/dish-kunafa.jpg" alt="كنافة" data-en-alt="Kunafa" width="400" height="400" loading="lazy" decoding="async"><figcaption><span data-en="Kunafa">كنافة</span></figcaption></figure>
+        <figure><img src="assets/dish-shakshuka.jpg" alt="شكشوكة" data-en-alt="Shakshuka" width="400" height="400" loading="lazy" decoding="async"><figcaption><span data-en="Shakshuka">شكشوكة</span></figcaption></figure>
+        <figure><img src="assets/dish-maqluba.jpg" alt="مقلوبة" data-en-alt="Maqluba" width="400" height="400" loading="lazy" decoding="async"><figcaption><span data-en="Maqluba">مقلوبة</span></figcaption></figure>
+        <figure><img src="assets/dish-hummus.jpg" alt="حمص" data-en-alt="Hummus" width="400" height="400" loading="lazy" decoding="async"><figcaption><span data-en="Hummus">حمص</span></figcaption></figure>
+        <figure><img src="assets/dish-fattoush.jpg" alt="فتوش" data-en-alt="Fattoush" width="400" height="400" loading="lazy" decoding="async"><figcaption><span data-en="Fattoush">فتوش</span></figcaption></figure>
+        <figure><img src="assets/dish-luqaimat.jpg" alt="لقيمات" data-en-alt="Luqaimat" width="400" height="400" loading="lazy" decoding="async"><figcaption><span data-en="Luqaimat">لقيمات</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section wrap section-tinted" id="how-it-works" aria-labelledby="features-title">
+      <div class="section-heading">
+        <div><p class="eyebrow"><span data-en="Find a recipe. Make it yours.">وصفة تعجبك. والباقي أسهل.</span></p><h2 id="features-title"><span data-en="From a passing link to dinner tonight.">من رابط عابر، إلى طبخة اليوم.</span></h2></div>
+        <p><span data-en="Bring your recipes, cooking and weekly plans together in one place.">بدل التنقّل بين الروابط والملاحظات، اجمع رحلتك مع الوصفة في مكان واحد.</span></p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature">
+          <div class="feature-copy"><span class="chapter" aria-hidden="true"><span data-en="01 / Save">01 / احفظ</span></span><h3><span data-en="Found a recipe? Share it.">وجدت وصفة؟ شاركها.</span></h3><p><span data-en="Share recipes from TikTok, Instagram, YouTube or any website straight to Wasfati.">من تيك توك أو إنستغرام أو يوتيوب أو أي موقع، شارك الوصفة إلى وصفاتي.</span></p></div>
+          <div class="feature-stage"><img data-en-src="assets/en-02_share.jpg" src="assets/ar-02_share.jpg" alt="لقطة عربية توضّح مشاركة رابط وصفة من منصات التواصل إلى تطبيق وصفاتي." data-en-alt="Share a recipe link from social platforms into Wasfati." width="720" height="1280" loading="lazy" decoding="async"></div>
+        </article>
+        <article class="feature">
+          <div class="feature-copy"><span class="chapter" aria-hidden="true"><span data-en="02 / Cook">02 / اطبخ</span></span><h3><span data-en="Clear ingredients. Step by step.">مقادير واضحة. خطوة بخطوة.</span></h3><p><span data-en="A tidy recipe with ingredients, temperatures and steps. Go from reading to cooking.">وصفة عربية مرتّبة بالمقادير والدرجات والخطوات، لتنتقل من القراءة إلى الطبخ.</span></p></div>
+          <div class="feature-stage"><img data-en-src="assets/en-04_recipe.jpg" src="assets/ar-04_recipe.jpg" alt="شاشة الوصفة بالعربية مع المقادير والحصص وأوقات التحضير والطبخ." data-en-alt="Recipe view with ingredients, servings and cooking times." width="720" height="1280" loading="lazy" decoding="async"></div>
+        </article>
+        <article class="feature">
+          <div class="feature-copy"><span class="chapter" aria-hidden="true"><span data-en="03 / Plan &amp; shop">03 / خطّط وتسوّق</span></span><h3><span data-en="Your week and your list, together.">أسبوعك وقائمتك، معًا.</span></h3><p><span data-en="Plan your weekly meals, then add the ingredients to one grocery list.">خطّط وجبات أسبوعك، ثم أضف المقادير إلى قائمة المشتريات لتكون جاهزًا للطبخ.</span></p></div>
+          <div class="feature-stage"><img data-en-src="assets/en-05_plan.jpg" src="assets/ar-05_plan.jpg" alt="خطة الوجبات الأسبوعية بالعربية مع وجبات كل يوم وزر أضف إلى المشتريات." data-en-alt="Weekly meal plan with recipes by day and an add to groceries button." width="720" height="1280" loading="lazy" decoding="async"></div>
+        </article>
+      </div>
+      <p class="section-footnote"><svg aria-hidden="true"><use href="#leaf"/></svg><span data-en="From your first saved recipe to next week’s grocery list.">من أول وصفة تحفظها، إلى قائمة الأسبوع المقبل.</span></p>
+    </section>
+
+    <section class="section wrap" id="screenshots" aria-labelledby="screenshots-title" data-gallery-section>
+      <div class="section-heading">
+        <div><p class="eyebrow"><span data-en="Come take a look">تفضّل، ألقِ نظرة</span></p><h2 id="screenshots-title"><span data-en="A little tour of your new kitchen.">جولة صغيرة في مطبخك الجديد.</span></h2></div>
+        <div class="gallery-controls" aria-label="التحكم في معرض الصور" data-en-aria-label="Screenshot controls">
+          <button class="round-button" type="button" data-previous aria-controls="gallery" aria-label="الصور السابقة" data-en-aria-label="Previous screenshots"><svg aria-hidden="true"><use href="#arrow-right"/></svg></button>
+          <button class="round-button" type="button" data-next aria-controls="gallery" aria-label="الصور التالية" data-en-aria-label="Next screenshots"><svg aria-hidden="true"><use href="#arrow-left"/></svg></button>
+        </div>
+      </div>
+      <div class="gallery" id="gallery" role="region" aria-label="سبع لقطات من تطبيق وصفاتي بالعربية" data-en-aria-label="Seven screenshots of Wasfati in English" aria-describedby="gallery-hint" tabindex="0">
+        <figure><img data-en-src="assets/en-01_lib.jpg" src="assets/ar-01_lib.jpg" alt="مكتبة الوصفات العربية تجمع الوصفات المحفوظة من مصادر مختلفة." data-en-alt="Recipe library with saved recipes from different sources." width="720" height="1280" loading="lazy" decoding="async"><figcaption><span aria-hidden="true">01</span><span data-en="Your recipe collection">كل وصفاتك، في مكتبتك</span></figcaption></figure>
+        <figure><img data-en-src="assets/en-02_share.jpg" src="assets/ar-02_share.jpg" alt="مشاركة رابط وصفة من منصات التواصل إلى وصفاتي." data-en-alt="Share a recipe link from social platforms into Wasfati." width="720" height="1280" loading="lazy" decoding="async"><figcaption><span aria-hidden="true">02</span><span data-en="Share it. Save it.">شارك ما أعجبك</span></figcaption></figure>
+        <figure><img data-en-src="assets/en-03_tidy.jpg" src="assets/ar-03_tidy.jpg" alt="تحويل وصف منشور الفيديو وكلامه إلى وصفة عربية مرتّبة بالمقادير." data-en-alt="Turn a video caption and spoken words into a tidy recipe." width="720" height="1280" loading="lazy" decoding="async"><figcaption><span aria-hidden="true">03</span><span data-en="From video to tidy recipe">من الفيديو إلى وصفة مرتّبة</span></figcaption></figure>
+        <figure><img data-en-src="assets/en-04_recipe.jpg" src="assets/ar-04_recipe.jpg" alt="وصفة عربية مرتبة: صورة الطبق، الأوقات، الحصص والمقادير." data-en-alt="Recipe with its photo, cooking times, servings and ingredients." width="720" height="1280" loading="lazy" decoding="async"><figcaption><span aria-hidden="true">04</span><span data-en="Ingredients and steps">وصفة واضحة، من أول نظرة</span></figcaption></figure>
+        <figure><img data-en-src="assets/en-05_plan.jpg" src="assets/ar-05_plan.jpg" alt="جدول الوجبات الأسبوعية مع وصفات الغداء والعشاء." data-en-alt="Weekly meal plan with lunch and dinner recipes." width="720" height="1280" loading="lazy" decoding="async"><figcaption><span aria-hidden="true">05</span><span data-en="Make a plan for the week">خطّط لوجبات الأسبوع</span></figcaption></figure>
+        <figure><img data-en-src="assets/en-06_groc.jpg" src="assets/ar-06_groc.jpg" alt="قائمة مشتريات تجمع المقادير المطلوبة للوصفات بالعربية." data-en-alt="One grocery list with the ingredients for your recipes." width="720" height="1280" loading="lazy" decoding="async"><figcaption><span aria-hidden="true">06</span><span data-en="One grocery list">المقادير في قائمة واحدة</span></figcaption></figure>
+        <figure><img data-en-src="assets/en-07_cook.jpg" src="assets/ar-07_cook.jpg" alt="وضع الطبخ يعرض خطوات الوصفة بالعربية واحدة تلو الأخرى." data-en-alt="Cooking mode presents recipe steps one at a time." width="720" height="1280" loading="lazy" decoding="async"><figcaption><span aria-hidden="true">07</span><span data-en="Cook, step by step">اطبخ، خطوة بخطوة</span></figcaption></figure>
+      </div>
+      <p class="gallery-hint" id="gallery-hint"><span data-en="Swipe or use the buttons to explore all seven screens. Keyboard: focus the gallery and use the arrow keys.">اسحب لمشاهدة اللقطات السبع، أو استخدم الأسهم. بلوحة المفاتيح: ركّز على المعرض واستخدم مفتاحَي السهم.</span></p>
+    </section>
+
+    <!-- OPTIONAL VIDEO: hidden by default. Set only YOUTUBE_EMBED_URL in the script below.
+         No placeholder player, thumbnail, video claim, or network request appears while empty. -->
+    <section class="section wrap" id="video-section" aria-labelledby="video-title" hidden>
+      <div class="video-panel"><p class="eyebrow"><span data-en="A closer look">نظرة أقرب</span></p><h2 id="video-title"><span data-en="Watch Wasfati">شاهد وصفاتي</span></h2><div class="video-shell" id="video-shell"></div></div>
+    </section>
+
+    <section class="section wrap section-tinted" aria-labelledby="trust-title">
+      <div class="trust">
+        <div class="trust-heading"><p class="eyebrow"><svg aria-hidden="true"><use href="#forge"/></svg><span data-en="From Oasis Forge to your kitchen">من Oasis Forge، إلى مطبخك</span></p><h2 id="trust-title"><span data-en="Thoughtfully made. Easy to reach.">أداة واضحة، ومكان للتواصل.</span></h2></div>
+        <div class="trust-grid">
+          <div><svg aria-hidden="true"><use href="#forge"/></svg><h3><span data-en="Meet the makers">تعرف من يصنع وصفاتي</span></h3><p><span data-en="A recipe app by Oasis Forge, bringing saving, cooking, planning and shopping together.">تطبيق وصفات من Oasis Forge، يجمع الحفظ والطبخ والتخطيط والتسوّق.</span></p><a class="text-link" href="https://oasis-forge.github.io/"><span data-en="Meet Oasis Forge ">تعرّف على Oasis Forge </span><svg aria-hidden="true"><use href="#arrow-left"/></svg></a></div>
+          <div><svg aria-hidden="true"><use href="#shield"/></svg><h3><span data-en="Privacy, clearly explained">الخصوصية، بوضوح</span></h3><p><span data-en="Read our privacy policy to understand how the app handles your data.">اقرأ سياسة الخصوصية للتعرّف على كيفية تعامل التطبيق مع البيانات.</span></p><a class="text-link" href="privacy-policy.html"><span data-en="Read the privacy policy ">اقرأ سياسة الخصوصية </span><svg aria-hidden="true"><use href="#arrow-left"/></svg></a></div>
+          <div><svg aria-hidden="true"><use href="#mail"/></svg><h3><span data-en="We’re here to help">سؤالك له مكان</span></h3><p><span data-en="Have a question, problem or suggestion? Send us an email.">لديك سؤال أو مشكلة أو اقتراح؟ يمكنك مراسلتنا مباشرة عبر البريد الإلكتروني.</span></p><a class="text-link" href="#support"><span data-en="Support and feedback ">الدعم والملاحظات </span><svg aria-hidden="true"><use href="#arrow-left"/></svg></a></div>
+        </div>
+      </div>
+    </section>
+
+<section class="section wrap" aria-labelledby="download-title">
+      <div class="download">
+        <div class="download-copy">
+          <p class="eyebrow"><svg aria-hidden="true"><use href="#leaf"/></svg><span data-en="Your next favourite starts here">وصفة اليوم… بداية الحكاية</span></p>
+          <h2 id="download-title"><span data-en="Save it today.">احفظها اليوم.</span><br><span data-en="Cook it your way.">واطبخها على ذوقك.</span></h2>
+          <p><span data-en="One place for your recipes, meal plan and grocery list.">مكان واحد لوصفاتك، وخطّة وجباتك، وقائمة مشترياتك.</span></p>
+          <div class="stores" aria-label="متاجر التطبيق" data-en-aria-label="App stores">
+            <a class="store" href="https://play.google.com/store/apps/details?id=com.oasisforge.wasfati" aria-label="حمّل وصفاتي من Google Play" data-en-aria-label="Get Wasfati on Google Play"><svg aria-hidden="true"><use href="#play-store"/></svg><span><small><span data-en="Get it on">متاح الآن على</span></small><strong lang="en">Google Play</strong></span></a>
+            <span class="store store-soon"><svg aria-hidden="true"><use href="#apple"/></svg><span><small><span data-en="Coming soon on">قريبًا على</span></small><strong lang="en">App Store</strong></span></span>
+          </div>
+        </div>
+        <img class="download-photo" src="assets/dish-kabsa.jpg" alt="" width="400" height="400" loading="lazy" decoding="async">
+      </div>
+    </section>
+
+    <section class="support wrap" id="support" aria-labelledby="support-title">
+      <div><h2 id="support-title"><span data-en="Support and feedback">الدعم والملاحظات</span></h2><p><span data-en="For any question, problem or suggestion, email us and we’ll get back to you:">لأي سؤال أو مشكلة أو اقتراح، راسلنا وسنرد عليك:</span></p></div>
+      <a class="email" href="mailto:oasisforge.support@gmail.com" dir="ltr">oasisforge.support@gmail.com</a>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <a class="studio" href="https://oasis-forge.github.io/" lang="en">Oasis Forge</a>
+    <p><span data-en="Wasfati">وصفاتي</span></p>
+    <nav aria-label="روابط التذييل" data-en-aria-label="Footer links"><a href="#support"><span data-en="Support">الدعم</span></a><a href="privacy-policy.html"><span data-en="Privacy policy">سياسة الخصوصية</span></a></nav>
   </footer>
-</main>
+
+  <script src="assets/site.js"></script>
 </body>
 </html>
