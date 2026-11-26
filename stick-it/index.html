@@ -1,63 +1,88 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Stick It: Knife Wheel — Oasis Forge</title>
-<meta name="description" content="Tap to throw. Stick every dart in the spinning wheel. 300 levels, 30 bosses. A one-tap arcade game, on Android now and coming to iPhone.">
-<meta name="theme-color" content="#2E1204">
-<link rel="canonical" href="https://oasis-forge.github.io/stick-it/">
-<link rel="icon" href="icon.png">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Oasis Forge">
-<meta property="og:title" content="Stick It: Knife Wheel">
-<meta property="og:description" content="Tap to throw. Stick every dart in the spinning wheel. 300 levels, 30 bosses.">
-<meta property="og:url" content="https://oasis-forge.github.io/stick-it/">
-<meta property="og:image" content="https://oasis-forge.github.io/stick-it/icon.png">
-<style>
-  :root { --bg:#2E1204; --card:#4a2008; --text:#fff4e6; --muted:#e0c4a8; --accent:#ffb35a; --line:#7a3208; }
-  * { box-sizing:border-box; }
-  body { margin:0; background:var(--bg); color:var(--text);
-         font:16px/1.6 -apple-system, "Segoe UI", Tahoma, Arial, sans-serif; }
-  main { max-width:560px; margin:0 auto; padding:40px 16px 32px; text-align:center; }
-  img.icon { width:112px; height:112px; border-radius:24px; box-shadow:0 8px 24px rgba(0,0,0,.45); }
-  h1 { font-size:28px; margin:20px 0 4px; }
-  p { color:var(--muted); margin:6px 0; }
-  .stores { display:flex; flex-direction:column; gap:12px; margin:28px 0; }
-  .btn { display:block; padding:14px 16px; border-radius:14px; font-weight:700; text-decoration:none; }
-  a.btn { background:var(--accent); color:#2E1204; }
-  span.btn { border:1px solid var(--line); color:var(--muted); background:var(--card); }
-  section { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:16px; margin-top:16px; }
-  section a { color:var(--accent); }
-  footer { margin-top:28px; font-size:14px; color:var(--muted); }
-  footer a { color:var(--text); }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stick It: Knife Wheel — Oasis Forge</title>
+  <meta name="description" content="One tap, no collisions. Throw darts into a spinning wheel, clear 300 levels in 30 worlds and beat 30 bosses. Free on Android; coming soon to iPhone.">
+  <meta name="theme-color" content="#f8eee1">
+  <meta name="theme-color" content="#302219" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://oasis-forge.github.io/stick-it/">
+  <link rel="icon" href="icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Oasis Forge">
+  <meta property="og:title" content="Stick It: Knife Wheel — One tap, no collisions">
+  <meta property="og:description" content="Tap to throw. Stick every dart in the spinning wheel. 300 levels, 30 worlds, 30 bosses and a new daily wheel every day.">
+  <meta property="og:url" content="https://oasis-forge.github.io/stick-it/">
+  <meta property="og:image" content="https://oasis-forge.github.io/stick-it/icon.png">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/site.js" defer></script>
 </head>
 <body>
-<main>
-  <img class="icon" src="icon.png" alt="Stick It: Knife Wheel" width="112" height="112">
-  <h1>Stick It</h1>
-  <p><strong>Tap to throw. Stick every dart in the spinning wheel.</strong></p>
-  <p>300 levels in 30 worlds, 30 boss wheels with faces, and a new daily wheel every day. Free to play, with optional in-app purchases.</p>
-
-  <div class="stores">
-    <a class="btn" href="https://play.google.com/store/apps/details?id=com.oasisforge.stickit">Get it on Google Play</a>
-    <!-- The App Store link goes here once the app has an App Store id (docs/ios-plan.md, P4b step 5). Until then the
-         page says it is coming and shows no link:
-    <a class="btn" href="https://apps.apple.com/app/idAPP_STORE_ID">Download on the App Store</a>
-    -->
-    <span class="btn">Coming soon to the App Store</span>
-  </div>
-
-  <section>
-    <p>Support and feedback</p>
-    <p><a href="mailto:oasisforge.support@gmail.com">oasisforge.support@gmail.com</a></p>
-  </section>
-
-  <footer>
-    <a href="privacy-policy">Privacy policy</a> ·
-    <a href="https://oasis-forge.github.io/">Oasis Forge</a>
-  </footer>
-</main>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header wrap">
+    <a class="brand" href="#" aria-label="Stick It, by Oasis Forge"><img src="icon.png" alt="" width="48" height="48"><span><strong>Stick It<span class="brand-dot">.</span></strong><small>by Oasis Forge</small></span></a>
+    <nav aria-label="Main navigation"><a href="#gameplay">The game</a><a href="#screenshots">Screenshots</a><a href="#support">Support</a><a class="nav-play" href="https://play.google.com/store/apps/details?id=com.oasisforge.stickit">Get the game</a></nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="tiny-wheel" aria-hidden="true"></span> One-tap arcade</p>
+        <h1 id="hero-title">One tap.<br><span>No collisions.</span></h1>
+        <p class="hero-intro">A spinning wheel. A handful of darts.<br>One very small gap.</p>
+        <p class="hero-description">Tap to throw. Stick every dart without hitting one that’s already there. Clear the wheel and smash it.</p>
+        <div class="stores" id="download">
+          <a class="store" href="https://play.google.com/store/apps/details?id=com.oasisforge.stickit" aria-label="Get Stick It on Google Play"><svg viewBox="0 0 24 26" width="28" height="30" aria-hidden="true"><path d="M2 1 15 8.5 10.5 13Z" fill="#57dc97"/><path d="m15 8.5 7 4.5-7 4.5-4.5-4.5Z" fill="#ffd65c"/><path d="M15 17.5 2 25l8.5-12Z" fill="#ff7777"/><path d="M2 1v24l8.5-12Z" fill="#69c8ff"/></svg><span><small>Get it on</small><b>Google Play</b></span></a>
+          <span class="store soon"><svg viewBox="0 0 24 26" width="25" height="28" aria-hidden="true"><path fill="currentColor" d="M17 0c.3 2.4-1.7 5-4.3 5C12.3 2.7 14.5.3 17 0ZM20 14c0-3 2.4-4.3 2.5-4.4C21 7.2 18.5 7 17.6 7c-2-.2-3.7 1.1-4.7 1.1-1 0-2.5-1-4.1-1C5 7.1 2.8 10.2 2.8 14c0 4.7 3.4 11.2 6.3 11.1 1.5-.1 2.1-.9 3.9-.9s2.3.9 4 .8c2.1 0 4.3-3.5 5.3-6.1C20.1 17.9 20 15.2 20 14Z"/></svg><span><small>Coming soon</small><b>App Store</b></span></span>
+        </div>
+        <p class="fine-print">Free to play · Contains ads · Optional in-app purchases</p>
+      </div>
+      <div class="hero-art">
+        <div class="orbit orbit-one" aria-hidden="true"></div><div class="orbit orbit-two" aria-hidden="true"></div>
+        <span class="art-word" aria-hidden="true">STICK<br>WITH IT.</span>
+        <div class="phone hero-phone"><img src="assets/hero-game.webp" alt="Level 5: knives stick into a wooden wheel while the next dart waits below." width="720" height="1489" fetchpriority="high"><span class="phone-bar" aria-hidden="true"></span></div>
+        <div class="throw-tag"><span aria-hidden="true">✳</span> Tap. Throw. Stick.</div>
+        <div class="boss-stamp"><strong>30</strong><span>boss wheels.<br>All attitude.</span></div>
+      </div>
+    </section>
+    <div class="rhythm-strip" aria-label="How to play"><div class="wrap"><span>Find your gap.</span><i aria-hidden="true">✳</i><span>Time your tap.</span><i aria-hidden="true">✳</i><span>Smash the wheel.</span><i aria-hidden="true">✳</i></div></div>
+    <section class="gameplay wrap section" id="gameplay" aria-labelledby="gameplay-title">
+      <div class="section-top"><p class="eyebrow">Simple rule. Tricky wheels.</p><h2 id="gameplay-title">The wheel has<br><em>other plans.</em></h2><p>Easy to start. Hard to find that last gap. The spin changes, the spaces get tighter, and boss wheels fight back.</p></div>
+      <div class="feature-layout">
+        <div class="boss-art"><span class="feature-label">Meet the boss wheels</span><div class="phone boss-phone"><img src="assets/boss-game.webp" alt="Level 180 boss: an expressive blue wheel with knives, coins and apples around its rim." width="720" height="1489" loading="lazy"></div><p class="boss-caption">A face. An attitude.<br>A trickier spin.</p></div>
+        <div class="feature-copy">
+          <article><span class="feature-icon" aria-hidden="true">◎</span><div><h3>30 bosses. None sitting still.</h3><p>Every tenth level brings a boss wheel with a face. It flinches when you hit it and gets furious when you’re close. Beat it to open the next world.</p></div></article>
+          <article><span class="feature-icon" aria-hidden="true">✳</span><div><h3>A new twist around the rim.</h3><p>Reversing spins, metal plates, apples to catch, shrinking wheels and sliding targets. Later worlds mix them together.</p></div></article>
+          <article><span class="feature-icon" aria-hidden="true">✦</span><div><h3>Make every throw count.</h3><p>Throw fast to build a rush for bonus coins. Collect darts, trails and shatter effects, and replay levels for up to three stars.</p></div></article>
+          <a class="text-link" href="#screenshots">Take a closer look <span aria-hidden="true">+</span></a>
+        </div>
+      </div>
+      <div class="stats"><div><strong>300</strong><span>levels to stick</span></div><div><strong>30</strong><span>worlds to explore</span></div><div><strong>30</strong><span>bosses to smash</span></div></div>
+    </section>
+    <section class="gallery-section section" id="screenshots" aria-labelledby="screenshots-title">
+      <div class="wrap"><div class="gallery-heading"><div><p class="eyebrow">Inside Stick It</p><h2 id="screenshots-title">Small tap.<br>Whole lot of game.</h2></div><div class="gallery-controls" role="group" aria-label="Screenshot gallery controls"><button type="button" id="gallery-prev" aria-label="Previous screenshots" aria-controls="gallery" aria-disabled="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg></button><button type="button" id="gallery-next" aria-label="Next screenshots" aria-controls="gallery" aria-disabled="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button></div></div>
+      <p class="gallery-hint" id="gallery-hint">Swipe, scroll, or use the buttons to explore.</p>
+      <div class="gallery" id="gallery" tabindex="0" role="region" aria-label="Stick It screenshots" aria-describedby="gallery-hint">
+        <figure><img src="assets/screen-01.webp" width="720" height="1440" alt="Store screenshot: Level 5, throwing knives into a wooden wheel." loading="lazy"><figcaption>Find a gap. Stick the dart.</figcaption></figure>
+        <figure><img src="assets/screen-02.webp" width="720" height="1440" alt="Store screenshot: Level 180 boss wheel with an expressive face." loading="lazy"><figcaption>Boss wheels with personality.</figcaption></figure>
+        <figure><img src="assets/screen-03.webp" width="720" height="1440" alt="Store screenshot: the dart collection with the Knife selected." loading="lazy"><figcaption>A collection that’s yours.</figcaption></figure>
+        <figure><img src="assets/screen-04.webp" width="720" height="1440" alt="Store screenshot: Level 45, metal plates around the spinning wheel." loading="lazy"><figcaption>Watch out for the plates.</figcaption></figure>
+        <figure><img src="assets/screen-05.webp" width="720" height="1440" alt="Store screenshot: the world map with level stars and a boss at level 160." loading="lazy"><figcaption>Keep climbing through 30 worlds.</figcaption></figure>
+        <figure><img src="assets/screen-06.webp" width="720" height="1440" alt="Store screenshot: a cleared wheel shatters after the last dart." loading="lazy"><figcaption>That last-dart feeling.</figcaption></figure>
+      </div><p class="gallery-status" id="gallery-status" aria-live="polite">Screenshots 1–3 of 6</p></div>
+    </section>
+    <section class="watch wrap section" aria-labelledby="watch-title">
+      <div class="watch-copy"><p class="eyebrow">See the spin</p><h2 id="watch-title">Just one<br><em>more throw.</em></h2><p>The Level 40 boss has a rhythm of its own. Watch the darts land, the gaps fill, and the wheel come apart.</p><span class="clip-label">Real gameplay · Level 40 boss · 11 seconds</span><div class="daily-note"><span aria-hidden="true">☀</span><div><h3>A fresh wheel. Every day.</h3><p>One daily wheel, the same for everyone. One try. Share your result card and see how your friends did.</p></div></div></div>
+      <!-- YOUTUBE SWAP: set only data-youtube-url to a https://www.youtube.com/embed/VIDEO_ID URL to replace the local clip with a click-to-load embed. -->
+      <div class="video-stage" data-youtube-url=""><video controls playsinline preload="none" poster="assets/level-40-poster.webp" width="540" height="1170" aria-label="Level 40 boss gameplay in Stick It"><source src="assets/level-40.mp4" data-src="assets/level-40.mp4" type="video/mp4"><p>Your browser does not support video. <a href="assets/level-40.mp4">Watch the Level 40 clip</a>.</p></video></div>
+    </section>
+    <section class="trust-section section" aria-labelledby="trust-title"><div class="wrap"><div class="trust-heading"><p class="eyebrow">A little peace of mind</p><h2 id="trust-title">Your game.<br>Your pace.</h2><p>Made by Oasis Forge for the moments in between.</p></div><div class="trust-grid">
+      <article><span aria-hidden="true">◉</span><h3>Play offline. No account.</h3><p>Your progress stays on your phone. Oasis Forge runs no game servers and has no analytics or crash-reporting services of its own.</p></article>
+      <article><span aria-hidden="true">✺</span><h3>Keep it comfortable.</h3><p>Calm effects mode softens the animations. Turn sound and haptics off separately, and use large text and screen-reader labels in the menus.</p></article>
+      <article><span aria-hidden="true">◇</span><h3>Know what’s included.</h3><p>Free to play, with Google AdMob ads and optional in-app purchases. Ads may appear between levels, never during play. Rewarded ads are your choice.</p></article>
+    </div><p class="privacy-note">Google may use device and ad-interaction data to serve and measure ads. Review the <a href="privacy-policy">privacy policy</a> for ad choices, phone backups and store purchases. Intended for players aged 13 and over.</p></div></section>
+    <section class="support wrap section" id="support" aria-labelledby="support-title"><div><p class="eyebrow">Support & feedback</p><h2 id="support-title">Something not<br>sticking?</h2><p>Get in touch with Oasis Forge for help or to share feedback.</p></div><a class="support-link" href="mailto:oasisforge.support@gmail.com"><span>Drop us a line</span><strong>oasisforge.support@gmail.com</strong></a></section>
+  </main>
+  <footer class="footer wrap"><a class="footer-name" href="#">Stick It<span>.</span></a><p>A little game by Oasis Forge.</p><div><a href="privacy-policy">Privacy policy</a><a href="https://oasis-forge.github.io/">More from Oasis Forge</a></div></footer>
 </body>
 </html>
