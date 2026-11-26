@@ -3,7 +3,7 @@ title: Privacy Policy – Memeback
 ---
 # Privacy Policy
 
-_Effective 20 November 2026._
+_Effective 26 November 2026._
 
 This policy covers the Memeback app ("the app"), published by **Oasis Forge**.
 
@@ -18,13 +18,15 @@ Memeback is free, with one-time purchases that unlock extra features or remove a
 ## The uses of the internet
 
 1. **Downloads of the reading languages and the sticker cut-out model.** Only after you tap a download button. The files come from the publisher's address on Hugging Face (`huggingface.co`, and the storage servers it redirects to) over HTTPS. That host sees your phone's IP address and which files you asked for, as any website does. Nothing about your pictures, the words in them, your searches or your phone is sent. The cut-out model is small (about 4.7 MB) and is used only by the sticker maker.
-2. **Purchases through Google Play.** The one-time products (the unlock, Remove ads and the bundle) are bought and restored through Google Play on your phone. Google handles the payment and keeps the record of the purchase; we never see your payment details. The app asks Google Play only which products are owned. The price you see is the price Google Play gives the app.
+2. **Purchases through Google Play.** The two one-time products (the Unlock and Remove ads) are bought and restored through Google Play on your phone. Google handles the payment and keeps the record of the purchase; we never see your payment details. The app asks Google Play only which products are owned. The price you see is the price Google Play gives the app.
 3. **Usage counts through Google's Firebase Analytics**, only in versions of the app that include it, and **only if you agree**: the counts are off until you say yes. The app asks once ("Help improve Memeback?"), and nothing is sent, and Google's automatic collection does not start, before you say yes. You can turn them off at any time with the switch "Usage counts" in Settings; nothing is sent after you do. The counts are:
-   - `search`, with the word "words" (the app searches by the words in your pictures, the only kind of search);
+   - `search`, with the word "words" (the app searches by the words in your pictures, the only kind of search) and whether a search found anything (yes or no);
+   - `meme_added`, once for each meme that becomes new in your library, with how it was added: share, pick or make;
+   - `keyboard_on`, when the app sees that the Memeback keyboard has been turned on (the app reads this setting; the keyboard itself sends nothing);
    - `send` with the place it was sent from (app, keyboard or panel) and, for sends from the app, whether it was a picture or a sound;
-   - `sound_made`, `unlock_shown`, `unlock_started`, `unlock_done` and `unlock_restored`.
+   - `sound_made`, `unlock_shown`, `unlock_started`, `unlock_done` with which product was bought (the Unlock or Remove ads) and `unlock_restored`.
 
-   They never contain what you type or search, the words in a picture, the name of a picture or a sound, the size of your library, or anything you made. Stickers, captions, motion clips, private shelf items and the home-screen widget are not counted at all. Once you agree, Firebase Analytics also collects by itself, as Google documents: a random app instance id (reset when you turn the counts off or reinstall), the automatic events `first_open`, `session_start`, `user_engagement`, `app_update`, `os_update`, `app_remove` and `app_clear_data`, and with them the app version, the phone model, the Android version, the language and the country as Google derives them from the connection. Memeback switches off the advertising id, the Android id, ad personalisation and automatic screen reporting, and denies ad storage and ad data sharing. A build of the app that was made without a Firebase configuration sends no counts at all and does not show the switch.
+   They never contain what you type or search, the words in a picture or the name of a picture or a sound. One count is sent for each meme you add, so the counts show how many memes you added. Making stickers, captions, motion clips and sounds is not counted, except that a made picture saved as a new meme counts as a meme added and a finished clip with sound is counted as `sound_made`; private shelf items and the home-screen widget are not counted. Once you agree, Firebase Analytics also collects by itself, as Google documents: a random app instance id (reset when you turn the counts off or reinstall), the automatic events `first_open`, `session_start`, `user_engagement`, `app_update`, `os_update`, `app_remove` and `app_clear_data`, and with them the app version, the phone model, the Android version, the language and the country as Google derives them from the connection. Memeback switches off the advertising id, the Android id, ad personalisation and automatic screen reporting, and denies ad storage and ad data sharing. A build of the app that was made without a Firebase configuration sends no counts at all and does not show the switch.
 
 4. **Ads from Google (AdMob)**, in the free version only. See **Ads** below for what Google's software reads and how you stay in control.
 
@@ -87,7 +89,7 @@ Memeback has an optional keyboard, "Memeback memes", that you turn on yourself i
 
 ## Ads
 
-**Ads.** The free version of Memeback shows ads from Google (AdMob). To show them, Google's software on your phone uses your device's advertising ID, IP address and some device and app information, and may use them to personalise ads. Where the law asks for it (the EEA, the UK, Switzerland and other places), Google's own consent form asks you first, and you can change your answer any time under Settings, **Ad choices**. Ads never appear in the Memeback keyboard or the home-screen widget, and no picture, text read from a picture, search or sound is ever sent to Google or to advertisers. Buying **Remove ads** (or the bundle) turns ads off and Google's ad software is not asked for ads, and you will not be asked for ad consent, unless you choose to watch an ad for a free sound meme.
+**Ads.** The free version of Memeback shows ads from Google (AdMob). To show them, Google's software on your phone uses your device's advertising ID, IP address and some device and app information, and may use them to personalise ads. Where the law asks for it (the EEA, the UK, Switzerland and other places), Google's own consent form asks you first, and you can change your answer any time under Settings, **Ad choices**. Ads never appear in the Memeback keyboard or the home-screen widget, and no picture, text read from a picture, search or sound is ever sent to Google or to advertisers. Buying **Remove ads** or the **Unlock** turns ads off: Google's ad software is not asked for ads, and you will not be asked for ad consent. The one exception is yours to choose: with Remove ads alone, you can still watch an ad for a free sound meme.
 
 The ad software is Google's. It may share with Google, for advertising, analytics and fraud prevention: the advertising ID and other device identifiers, the approximate location it works out from your IP address, ad interactions, app and Android version, phone model, screen size, language and network type, and its own crash and performance data. Ad requests carry no keywords, no content address and no targeting from the app. Memeback's usage counts are separate and unchanged: Firebase's advertising ID collection and ad personalisation stay off.
 
