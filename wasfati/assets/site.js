@@ -16,8 +16,8 @@ const YOUTUBE_EMBED_URL = '';
 
   function updateGallery() {
     const position = Math.abs(gallery.scrollLeft);
-    previous.disabled = position < 2;
-    next.disabled = position >= gallery.scrollWidth - gallery.clientWidth - 2;
+    previous.setAttribute('aria-disabled', String(position < 2));
+    next.setAttribute('aria-disabled', String(position >= gallery.scrollWidth - gallery.clientWidth - 2));
   }
 
   function setLanguage(language, remember = false) {

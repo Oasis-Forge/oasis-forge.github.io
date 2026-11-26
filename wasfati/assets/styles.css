@@ -98,7 +98,7 @@
     .js .gallery-controls { display: flex; }
     .round-button { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface); color: var(--ink); }
     .round-button:hover { background: var(--peach); }
-    .round-button:disabled { opacity: .35; cursor: default; }
+    .round-button[aria-disabled="true"] { opacity: .35; cursor: default; }
     .round-button svg { width: 19px; height: 19px; }
     .gallery { display: flex; gap: 20px; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scrollbar-width: thin; scrollbar-color: var(--accent-text) var(--peach); padding: 5px 5px 22px; margin-inline: -5px; }
     .gallery figure { flex: 0 0 min(73vw, 238px); scroll-snap-align: start; }
