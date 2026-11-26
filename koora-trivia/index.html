@@ -1,61 +1,103 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>تحدي كرة القدم · Koora Trivia — Oasis Forge</title>
-<meta name="description" content="لعبة أسئلة عن كرة القدم بالعربية والإنجليزية. A football trivia game in Arabic and English.">
-<meta name="theme-color" content="#06301C">
-<link rel="canonical" href="https://oasis-forge.github.io/koora-trivia/">
-<link rel="icon" href="icon.png">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Oasis Forge">
-<meta property="og:title" content="تحدي كرة القدم · Koora Trivia">
-<meta property="og:description" content="لعبة أسئلة عن كرة القدم بالعربية والإنجليزية. A football trivia game in Arabic and English.">
-<meta property="og:url" content="https://oasis-forge.github.io/koora-trivia/">
-<meta property="og:image" content="https://oasis-forge.github.io/koora-trivia/icon.png">
-<style>
-  :root { --bg:#06301C; --card:#0d4429; --text:#f2f6f0; --muted:#b9cdbf; --gold:#f0bf3c; --line:#1f5a3a; }
-  * { box-sizing:border-box; }
-  body { margin:0; background:var(--bg); color:var(--text);
-         font:16px/1.6 -apple-system, "Segoe UI", Tahoma, "Noto Sans Arabic", Arial, sans-serif; }
-  main { max-width:560px; margin:0 auto; padding:40px 16px 32px; text-align:center; }
-  img.icon { width:112px; height:112px; border-radius:24px; box-shadow:0 8px 24px rgba(0,0,0,.35); }
-  h1 { font-size:28px; margin:20px 0 4px; }
-  .en { direction:ltr; }
-  p { color:var(--muted); margin:6px 0; }
-  .stores { display:flex; flex-direction:column; gap:12px; margin:28px 0; }
-  .btn { display:block; padding:14px 16px; border-radius:14px; font-weight:700; text-decoration:none; }
-  a.btn { background:var(--gold); color:#06301C; }
-  span.btn { border:1px solid var(--line); color:var(--muted); background:var(--card); }
-  section { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:16px; margin-top:16px; }
-  section a { color:var(--gold); }
-  footer { margin-top:28px; font-size:14px; color:var(--muted); }
-  footer a { color:var(--text); }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>تحدي كرة القدم · Koora Trivia — Oasis Forge</title>
+  <meta name="description" content="اختبر معلوماتك الكروية بالعربية والإنجليزية: مستويات متدرّجة، لعب سريع، تحدٍّ يومي وسلسلة أيام تنمو معك. Football trivia in Arabic and English, with levels, quick play and a daily challenge.">
+  <meta name="theme-color" content="#145137">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://oasis-forge.github.io/koora-trivia/">
+  <link rel="icon" href="icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Oasis Forge">
+  <meta property="og:title" content="تحدي كرة القدم · Koora Trivia">
+  <meta property="og:description" content="Think you know football? Put your knowledge to the test in Arabic and English. Levels, quick play, a daily challenge and a day streak to keep.">
+  <meta property="og:url" content="https://oasis-forge.github.io/koora-trivia/">
+  <meta property="og:image" content="https://oasis-forge.github.io/koora-trivia/icon.png">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/site.js" defer></script>
 </head>
 <body>
-<main>
-  <img class="icon" src="icon.png" alt="تحدي كرة القدم · Koora Trivia" width="112" height="112">
-  <h1>تحدي كرة القدم</h1>
-  <p>أسئلة عن كرة القدم في مستويات تزداد صعوبة، وتحدٍّ يومي، وسلسلة أيام تحافظ عليها.</p>
-  <p class="en" lang="en"><strong>Koora Trivia</strong> — football questions across levels that get harder, a daily challenge and a day streak to keep.</p>
+  <a class="skip" href="#main" data-en="Skip to content">انتقل إلى المحتوى</a>
+  <svg class="symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="ball" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m12 7 5 4-2 6H9l-2-6 5-4ZM12 2v5M2 10l5 1m-1 9 3-3m9 3-3-3m7-7-5 1"/></symbol>
+    <symbol id="star" viewBox="0 0 24 24"><path d="m12 2 3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1 3-6Z"/></symbol>
+    <symbol id="flame" viewBox="0 0 24 24"><path d="M12 2c1 5-5 6-5 11 0 2 1 3 2 4-1-4 3-5 4-7 1 3 5 4 5 7 0 2-2 5-6 5-5 0-9-4-9-9C3 8 8 4 12 2Z"/></symbol>
+    <symbol id="bolt" viewBox="0 0 24 24"><path d="m14 2-10 12h7l-1 8L20 9h-7l1-7Z"/></symbol>
+    <symbol id="shield" viewBox="0 0 24 24"><path d="m12 2 8 4v6c0 6-8 10-8 10S4 18 4 12V6l8-4Z"/><path d="m8 12 3 3 5-6"/></symbol>
+    <symbol id="play-store" viewBox="0 0 24 26"><path d="M3 2v22l19-11L3 2Z"/><path d="m3 2 13 15m-13 7L16 9"/></symbol>
+    <symbol id="apple" viewBox="0 0 24 28"><path fill="currentColor" stroke="none" d="M17.2 4.5c1-1.2 1.7-2.8 1.5-4.5-1.5.1-3.2 1-4.2 2.2-1 1-1.8 2.7-1.5 4.2 1.6.1 3.2-.8 4.2-1.9ZM20.8 15c0-3.2 2.6-4.7 2.7-4.8-1.5-2.2-3.9-2.5-4.7-2.5-2-.2-3.8 1.1-4.8 1.1s-2.5-1.1-4.1-1C7.8 7.8 5.8 9 4.7 10.9c-2.2 3.8-.6 9.5 1.6 12.6 1 1.5 2.2 3.2 3.8 3.1 1.5-.1 2.1-1 4-1s2.4 1 4.1.9c1.7 0 2.7-1.5 3.7-3 .9-1.1 1.6-2.5 2.1-4-2.1-.9-3.2-2.5-3.2-4.5Z"/></symbol>
+  </defs></svg>
 
-  <div class="stores">
-    <a class="btn" href="https://play.google.com/store/apps/details?id=com.oasisforge.kooratrivia">
-      حمّلها من Google Play · <span lang="en">Get it on Google Play</span></a>
-    <span class="btn">قريباً على App Store · <span lang="en">Coming soon to the App Store</span></span>
-  </div>
+  <header class="topbar wrap">
+    <a class="brand" href="#main"><img src="icon.png" alt="" width="44" height="44"><span><strong data-en="Koora Trivia">تحدي كرة القدم</strong><small><bdi>Oasis Forge</bdi></small></span></a>
+    <nav aria-label="التنقل الرئيسي" data-en-aria-label="Main navigation">
+      <a class="nav-detail" href="#play" data-en="The game">اللعبة</a>
+      <a class="nav-detail" href="#screenshots" data-en="Inside Koora">داخل اللعبة</a>
+      <a class="nav-detail" href="#support" data-en="Support">الدعم</a>
+      <button class="language" id="language-toggle" type="button" lang="en" aria-label="Switch to English" hidden>English <span aria-hidden="true">◎</span></button>
+    </nav>
+  </header>
 
-  <section>
-    <p>الدعم والملاحظات · <span lang="en">Support and feedback</span></p>
-    <p><a href="mailto:oasisforge.support@gmail.com">oasisforge.support@gmail.com</a></p>
-  </section>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="pitch" aria-hidden="true"><i></i></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><svg><use href="#ball"/></svg><span data-en="Football trivia. Match-day energy.">أسئلة كروية. حماس يوم المباراة.</span></p>
+        <h1 id="hero-title"><span data-en="Think you">تظن أنك</span><br><em data-en="know football?">تعرف الكرة؟</em></h1>
+        <p class="hero-lead" data-en="Put your knowledge to the test in Arabic and English.">اختبر معلوماتك الكروية بالعربية والإنجليزية.</p>
+        <p class="hero-description" data-en="Climb through harder levels, take on the daily challenge and keep your streak alive. Your next challenge is waiting.">مستويات تزداد صعوبة، وتحدٍّ يومي، وسلسلة أيام تحافظ عليها. التحدي القادم بانتظارك.</p>
+        <div class="stores">
+          <a class="store" href="https://play.google.com/store/apps/details?id=com.oasisforge.kooratrivia" aria-label="حمّل تحدي كرة القدم من Google Play" data-en-aria-label="Get Koora Trivia on Google Play"><svg aria-hidden="true"><use href="#play-store"/></svg><span><small data-en="Get it on">حمّلها من</small><strong lang="en">Google Play</strong></span></a>
+          <span class="store store-soon"><svg aria-hidden="true"><use href="#apple"/></svg><span><small data-en="Coming soon">قريبًا على</small><strong lang="en">App Store</strong></span></span>
+        </div>
+        <p class="hero-name"><span lang="en">Koora Trivia</span><span aria-hidden="true"> / </span><span data-en="Football Quiz">تحدي كرة القدم</span></p>
+      </div>
+      <figure class="hero-art">
+        <span class="art-tag"><span lang="ar">العربية</span><span aria-hidden="true"> / </span><span lang="en">English</span></span>
+        <div class="phone hero-phone"><img src="assets/question-ar.webp" data-en-src="assets/question-en.webp" alt="سؤال عن المدربين مع عدّاد وقت وأربع إجابات للاختيار." data-en-alt="A managers question with a timer and four answer choices." width="720" height="1280" fetchpriority="high" decoding="async"></div>
+        <img class="hero-ball" src="assets/ball.webp" alt="" width="500" height="500" decoding="async">
+        <figcaption><svg aria-hidden="true"><use href="#bolt"/></svg><span data-en="Your football knowledge. On the clock.">معلوماتك الكروية. والوقت يجري.</span></figcaption>
+      </figure>
+      <div class="hero-bottom"><span><svg aria-hidden="true"><use href="#star"/></svg><span data-en="Earn stars">اجمع النجوم</span></span><span><svg aria-hidden="true"><use href="#flame"/></svg><span data-en="Build your streak">حافظ على سلسلتك</span></span><span><svg aria-hidden="true"><use href="#ball"/></svg><span data-en="Share your score">شارك نتيجتك</span></span></div>
+    </section>
 
-  <footer>
-    <a href="privacy/">سياسة الخصوصية · <span lang="en">Privacy policy</span></a> ·
-    <a href="https://oasis-forge.github.io/">Oasis Forge</a>
-  </footer>
-</main>
+    <section class="section wrap" id="play" aria-labelledby="play-title">
+      <div class="section-heading"><div><p class="eyebrow" data-en="One game. Three ways to play.">لعبة واحدة. ثلاثة أنماط.</p><h2 id="play-title" data-en="Find your next challenge.">اختر تحديك القادم.</h2></div><p data-en="A quick round or a climb through the levels. There’s always another way to test your football knowledge.">جولة سريعة أم رحلة عبر المستويات؟ اختر كيف تختبر معلوماتك عن عالم كرة القدم.</p></div>
+      <div class="play-grid">
+        <article class="play-card levels-card">
+          <div class="card-copy"><svg class="feature-icon" aria-hidden="true"><use href="#star"/></svg><h3 data-en="Climb the levels.">اصعد بالمستوى.</h3><p data-en="Start easy, earn stars and unlock the next level. The questions get harder as you go.">ابدأ بالسهل، واكسب النجوم وافتح المستوى التالي. كلما تقدّمت، زاد التحدي.</p></div>
+          <div class="phone feature-phone"><img src="assets/levels-ar.webp" data-en-src="assets/levels-en.webp" alt="شبكة المستويات: نجوم للتقدّم ومستويات تُفتح تدريجيًا." data-en-alt="The level grid shows stars, progress and levels to unlock." width="720" height="1280" loading="lazy" decoding="async"></div>
+        </article>
+        <article class="play-card daily-card">
+          <div class="card-copy"><svg class="feature-icon" aria-hidden="true"><use href="#flame"/></svg><h3 data-en="Make it a daily ritual.">خلّها عادة يومية.</h3><p data-en="The same daily questions for everyone, with points ×1.5. Come back, keep your streak and pick up daily task rewards.">أسئلة اليوم نفسها للجميع، بنقاط ×1.5. ارجع كل يوم، وحافظ على سلسلتك واجمع مكافآت المهام اليومية.</p></div>
+          <div class="phone feature-phone"><img src="assets/home-ar.webp" data-en-src="assets/home-en.webp" alt="الصفحة الرئيسية مع تحدي اليوم والسلسلة والإحصائيات وزر اللعب السريع." data-en-alt="The home screen with daily challenge, streak, stats and quick play." width="720" height="1280" loading="lazy" decoding="async"></div>
+        </article>
+        <article class="quick-card"><svg class="feature-icon" aria-hidden="true"><use href="#bolt"/></svg><div><h3 data-en="A little time? Quick play.">عندك وقت؟ العب سريعًا.</h3><p data-en="Pick a category and jump straight into a round. Share your score with friends when you’re done.">اختر تصنيفك وابدأ الجولة فورًا. وبعدها، شارك نتيجتك مع أصدقائك.</p></div><a href="#screenshots" data-en="Explore the game">تعرّف على اللعبة</a></article>
+      </div>
+    </section>
+
+    <section class="world wrap" aria-labelledby="world-title"><div><p class="eyebrow" data-en="Every side of the beautiful game">كل جوانب الساحرة المستديرة</p><h2 id="world-title" data-en="From the world stage to Arab football.">من كأس العالم إلى الكرة العربية.</h2></div><ul class="categories"><li data-en="World Cup">كأس العالم</li><li data-en="Continental Cups">البطولات القارية</li><li data-en="Champions League">دوري أبطال أوروبا</li><li data-en="Top Leagues">الدوريات الكبرى</li><li data-en="Arab Football">الكرة العربية</li><li data-en="Players">اللاعبون</li><li data-en="Clubs">الأندية</li><li data-en="Managers">المدربون</li><li data-en="Laws of the Game">القوانين</li><li data-en="Moments & Records">لحظات وأرقام قياسية</li></ul></section>
+
+    <section class="section wrap gallery-section" id="screenshots" aria-labelledby="screenshots-title">
+      <div class="section-heading"><div><p class="eyebrow" data-en="A look inside">من داخل اللعبة</p><h2 id="screenshots-title" data-en="The pitch is in your pocket.">الملعب في جيبك.</h2></div><div class="gallery-controls" hidden><button type="button" id="gallery-prev" aria-label="الصورة السابقة" data-en-aria-label="Previous screenshot" aria-controls="gallery" aria-disabled="true"><span aria-hidden="true">→</span></button><button type="button" id="gallery-next" aria-label="الصورة التالية" data-en-aria-label="Next screenshot" aria-controls="gallery" aria-disabled="false"><span aria-hidden="true">←</span></button></div></div>
+      <div class="gallery" id="gallery" tabindex="0" role="region" aria-label="صور اللعبة؛ استخدم أسهم لوحة المفاتيح أو اسحب للتصفّح" data-en-aria-label="Game screenshots; use keyboard arrow keys or swipe to browse">
+        <figure><div class="phone"><img src="assets/home-ar.webp" data-en-src="assets/home-en.webp" alt="تحدي اليوم، السلسلة والإحصائيات في الشاشة الرئيسية." data-en-alt="Daily challenge, streak and stats on the home screen." width="720" height="1280" loading="lazy" decoding="async"></div><figcaption><strong data-en="Your daily kick-off">بداية تحديك اليومي</strong><span data-en="A challenge, a streak, a reason to return.">تحدٍّ، وسلسلة، وسبب للعودة.</span></figcaption></figure>
+        <figure><div class="phone"><img src="assets/categories-ar.webp" data-en-src="assets/categories-en.webp" alt="شاشة اختيار تصنيف الأسئلة مع النجوم والتقدّم." data-en-alt="Choose a football category and see your stars and progress." width="720" height="1280" loading="lazy" decoding="async"></div><figcaption><strong data-en="Choose your territory">اختر ملعبك</strong><span data-en="Explore the categories you love.">تجوّل في التصنيفات التي تحبّها.</span></figcaption></figure>
+        <figure><div class="phone"><img src="assets/levels-ar.webp" data-en-src="assets/levels-en.webp" alt="مستويات متدرّجة تُفتح مع إحراز التقدّم." data-en-alt="Progressive levels to unlock as you advance." width="720" height="1280" loading="lazy" decoding="async"></div><figcaption><strong data-en="Keep climbing">واصل التقدّم</strong><span data-en="Earn stars. Unlock the next level.">اجمع النجوم وافتح المستوى التالي.</span></figcaption></figure>
+        <figure><div class="phone"><img src="assets/question-ar.webp" data-en-src="assets/question-en.webp" alt="سؤال عن مدرّب بطل أوروبا عام 1997 مع أربع إجابات." data-en-alt="A timed football question with four answer choices." width="720" height="1280" loading="lazy" decoding="async"></div><figcaption><strong data-en="Beat the clock">سابق الوقت</strong><span data-en="Read, think and pick your answer.">اقرأ، فكّر، واختر إجابتك.</span></figcaption></figure>
+        <figure><div class="phone"><img src="assets/answer-ar.webp" data-en-src="assets/answer-en.webp" alt="الإجابة الصحيحة مع شرح بعد اختيار الإجابة." data-en-alt="Answer feedback reveals the correct choice and an explanation." width="720" height="1280" loading="lazy" decoding="async"></div><figcaption><strong data-en="Leave knowing more">اطلع بمعلومة جديدة</strong><span data-en="See the answer and its explanation.">اعرف الإجابة واقرأ الشرح.</span></figcaption></figure>
+      </div>
+      <p class="gallery-note" data-en="Real game screens · Available in Arabic and English">صور فعلية من اللعبة · متاحة بالعربية والإنجليزية</p>
+    </section>
+
+    <section class="privacy wrap" aria-labelledby="privacy-title"><div><svg class="feature-icon" aria-hidden="true"><use href="#shield"/></svg><p class="eyebrow" data-en="Your progress, on your device">تقدّمك محفوظ على جهازك</p><h2 id="privacy-title" data-en="No account. Just football.">بدون حساب. ابدأ التحدي.</h2></div><div class="privacy-copy"><p data-en="Your scores, stars, streak and settings are saved locally on your device. There’s no sign-in to get started.">نتائجك ونجومك وسلسلتك وإعداداتك تُحفظ محليًا على جهازك. ابدأ اللعب دون تسجيل دخول.</p><p data-en="The game includes Google AdMob ads and optional purchases for coins and removing ads. Ad partners may process device and usage data; the privacy policy explains the details and your choices.">تتضمن اللعبة إعلانات Google AdMob ومشتريات اختيارية للعملات وإزالة الإعلانات. قد يعالج شركاء الإعلانات بيانات الجهاز والاستخدام؛ توضّح سياسة الخصوصية التفاصيل وخياراتك.</p><a href="privacy/" data-en="Read the privacy policy">اقرأ سياسة الخصوصية</a></div></section>
+
+    <section class="final-call wrap" aria-labelledby="download-title"><img src="assets/stadium.webp" alt="" width="1024" height="500" loading="lazy" decoding="async"><div><p class="eyebrow" data-en="Ready for kick-off?">جاهز لضربة البداية؟</p><h2 id="download-title" data-en="Let your knowledge do the talking.">خلّ معلوماتك تتكلم.</h2><a class="store" href="https://play.google.com/store/apps/details?id=com.oasisforge.kooratrivia"><svg aria-hidden="true"><use href="#play-store"/></svg><span><small data-en="Get it on">حمّلها من</small><strong lang="en">Google Play</strong></span></a><p class="coming-soon" data-en="Coming soon to the App Store">قريبًا على App Store</p></div></section>
+
+    <section class="support wrap" id="support" aria-labelledby="support-title"><div><p class="eyebrow" data-en="Support & feedback">الدعم والملاحظات</p><h2 id="support-title" data-en="Got a question for us?">عندك سؤال لنا؟</h2><p data-en="A question, a bug or a correction to a football fact? Send us a message.">سؤال، مشكلة، أو تصحيح لمعلومة كروية؟ راسلنا.</p></div><a href="mailto:oasisforge.support@gmail.com" dir="ltr">oasisforge.support@gmail.com</a></section>
+  </main>
+  <footer class="wrap"><a class="studio" href="https://oasis-forge.github.io/">oasis forge.</a><p>© 2026 Oasis Forge</p><nav aria-label="روابط التذييل" data-en-aria-label="Footer navigation"><a href="#support" data-en="Support">الدعم</a><a href="privacy/" data-en="Privacy policy">سياسة الخصوصية</a></nav></footer>
 </body>
 </html>
