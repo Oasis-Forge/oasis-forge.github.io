@@ -1,7 +1,114 @@
 <!doctype html>
-<meta charset="utf-8">
-<title>QR Scanner + Generator — Oasis Forge</title>
-<meta http-equiv="refresh" content="0; url=https://oasis-forge.github.io/">
-<link rel="canonical" href="https://oasis-forge.github.io/">
-<p><a href="https://oasis-forge.github.io/">Oasis Forge</a> ·
-   <a href="privacy-policy/">Privacy policy</a></p>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f4f3eb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#242720" media="(prefers-color-scheme: dark)">
+  <title>QR Scanner + Generator — Look before you open · Oasis Forge</title>
+  <meta name="description" content="Know where a code goes before you go there. Scan QR codes and barcodes, preview links, and create codes checked for readability. By Oasis Forge.">
+  <link rel="canonical" href="https://oasis-forge.github.io/qr-scanner-generator/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Oasis Forge">
+  <meta property="og:title" content="QR Scanner + Generator — Look before you open">
+  <meta property="og:description" content="Scan QR codes and barcodes, see where links lead before opening, and create clean codes of your own. No account needed.">
+  <meta property="og:url" content="https://oasis-forge.github.io/qr-scanner-generator/">
+  <meta property="og:image" content="https://oasis-forge.github.io/qr-scanner-generator/icon.png">
+  <meta property="og:image:alt" content="QR Scanner + Generator app icon">
+  <link rel="icon" href="icon.png" type="image/png">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <svg class="symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="scan" viewBox="0 0 24 24"><path d="M3 8V3h5m8 0h5v5M3 16v5h5m8 0h5v-5M7 12h10"/></symbol>
+    <symbol id="play" viewBox="0 0 24 24"><path d="M4 2 16 8.3 12.5 12z" fill="#3ddc84"/><path d="m16 8.3 5 3.7-5 3.7-3.5-3.7z" fill="#ffd400"/><path d="M16 15.7 4 22 12.5 12z" fill="#ff6073"/><path d="m4 2 8.5 10L4 22z" fill="#2eb7ff"/></symbol>
+    <symbol id="apple" viewBox="0 0 24 24"><path fill="currentColor" d="M16.8 12.8c0-2 1.6-3 1.7-3.1-1-1.4-2.5-1.6-3-1.6-1.3-.1-2.6.8-3.3.8-.7 0-1.8-.8-2.9-.8C7.8 8.1 6.3 9 5.5 10.3c-1.7 3 .4 7.5 1.9 9.6.7 1 1.4 2 2.5 1.9 1 0 1.4-.6 2.7-.6s1.7.6 2.7.6c1.1 0 1.8-1 2.5-2 .8-1.1 1.1-2.1 1.2-2.4-.1 0-2.2-.9-2.2-4.6ZM14.6 6.7c.6-.8 1-1.8.9-2.9-.9.1-2 .6-2.7 1.4-.6.7-1.1 1.8-1 2.8 1 .1 2.1-.5 2.8-1.3Z"/></symbol>
+  </svg>
+
+  <header class="topbar wrap">
+    <a class="brand" href="#" aria-label="QR Scanner + Generator, top of page"><img src="icon.png" alt="" width="40" height="40"><span>QR Scanner <b>+ Generator</b></span></a>
+    <nav aria-label="Main navigation"><a href="#features">The details</a><a href="#screenshots">Screenshots</a><a href="#support">Support <span aria-hidden="true">↗</span></a></nav>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> An everyday tool by Oasis Forge</p>
+        <h1 id="hero-title">Look before<br>you <span class="highlight">open.</span><svg aria-hidden="true"><use href="#scan"/></svg></h1>
+        <p class="intro">Know where a code goes before you go there. Scan QR codes and barcodes, or create clean codes of your own.</p>
+        <div class="stores" aria-label="App availability">
+          <a class="store" href="https://play.google.com/store/apps/details?id=com.oasisforge.qrscanner" aria-label="Get QR Scanner + Generator on Google Play"><svg aria-hidden="true"><use href="#play"/></svg><span><small>Get it on</small><strong>Google Play</strong></span></a>
+          <span class="store soon"><svg aria-hidden="true"><use href="#apple"/></svg><span><small>Coming soon</small><strong>App Store</strong></span></span>
+        </div>
+        <p class="hero-note">No account. No ads over your camera or results.</p>
+        <a class="text-link explore" href="#features">See how it works <svg aria-hidden="true"><use href="#arrow"/></svg></a>
+      </div>
+      <div class="hero-art">
+        <span class="art-label mono">SCAN / REVIEW / DECIDE</span>
+        <div class="scan-field" aria-hidden="true"><i></i><i></i><i></i><i></i><span class="scan-axis"></span></div>
+        <figure class="hero-phone"><img src="assets/2-result-phone.webp" alt="The app’s link result screen shows the website name and full address before offering Open, Copy and Share." width="720" height="1433" fetchpriority="high" decoding="async"></figure>
+        <div class="art-note"><span class="note-icon" aria-hidden="true">↗</span><div><strong>The next move is yours.</strong><span>Nothing opens on its own.</span></div></div>
+        <span class="art-foot mono">A LITTLE MORE CLARITY.</span>
+      </div>
+    </section>
+
+    <div class="benefit-strip"><div class="wrap"><span><b aria-hidden="true">↗</b> Preview before opening</span><span><b aria-hidden="true">▦</b> Scan &amp; create</span><span><b aria-hidden="true">◎</b> History on your phone</span><span><b aria-hidden="true">文</b> 20 languages</span></div></div>
+
+    <section class="section wrap" id="features" aria-labelledby="features-title">
+      <div class="section-heading"><div><p class="eyebrow">Small tool. Thoughtful details.</p><h2 id="features-title">From a code<br>to a clear next step.</h2></div><p>Read what’s there. Choose what happens next. And make something useful to share.</p></div>
+      <div class="feature-grid">
+        <article class="feature-card scan-card">
+          <div class="feature-copy"><p class="chapter">01 / SCAN</p><h3>Point. Read. You’re in control.</h3><p>Scan QR codes and common barcodes with your camera, or pick a photo you already have. A torch helps when the light doesn’t.</p></div>
+          <div class="feature-visual"><img src="assets/1-scan-phone.webp" alt="Scanner screen with a QR code inside the viewfinder, torch, zoom and Scan a photo controls." width="720" height="1433" loading="lazy" decoding="async"></div>
+          <p class="card-foot mono"><span class="status-dot" aria-hidden="true"></span> NO ADS IN THE VIEWFINDER</p>
+        </article>
+        <article class="feature-card review-card">
+          <div class="feature-copy"><p class="chapter">02 / REVIEW</p><h3>The address comes first.</h3><p>See the site name and full link before anything opens. Unusual addresses are flagged on your device, with the choice to copy without opening.</p></div>
+          <div class="review-preview"><img src="assets/3-review.webp" alt="A flagged IP-address link on the app’s result screen, with a Review action." width="720" height="1280" loading="lazy" decoding="async"></div>
+          <p class="card-foot mono">YOUR TAP. YOUR DECISION.</p>
+        </article>
+        <article class="feature-card create-card">
+          <div class="feature-copy"><p class="chapter">03 / CREATE</p><h3>Make a code. Make it useful.</h3><p>Links, text, Wi-Fi, contacts, phone numbers, email and SMS. The app reads its own code back before you save or share a 1024 × 1024 PNG.</p></div>
+          <div class="feature-visual"><img src="assets/4-create-phone.webp" alt="Create screen with choices for Link, Text, Wi-Fi, Contact, Phone number, Email and SMS." width="720" height="1433" loading="lazy" decoding="async"></div>
+          <p class="card-foot mono">CHECKED BEFORE YOU SHARE</p>
+        </article>
+      </div>
+      <div class="history-note"><span class="history-mark" aria-hidden="true">↶</span><div><h3>A useful code? Keep it close.</h3><p>History keeps your scanned and created codes together, grouped by day. Filter by Scanned or Created, reopen a result, and keep Wi-Fi passwords hidden in the list.</p></div><a class="text-link" href="#screenshots">Take a look <svg aria-hidden="true"><use href="#arrow"/></svg></a></div>
+    </section>
+
+    <section class="gallery-section section" id="screenshots" aria-labelledby="screenshots-title">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow">Straight from the app</p><h2 id="screenshots-title">Less guessing.<br>More getting on with it.</h2></div><div class="gallery-controls" aria-label="Screenshot controls"><button type="button" id="previous" aria-label="Previous screenshot" aria-controls="gallery" aria-disabled="true"><svg aria-hidden="true"><use href="#arrow"/></svg></button><button type="button" id="next" aria-label="Next screenshot" aria-controls="gallery" aria-disabled="false"><svg aria-hidden="true"><use href="#arrow"/></svg></button></div></div>
+        <div class="gallery" id="gallery" tabindex="0" role="region" aria-label="Six app screenshots" aria-describedby="gallery-hint">
+          <figure><img src="assets/1-scan.webp" alt="Point and scan: QR codes and barcodes in the camera viewfinder." width="720" height="1280" loading="lazy" decoding="async"><figcaption><span>01</span> Scan a code</figcaption></figure>
+          <figure><img src="assets/2-result.webp" alt="Preview a link with its site name and full address before opening it." width="720" height="1280" loading="lazy" decoding="async"><figcaption><span>02</span> See where it leads</figcaption></figure>
+          <figure><img src="assets/3-review.webp" alt="An unusual IP-address link is flagged for review instead of automatically opening." width="720" height="1280" loading="lazy" decoding="async"><figcaption><span>03</span> Review unusual links</figcaption></figure>
+          <figure><img src="assets/4-create.webp" alt="Choose a QR code type: link, text, Wi-Fi, contact, phone number, email or SMS." width="720" height="1280" loading="lazy" decoding="async"><figcaption><span>04</span> Create your own</figcaption></figure>
+          <figure><img src="assets/5-history.webp" alt="History with All, Scanned and Created filters and a Wi-Fi password hidden in the list." width="720" height="1280" loading="lazy" decoding="async"><figcaption><span>05</span> Find it again</figcaption></figure>
+          <figure><img src="assets/6-settings.webp" alt="Settings with system, light and dark themes, language, scan feedback and save-history options." width="720" height="1280" loading="lazy" decoding="async"><figcaption><span>06</span> Make it feel like yours</figcaption></figure>
+        </div>
+        <div class="gallery-bottom"><p id="gallery-hint">Swipe, scroll, or focus the gallery and use the arrow keys.</p><p class="mono" id="gallery-position" aria-live="polite" aria-atomic="true">01 / 06</p></div>
+      </div>
+    </section>
+
+    <section class="section wrap trust-section" id="privacy" aria-labelledby="privacy-title">
+      <div class="section-heading"><div><p class="eyebrow">Clear about the small print, too</p><h2 id="privacy-title">Your codes.<br>Your choices.</h2></div><a class="text-link" href="privacy-policy/">Read the privacy policy <svg aria-hidden="true"><use href="#arrow"/></svg></a></div>
+      <div class="trust-grid">
+        <article><span class="trust-symbol" aria-hidden="true">01</span><h3>On your phone.</h3><p>No account or sign-in. Scans, created codes and history are stored on your device. Link checks run locally, without sending the scanned address to a server.</p><p class="fine-print">Android may include stored app data in your device backup if you have it enabled.</p></article>
+        <article><span class="trust-symbol" aria-hidden="true">02</span><h3>Space to do the job.</h3><p>No ads over the camera, scan results or code editor. The free app includes the core tools; removing ads is one optional, one-time purchase.</p><p class="fine-print">Banners appear in History, Settings and the Create picker. A full-screen ad may follow saving or sharing a created code.</p></article>
+        <article><span class="trust-symbol" aria-hidden="true">03</span><h3>Understand what’s shared.</h3><p>Camera images and imported photos aren’t stored. Google’s scanner sends usage and performance statistics; ads can involve device and interaction data.</p><p class="fine-print">The privacy policy explains these services, permissions and your ad choices.</p></article>
+      </div>
+    </section>
+
+    <section class="download wrap" aria-labelledby="download-title"><div><p class="eyebrow">Scan &amp; create, with a little clarity</p><h2 id="download-title">One code.<br>You take it from here.</h2><p>QR Scanner + Generator by Oasis Forge.</p></div><div><a class="store" href="https://play.google.com/store/apps/details?id=com.oasisforge.qrscanner" aria-label="Get QR Scanner + Generator on Google Play"><svg aria-hidden="true"><use href="#play"/></svg><span><small>Get it on</small><strong>Google Play</strong></span></a><p class="download-note">App Store · Coming soon</p></div><svg class="download-scan" aria-hidden="true"><use href="#scan"/></svg></section>
+
+    <section class="support wrap" id="support" aria-labelledby="support-title"><div><p class="eyebrow">A direct line to Oasis Forge</p><h2 id="support-title">Need a hand?</h2><p>Questions, a code that won’t scan, or an idea for the app? Email us.</p></div><a class="email" href="mailto:oasisforge.support@gmail.com">oasisforge.support@gmail.com <span aria-hidden="true">↗</span></a></section>
+  </main>
+
+  <footer class="wrap"><a class="studio" href="https://oasis-forge.github.io/">oasis forge.<span>Everyday tools. A thoughtful touch.</span></a><p>QR Scanner + Generator</p><nav aria-label="Footer navigation"><a href="#support">Support</a><a href="privacy-policy/">Privacy policy</a></nav></footer>
+</body>
+</html>
